@@ -179,8 +179,8 @@ public extension ColorTheme {
     var buttonGradient: LinearGradient {
         LinearGradient(
             colors: [buttonBackgroundStart, buttonBackgroundEnd],
-            startPoint: .top,
-            endPoint: .bottom
+            startPoint: .leading,
+            endPoint: .trailing
         )
     }
 }

@@ -25,3 +25,16 @@ public enum CornerStyle {
         }
     }
 }
+
+// MARK: - Corner Style Helper
+
+public extension View {
+    @ViewBuilder
+    func clipCornerStyle(_ style: CornerStyle) -> some View {
+        if style.isCapsule {
+            self.clipShape(Capsule())
+        } else {
+            self.clipShape(RoundedRectangle(cornerRadius: style.radius))
+        }
+    }
+}

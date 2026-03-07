@@ -12,7 +12,15 @@ public enum Icons: String, CaseIterable, Identifiable, Hashable {
     case branch = "arrow.trianglehead.branch"
     case chevronUp = "chevron.up"
     case chevronDown = "chevron.down"
+    case chevronRight = "chevron.right"
     case chevronUpAndDown = "chevron.up.chevron.down"
+    case arrowRight = "arrow.right"
+    case checkmark = "checkmark"
+    case checkmarkCircleFill = "checkmark.circle.fill"
+    case xmarkCircleFill = "xmark.circle.fill"
+    case clockFill = "clock.fill"
+    case warning = "exclamationmark.triangle.fill"
+    case infoCircleFill = "info.circle.fill"
     case heart = "heart.fill"
     case star = "star.fill"
     case bell = "bell.fill"
@@ -72,23 +80,30 @@ public struct Icon: View {
             }
         }
     }
-    private let icon: Icons
+    private let iconName: String
     private let size: Icon.Size
-    private let color: Color
+    private let color: Color?
     private let animated: Bool
 
-    public init(_ icon: Icons, size: Icon.Size = Icon.Size.normal, color: Color = .primary, animated: Bool = true) {
-        self.icon = icon
+    public init(_ icon: Icons, size: Icon.Size = Icon.Size.normal, color: Color? = nil, animated: Bool = true) {
+        self.iconName = icon.rawValue
+        self.size = size
+        self.color = color
+        self.animated = animated
+    }
+    
+    public init(iconName: String, size: Icon.Size = Icon.Size.normal, color: Color? = nil, animated: Bool = true) {
+        self.iconName = iconName
         self.size = size
         self.color = color
         self.animated = animated
     }
 
     public var body: some View {
-        Image(systemName: icon.rawValue)
+        Image(systemName: iconName)
             .font(.system(size: size.font))
             .frame(width: size.frame, height: size.frame)
-            .foregroundStyle(color)
+            .ifLet(color) { view, value in view.foregroundStyle(value) }
             .contentTransition(animated ? .symbolEffect(.automatic, options: .nonRepeating) : .interpolate)
     }
 }
