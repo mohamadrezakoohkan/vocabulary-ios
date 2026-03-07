@@ -10,6 +10,9 @@ import Foundation
 
 public enum Icons: String, CaseIterable, Identifiable, Hashable {
     case branch = "arrow.trianglehead.branch"
+    case chevronUp = "chevron.up"
+    case chevronDown = "chevron.down"
+    case chevronUpAndDown = "chevron.up.chevron.down"
     case heart = "heart.fill"
     case star = "star.fill"
     case bell = "bell.fill"
@@ -38,12 +41,15 @@ public enum Icons: String, CaseIterable, Identifiable, Hashable {
 
 public struct Icon: View {
     public enum Size {
+        case small
         case normal
         case large
         case custom(CGFloat)
 
         public var font: CGFloat {
             switch self {
+            case .small:
+                10
             case .normal:
                 medium
             case .large:
@@ -55,6 +61,8 @@ public struct Icon: View {
 
         public var frame: CGFloat {
             switch self {
+            case .small:
+                14
             case .normal:
                 mediumBig
             case .large:
@@ -67,11 +75,13 @@ public struct Icon: View {
     private let icon: Icons
     private let size: Icon.Size
     private let color: Color
+    private let animated: Bool
 
-    public init(_ icon: Icons, size: Icon.Size = Icon.Size.normal, color: Color = .primary) {
+    public init(_ icon: Icons, size: Icon.Size = Icon.Size.normal, color: Color = .primary, animated: Bool = true) {
         self.icon = icon
         self.size = size
         self.color = color
+        self.animated = animated
     }
 
     public var body: some View {
@@ -79,6 +89,7 @@ public struct Icon: View {
             .font(.system(size: size.font))
             .frame(width: size.frame, height: size.frame)
             .foregroundStyle(color)
+            .contentTransition(animated ? .symbolEffect(.automatic, options: .nonRepeating) : .interpolate)
     }
 }
 
