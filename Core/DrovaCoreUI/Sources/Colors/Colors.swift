@@ -14,6 +14,7 @@ public protocol ColorTheme {
     // Content colors
     var content1: Color { get }
     var content2: Color { get }
+    var content3: Color { get }
     var contentInverse: Color { get }
     
     // Accent colors
@@ -60,6 +61,7 @@ private struct LightTheme: ColorTheme {
     // Content
     var content1: Color { Color(hex: "#091B0A") }
     var content2: Color { Color(hex: "#6D7C6D") }
+    var content3: Color { Color(hex: "#999999") }
     var contentInverse: Color { Color(hex: "#071C0E") }
     
     // Accent
@@ -105,7 +107,8 @@ private struct LightTheme: ColorTheme {
 private struct DarkTheme: ColorTheme {
     // Content
     var content1: Color { Color(hex: "#FFFFFF") }
-    var content2: Color { Color(hex: "#B1C4B1") }
+    var content2: Color { Color(hex: "#808E80") }
+    var content3: Color { Color(hex: "#505050") }
     var contentInverse: Color { Color(hex: "#071C0E") }
     
     // Accent
@@ -272,6 +275,7 @@ private struct ColorsPreview: View {
                 colorSection(title: "Content", items: [
                     ("content1", colors.content1),
                     ("content2", colors.content2),
+                    ("content3", colors.content3),
                     ("contentInverse", colors.contentInverse),
                 ])
                 

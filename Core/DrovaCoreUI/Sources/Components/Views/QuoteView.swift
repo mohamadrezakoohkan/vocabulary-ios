@@ -83,7 +83,7 @@ public struct QuoteView: View {
                     if !timestamp.isEmpty {
                         Text(timestamp)
                             .font(.caption.monospaced())
-                            .foregroundStyle(colors.content2)
+                            .foregroundStyle(colors.content3)
                     }
                     
                     Spacer()
