@@ -39,6 +39,20 @@ public extension Module {
         }
     }
 
+    var infoPlist: InfoPlist? {
+        switch self {
+        case .app:
+            return .extendingDefault(with: [
+                "UILaunchScreen": [
+                    "UIColorName": "",
+                    "UIImageName": "",
+                ],
+            ])
+        default:
+            return InfoPlist.default
+        }
+    }
+
     /// The path to the module's sources
     var sourcesPath: String {
         switch self {

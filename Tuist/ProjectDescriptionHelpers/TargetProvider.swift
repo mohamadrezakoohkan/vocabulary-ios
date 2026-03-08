@@ -11,15 +11,30 @@ import ProjectDescription
 // MARK: - Module Target Generation
 
 public extension Module {
-    /// Generates a Target for this module
+    /**
+     Generates a Target for this module.
+     
+     Uses `buildableFolders` for file inclusion (folder references with dynamic discovery).
+     
+     Alternative approach using glob patterns (requires regeneration on file changes):
+     ```
+     sources: ["\(sourcesPath)/\**"],
+     resources: ["\(resourcesPath)/\**"],
+     sources: ["\(testsPath)/\**"],
+     ```
+     Note: `sources`/`resources` and `buildableFolders` are mutually exclusive.
+     */
     func makeTarget() -> Target {
         .target(
             name: name,
             destinations: .iOS,
             product: product,
             bundleId: bundleId,
-            sources: ["\(sourcesPath)/**"],
-            resources: ["\(resourcesPath)/**"],
+            infoPlist: infoPlist,
+            buildableFolders: [
+                .folder(.path(sourcesPath)),
+                .folder(.path(resourcesPath))
+            ],
             dependencies: dependencies
         )
     }
@@ -31,7 +46,7 @@ public extension Module {
             destinations: .iOS,
             product: .unitTests,
             bundleId: "\(bundleId)Tests",
-            sources: ["\(testsPath)/**"],
+            buildableFolders: [.folder(.path(testsPath))],
             dependencies: [.target(name: name), .target(name: Module.sharedTesting.name)]
         )
     }

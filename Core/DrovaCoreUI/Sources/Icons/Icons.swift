@@ -9,11 +9,31 @@ import SwiftUI
 import Foundation
 
 public enum Icons: String, CaseIterable, Identifiable, Hashable {
-    case branch = "arrow.trianglehead.branch"
     case chevronUp = "chevron.up"
     case chevronDown = "chevron.down"
     case chevronRight = "chevron.right"
     case chevronUpAndDown = "chevron.up.chevron.down"
+    case branch = "arrow.trianglehead.branch"
+    case leaf = "leaf"
+    case leafFill = "leaf.fill"
+    case flame = "flame.fill"
+    case zzz = "zzz"
+    case tornado = "tornado"
+
+    // MARK: - Tab Bar Icons
+
+    /// Capture tab icon - sparkle symbol
+    case sparkle = "sparkle"
+
+    /// Revisit tab icon - arrow clockwise symbol
+    case arrowClockwise = "arrow.clockwise"
+
+    /// Lineage tab icon - chart line uptrend
+    case arrowBranch = "arrow.branch"
+
+    /// Evolve tab icon - circle symbol
+    case buttonProgrammable = "button.programmable"
+
     case arrowRight = "arrow.right"
     case checkmark = "checkmark"
     case checkmarkCircleFill = "checkmark.circle.fill"

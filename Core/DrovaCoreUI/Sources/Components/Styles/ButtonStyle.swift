@@ -17,10 +17,106 @@ public enum ButtonVariant {
     case secondary
     /// Tertiary button with border, no fill
     case tertiary
-    /// Destructive/danger action button
-    case destructive
     /// Ghost button - text only, no background or border
     case ghost
+    /// Accent style button (non-gradient)
+    case accent
+    /// Informational style button
+    case info
+    /// Warning style button
+    case warning
+    /// Danger/error style button
+    case danger
+}
+
+// MARK: - Color Resolution
+
+public extension ButtonVariant {
+    /// Returns the content/foreground color for this variant
+    func contentColor(for theme: any ColorTheme) -> Color {
+        switch self {
+        case .primary:
+            return theme.buttonContent
+        case .secondary, .tertiary, .ghost:
+            return theme.content1
+        case .accent:
+            return theme.accentContent
+        case .info:
+            return theme.alertInfoContent
+        case .warning:
+            return theme.alertWarningContent
+        case .danger:
+            return theme.alertDangerContent
+        }
+    }
+    
+    /// Returns the background color for this variant
+    func backgroundColor(for theme: any ColorTheme) -> Color {
+        switch self {
+        case .primary:
+            return .clear // Uses gradient instead
+        case .secondary:
+            return theme.background3
+        case .tertiary, .ghost:
+            return .clear
+        case .accent:
+            return theme.accentBackground
+        case .info:
+            return theme.alertInfoBackground
+        case .warning:
+            return theme.alertWarningBackground
+        case .danger:
+            return theme.alertDangerBackground
+        }
+    }
+    
+    /// Returns the border color for this variant
+    func borderColor(for theme: any ColorTheme) -> Color {
+        switch self {
+        case .primary, .secondary, .ghost:
+            return .clear
+        case .tertiary:
+            return theme.border1
+        case .accent:
+            return theme.accentBorder
+        case .info:
+            return theme.alertInfoBorder
+        case .warning:
+            return theme.alertWarningBorder
+        case .danger:
+            return theme.alertDangerBorder
+        }
+    }
+    
+    /// Returns whether this variant uses a gradient background
+    var usesGradient: Bool {
+        self == .primary
+    }
+    
+    /// Returns the gradient for this variant (only applicable for primary)
+    func gradient(for theme: any ColorTheme) -> LinearGradient {
+        theme.buttonGradient
+    }
+    
+    /// Returns the shadow color for this variant
+    func shadowColor(for theme: any ColorTheme, isEnabled: Bool) -> Color {
+        switch self {
+        case .primary:
+            return theme.buttonBackgroundStart.opacity(isEnabled ? 0.4 : 0)
+        default:
+            return .clear
+        }
+    }
+    
+    /// Returns the disabled opacity for this variant
+    var disabledOpacity: Double {
+        switch self {
+        case .primary, .accent, .info, .warning, .danger:
+            return 0.6
+        case .secondary, .tertiary, .ghost:
+            return 0.5
+        }
+    }
 }
 
 // MARK: - Button Modifier
@@ -45,57 +141,29 @@ public struct ButtonModifier: ViewModifier {
     }
     
     public func body(content: Content) -> some View {
-        switch variant {
-        case .primary:
-            content
-                .foregroundStyle(theme.buttonContent)
-                .padding(.horizontal, medium)
-                .padding(.vertical, smallMedium)
-                .background(theme.buttonGradient)
-                .clipCornerStyle(cornerStyle)
-                .shadow(color: theme.buttonBackgroundStart.opacity(isEnabled ? 0.4 : 0), radius: 8, x: 0, y: 4)
-                .opacity(isEnabled ? 1.0 : 0.6)
-
-        case .secondary:
-            content
-                .foregroundStyle(theme.content1)
-                .cardStyle(
-                    paddingHorizontal: medium,
-                    paddingVertical: smallMedium,
-                    backgroundColor: theme.background3,
-                    cornerStyle: cornerStyle
-                )
-                .opacity(isEnabled ? 1.0 : 0.5)
-        case .tertiary:
-            content
-                .foregroundStyle(theme.content1)
-                .cardStyle(
-                    paddingHorizontal: medium,
-                    paddingVertical: smallMedium,
-                    borderColor: theme.border1,
-                    cornerStyle: cornerStyle
-                )
-                .opacity(isEnabled ? 1.0 : 0.5)
-
-        case .destructive:
-            content
-                .foregroundStyle(theme.alertDangerContent)
-                .cardStyle(
-                    paddingHorizontal: medium,
-                    paddingVertical: smallMedium,
-                    backgroundColor: theme.alertDangerBackground,
-                    borderColor: theme.alertDangerBorder.opacity(isEnabled ? 1 : 0.4),
-                    cornerStyle: cornerStyle
-                )
-                .opacity(isEnabled ? 1.0 : 0.6)
-
-        case .ghost:
-            content
-                .foregroundStyle(theme.content1)
-                .padding(.horizontal, medium)
-                .padding(.vertical, smallMedium)
-                .opacity(isEnabled ? 1.0 : 0.5)
-        }
+        content
+            .foregroundStyle(variant.contentColor(for: theme))
+            .padding(.horizontal, medium)
+            .padding(.vertical, smallMedium)
+            .background {
+                if variant.usesGradient {
+                    variant.gradient(for: theme)
+                } else {
+                    variant.backgroundColor(for: theme)
+                }
+            }
+            .clipCornerStyle(cornerStyle)
+            .overlay {
+                RoundedRectangle(cornerRadius: cornerStyle.radius)
+                    .strokeBorder(variant.borderColor(for: theme).opacity(isEnabled ? 1 : 0.4), lineWidth: 1)
+            }
+            .shadow(
+                color: variant.shadowColor(for: theme, isEnabled: isEnabled),
+                radius: 8,
+                x: 0,
+                y: 4
+            )
+            .opacity(isEnabled ? 1.0 : variant.disabledOpacity)
     }
 }
 
@@ -153,10 +221,6 @@ public extension ButtonStyle where Self == AppButtonStyle {
         AppButtonStyle(variant: .primary)
     }
     
-    static var appDestructive: AppButtonStyle {
-        AppButtonStyle(variant: .destructive)
-    }
-    
     static var appSecondary: AppButtonStyle {
         AppButtonStyle(variant: .secondary)
     }
@@ -167,6 +231,22 @@ public extension ButtonStyle where Self == AppButtonStyle {
 
     static var appGhost: AppButtonStyle {
         AppButtonStyle(variant: .ghost)
+    }
+    
+    static var appAccent: AppButtonStyle {
+        AppButtonStyle(variant: .accent)
+    }
+    
+    static var appInfo: AppButtonStyle {
+        AppButtonStyle(variant: .info)
+    }
+    
+    static var appWarning: AppButtonStyle {
+        AppButtonStyle(variant: .warning)
+    }
+    
+    static var appDanger: AppButtonStyle {
+        AppButtonStyle(variant: .danger)
     }
     
     static func app(
@@ -210,19 +290,42 @@ private struct ButtonStylePreview: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 
-                // Destructive buttons
+                // Alert style buttons
                 VStack(alignment: .leading, spacing: small) {
-                    Text("Destructive")
+                    Text("Alert Styles")
                         .font(.subheadline)
                         .fontWeight(.semibold)
                         .foregroundStyle(colors.content2)
 
                     HStack {
-                        Button("Delete Item") {}
-                            .buttonStyle(.appDestructive)
+                        Button("Accent") {}
+                            .buttonStyle(.appAccent)
 
-                        Button("Destructive Disabled") {}
-                            .buttonStyle(.appDestructive)
+                        Button("Info") {}
+                            .buttonStyle(.appInfo)
+
+                        Button("Warning") {}
+                            .buttonStyle(.appWarning)
+
+                        Button("Danger") {}
+                            .buttonStyle(.appDanger)
+                    }
+                    
+                    HStack {
+                        Button("Accent") {}
+                            .buttonStyle(.appAccent)
+                            .disabled(true)
+
+                        Button("Info") {}
+                            .buttonStyle(.appInfo)
+                            .disabled(true)
+
+                        Button("Warning") {}
+                            .buttonStyle(.appWarning)
+                            .disabled(true)
+
+                        Button("Danger") {}
+                            .buttonStyle(.appDanger)
                             .disabled(true)
                     }
                 }
@@ -291,7 +394,7 @@ private struct ButtonStylePreview: View {
                                 Text("Delete")
                             }
                         }
-                        .buttonStyle(.appDestructive)
+                        .buttonStyle(.appDanger)
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -305,31 +408,138 @@ private struct ButtonStylePreview: View {
                     
                     Button {
                     } label: {
-                        Text("Continue")
+                        Text("Primary")
                             .frame(maxWidth: .infinity)
                     }
                     .buttonStyle(.appPrimary)
 
                     Button {
                     } label: {
-                        Text("Not now")
+                        Text("Ghost")
                             .frame(maxWidth: .infinity)
                     }
                     .buttonStyle(.appGhost)
 
                     Button {
                     } label: {
-                        Text("Cancel")
+                        Text("Secondary")
                             .frame(maxWidth: .infinity)
                     }
                     .buttonStyle(.appSecondary)
 
                     Button {
                     } label: {
-                        Text("Cancel")
+                        Text("Tertiary")
                             .frame(maxWidth: .infinity)
                     }
                     .buttonStyle(.appTertiary)
+
+                    Button {
+                    } label: {
+                        Text("Accent")
+                            .frame(maxWidth: .infinity)
+                    }
+                    .buttonStyle(.appAccent)
+
+                    Button {
+                    } label: {
+                        Text("Info")
+                            .frame(maxWidth: .infinity)
+                    }
+                    .buttonStyle(.appInfo)
+
+                    Button {
+                    } label: {
+                        Text("Warning")
+                            .frame(maxWidth: .infinity)
+                    }
+                    .buttonStyle(.appWarning)
+
+                    Button {
+                    } label: {
+                        Text("Danger")
+                            .frame(maxWidth: .infinity)
+                    }
+                    .buttonStyle(.appDanger)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                
+                // Vertical layout buttons
+                VStack(alignment: .leading, spacing: small) {
+                    Text("Vertical Layout")
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(colors.content2)
+                    
+                    HStack(spacing: smallMedium) {
+                        Button {
+                        } label: {
+                            VStack(spacing: small) {
+                                Image(systemName: "leaf.fill")
+                                    .font(.title)
+                                Text("Evolve")
+                            }
+                            .frame(width: 80, height: 80)
+                        }
+                        .buttonStyle(.appAccent)
+
+                        Button {
+                        } label: {
+                            VStack(spacing: small) {
+                                Image(systemName: "moon.zzz.fill")
+                                    .font(.title)
+                                Text("Rest")
+                            }
+                            .frame(width: 80, height: 80)
+                        }
+                        .buttonStyle(.appWarning)
+
+                        Button {
+                        } label: {
+                            VStack(spacing: small) {
+                                Image(systemName: "archivebox.fill")
+                                    .font(.title)
+                                Text("Archive")
+                            }
+                            .frame(width: 80, height: 80)
+                        }
+                        .buttonStyle(.appDanger)
+                    }
+                    
+                    HStack(spacing: smallMedium) {
+                        Button {
+                        } label: {
+                            VStack(spacing: small) {
+                                Image(systemName: "star.fill")
+                                    .font(.title2)
+                                Text("Primary")
+                            }
+                            .frame(width: 80, height: 80)
+                        }
+                        .buttonStyle(.appPrimary)
+
+                        Button {
+                        } label: {
+                            VStack(spacing: small) {
+                                Image(systemName: "info.circle.fill")
+                                    .font(.title2)
+                                Text("Info")
+                            }
+                            .frame(width: 80, height: 80)
+                        }
+                        .buttonStyle(.appInfo)
+
+                        Button {
+                        } label: {
+                            VStack(spacing: small) {
+                                Image(systemName: "gearshape.fill")
+                                    .font(.title2)
+                                Text("Secondary")
+                            }
+                            .frame(width: 80, height: 80)
+                        }
+                        .buttonStyle(.appSecondary)
+                    }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
             }

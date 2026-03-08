@@ -17,6 +17,8 @@ public protocol ColorTheme {
     var contentInverse: Color { get }
     
     // Accent colors
+    var accentPrimary: Color { get }
+    var accentSecondary: Color { get }
     var accentContent: Color { get }
     var accentBackground: Color { get }
     var accentBorder: Color { get }
@@ -61,6 +63,8 @@ private struct LightTheme: ColorTheme {
     var contentInverse: Color { Color(hex: "#071C0E") }
     
     // Accent
+    var accentPrimary: Color { Color(hex: "#00DE3C") }
+    var accentSecondary: Color { Color(hex: "#00C358") }
     var accentContent: Color { Color(hex: "#FFFFFF") }
     var accentBackground: Color { Color(hex: "#30D158") }
     var accentBorder: Color { Color(hex: "#28A745") }
@@ -91,8 +95,8 @@ private struct LightTheme: ColorTheme {
     var alertWarningBorder: Color { Color(hex: "#FFA900") }
     
     // Button
-    var buttonBackgroundStart: Color { Color(hex: "#00DE3C") }
-    var buttonBackgroundEnd: Color { Color(hex: "#00C358") }
+    var buttonBackgroundStart: Color { accentPrimary }
+    var buttonBackgroundEnd: Color { accentSecondary }
     var buttonContent: Color { Color(hex: "#FFFFFF") }
 }
 
@@ -105,6 +109,8 @@ private struct DarkTheme: ColorTheme {
     var contentInverse: Color { Color(hex: "#071C0E") }
     
     // Accent
+    var accentPrimary: Color { Color(hex: "#00DE3C") }
+    var accentSecondary: Color { Color(hex: "#00C358") }
     var accentContent: Color { Color(hex: "#00E275") }
     var accentBackground: Color { Color(hex: "#15261B") }
     var accentBorder: Color { Color(hex: "#0A4726") }
@@ -135,23 +141,31 @@ private struct DarkTheme: ColorTheme {
     var alertWarningBorder: Color { Color(hex: "#52411B") }
 
     // Button
-    var buttonBackgroundStart: Color { Color(hex: "#00DE3C") }
-    var buttonBackgroundEnd: Color { Color(hex: "#00C358") }
+    var buttonBackgroundStart: Color { accentPrimary }
+    var buttonBackgroundEnd: Color { accentSecondary }
     var buttonContent: Color { Color(hex: "#FFFFFF") }
 }
 
 // MARK: - ColorScheme Extension
 
 public extension ColorScheme {
+
+    var light: any ColorTheme {
+        LightTheme()
+    }
+
+    var dark: any ColorTheme {
+        DarkTheme()
+    }
     /// Returns the current theme colors based on the color scheme
     var theme: any ColorTheme {
         switch self {
         case .light:
-            return LightTheme()
+            return light
         case .dark:
-            return DarkTheme()
+            return dark
         @unknown default:
-            return LightTheme()
+            return light
         }
     }
 }
@@ -262,6 +276,8 @@ private struct ColorsPreview: View {
                 ])
                 
                 colorSection(title: "Accent", items: [
+                    ("accentPrimary", colors.accentPrimary),
+                    ("accentSecondary", colors.accentSecondary),
                     ("accentContent", colors.accentContent),
                     ("accentBackground", colors.accentBackground),
                     ("accentBorder", colors.accentBorder),

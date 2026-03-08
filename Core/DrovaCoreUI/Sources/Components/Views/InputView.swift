@@ -30,6 +30,9 @@ public struct InputView: View {
 
     /// Maximum height for the text editor
     private let maxHeight: CGFloat
+    
+    /// Maximum character length (nil for unlimited)
+    private let maxLength: Int?
 
     /// Whether the input is focused
     @FocusState private var isFocused: Bool
@@ -42,16 +45,19 @@ public struct InputView: View {
     ///   - placeholder: Placeholder text to display when empty (default: "Enter text...")
     ///   - minHeight: Minimum height for the text editor (default: 120)
     ///   - maxHeight: Maximum height for the text editor (default: 500)
+    ///   - maxLength: Maximum character length (default: nil for unlimited)
     public init(
         text: Binding<String>,
         placeholder: String = "Enter text...",
         minHeight: CGFloat = 120,
-        maxHeight: CGFloat = 500
+        maxHeight: CGFloat = 500,
+        maxLength: Int? = nil
     ) {
         self._text = text
         self.placeholder = placeholder
         self.minHeight = minHeight
         self.maxHeight = maxHeight
+        self.maxLength = maxLength
     }
     
     // MARK: - Body
@@ -75,6 +81,11 @@ public struct InputView: View {
                 .background(Color.clear)
                 .frame(minHeight: minHeight, maxHeight: maxHeight)
                 .focused($isFocused)
+                .onChange(of: text) { oldValue, newValue in
+                    if let maxLength, newValue.count > maxLength {
+                        text = String(newValue.prefix(maxLength))
+                    }
+                }
         }
         .cardStyle(
             paddingHorizontal: medium,
@@ -143,6 +154,16 @@ private struct InputPreview: View {
                         placeholder: "Write your seed here..."
                     )
                 }
+                
+                // Max length demo
+                VStack(alignment: .leading, spacing: smallMedium) {
+                    Text("With Max Length (50 chars)")
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(colors.content2)
+                    
+                    MaxLengthInputDemo()
+                }
             }
             .padding()
         }
@@ -191,6 +212,39 @@ private struct InteractiveInputDemo: View {
         }
     }
 }
+// MARK: - Max Length Demo
+
+/// Demo component showing max length behavior
+private struct MaxLengthInputDemo: View {
+    @Environment(\.colorScheme) private var colorScheme
+    @State private var inputText: String = ""
+    
+    private let maxLength = 50
+    
+    private var colors: any ColorTheme {
+        colorScheme.theme
+    }
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: smallMedium) {
+            InputView(
+                text: $inputText,
+                placeholder: "Limited to 50 characters...",
+                minHeight: 80,
+                maxLength: maxLength
+            )
+            
+            HStack {
+                Text("\(inputText.count)/\(maxLength)")
+                    .font(.caption)
+                    .foregroundStyle(inputText.count >= maxLength ? colors.alertDangerContent : colors.content2)
+                
+                Spacer()
+            }
+        }
+    }
+}
+
 #Preview("Light Mode") {
     InputPreview()
         .preferredColorScheme(.light)
