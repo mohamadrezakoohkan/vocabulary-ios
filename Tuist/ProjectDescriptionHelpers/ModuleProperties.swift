@@ -10,38 +10,30 @@ import ProjectDescription
 // MARK: - Module Properties
 
 public extension Module {
-    /// The display name for the module
-    var name: String {
-        rawValue
-    }
-
     /// The bundle identifier for this module
     var bundleId: String {
-        "com.drova.\(rawValue)"
+        "vocabulary.com.\(rawValue)"
     }
 
     /// The product type for this module
     var product: Product {
         switch self {
-        case .app:
+        case is AppModule:
             return .app
-        case .capture, .revisit, .lineage, .evolve:
+        case is FeatureModule:
             return .framework
-        case .drovaCoreFoundation,
-                .drovaCoreUI,
-                .drovaCoreModels,
-                .drovaCoreNetwork,
-                .drovaCoreDatabase,
-                .drovaCoreAnalytics:
+        case is CoreModule:
             return .framework
-        case .sharedCommon, .sharedTesting:
+        case is SharedModule:
             return .framework
+        default:
+            fatalError("Module type not found")
         }
     }
 
     var infoPlist: InfoPlist? {
         switch self {
-        case .app:
+        case is AppModule:
             return .extendingDefault(with: [
                 "UILaunchScreen": [
                     "UIColorName": "",
@@ -53,112 +45,61 @@ public extension Module {
         }
     }
 
-    /// The path to the module's sources
-    var sourcesPath: String {
+    /// The base path for this module's directory
+    var basePath: String {
         switch self {
-        case .app:
-            "App/Sources"
-        case .capture, .revisit, .lineage, .evolve:
-            "Features/\(name)/Sources"
-        case .drovaCoreFoundation,
-                .drovaCoreUI,
-                .drovaCoreModels,
-                .drovaCoreNetwork,
-                .drovaCoreDatabase,
-                .drovaCoreAnalytics:
-            "Core/\(name)/Sources"
-        case .sharedCommon, .sharedTesting:
-            "Shared/\(name)/Sources"
+        case is AppModule:
+            "App"
+        case is FeatureModule:
+            "Features/\(rawValue)"
+        case is CoreModule:
+            "Core/\(rawValue)"
+        case is SharedModule:
+            "Shared/\(rawValue)"
+        default:
+            fatalError("Module type not found")
         }
     }
 
-    /// The path to the module's resources
-    var resourcesPath: String {
-        switch self {
-        case .app:
-            "App/Resources"
-        case .capture, .revisit, .lineage, .evolve:
-            "Features/\(name)/Resources"
-        case .drovaCoreFoundation,
-                .drovaCoreUI,
-                .drovaCoreModels,
-                .drovaCoreNetwork,
-                .drovaCoreDatabase,
-                .drovaCoreAnalytics:
-            "Core/\(name)/Resources"
-        case .sharedCommon, .sharedTesting:
-            "Shared/\(name)/Resources"
-        }
-    }
+    var sourcesPath: String { "\(basePath)/Sources" }
+    var resourcesPath: String { "\(basePath)/Resources" }
+    var testsPath: String { "\(basePath)/Tests" }
+    var examplePath: String { "\(basePath)/Example" }
 
-    /// The path to the module's tests
-    var testsPath: String {
-        switch self {
-        case .app:
-            "App/Tests"
-        case .capture, .revisit, .lineage, .evolve:
-            "Features/\(name)/Tests"
-        case .drovaCoreFoundation,
-                .drovaCoreUI,
-                .drovaCoreModels,
-                .drovaCoreNetwork,
-                .drovaCoreDatabase,
-                .drovaCoreAnalytics:
-            "Core/\(name)/Tests"
-        case .sharedCommon, .sharedTesting:
-            "Shared/\(name)/Tests"
-        }
+    /// A target dependency referencing this module
+    var targetDependency: TargetDependency {
+        .target(name: rawValue)
     }
 
     /// Dependencies for this module
     var dependencies: [TargetDependency] {
         switch self {
-        case .capture, .revisit, .lineage, .evolve:
-            return [
-                .target(name: Module.drovaCoreFoundation.name),
-                .target(name: Module.drovaCoreUI.name),
-                .target(name: Module.drovaCoreModels.name),
-                .target(name: Module.drovaCoreNetwork.name),
-                .target(name: Module.drovaCoreDatabase.name),
-                .target(name: Module.drovaCoreAnalytics.name),
-            ]
-        case .drovaCoreUI, .drovaCoreFoundation:
-            return []
-        case .drovaCoreModels:
-            return [.target(name: Module.drovaCoreFoundation.name)]
-        case .drovaCoreNetwork, .drovaCoreDatabase, .drovaCoreAnalytics:
-            return [
-                .target(name: Module.drovaCoreFoundation.name),
-                .target(name: Module.drovaCoreModels.name),
-            ]
-        case .sharedCommon:
-            return [
-                .target(name: Module.drovaCoreFoundation.name),
-                .target(name: Module.drovaCoreUI.name),
-                .target(name: Module.drovaCoreModels.name),
-                .target(name: Module.drovaCoreNetwork.name),
-                .target(name: Module.drovaCoreDatabase.name),
-                .target(name: Module.drovaCoreAnalytics.name),
-            ]
-        case .sharedTesting:
-            return [
-                .target(name: Module.drovaCoreFoundation.name),
-                .target(name: Module.drovaCoreModels.name),
-            ]
-        case .app:
-            return [
-                .target(name: Module.capture.name),
-                .target(name: Module.revisit.name),
-                .target(name: Module.lineage.name),
-                .target(name: Module.evolve.name),
-                .target(name: Module.sharedCommon.name),
-                .target(name: Module.drovaCoreFoundation.name),
-                .target(name: Module.drovaCoreUI.name),
-                .target(name: Module.drovaCoreModels.name),
-                .target(name: Module.drovaCoreNetwork.name),
-                .target(name: Module.drovaCoreDatabase.name),
-                .target(name: Module.drovaCoreAnalytics.name),
-            ]
+        case is AppModule:
+            FeatureModule.allCases.map(\.targetDependency) +
+            CoreModule.allCases.map(\.targetDependency) +
+            [SharedModule.sharedCommon.targetDependency]
+        case is FeatureModule:
+            CoreModule.allCases.map(\.targetDependency)
+        case let core as CoreModule:
+            switch core {
+            case .coreUI, .coreFoundation:
+                []
+            case .coreModels:
+                [CoreModule.coreFoundation.targetDependency]
+            case .coreNetwork, .coreDatabase, .coreAnalytics:
+                [CoreModule.coreFoundation, .coreModels].map(\.targetDependency)
+            }
+        case let shared as SharedModule:
+            switch shared {
+            case .sharedCommon:
+                CoreModule.allCases.map(\.targetDependency)
+            case .sharedTesting:
+                [CoreModule.coreFoundation, .coreModels].map(\.targetDependency)
+            case .sharedExample:
+                CoreModule.allCases.map(\.targetDependency) + [SharedModule.sharedCommon.targetDependency]
+            }
+        default:
+            fatalError("Module type not found")
         }
     }
 }

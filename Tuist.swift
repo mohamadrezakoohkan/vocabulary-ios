@@ -1,7 +1,7 @@
 import ProjectDescription
 
 let tuist = Tuist.init(
-    fullHandle: "work.koohkan/drova-ios",
+    fullHandle: "vocabulary/vocabulary-ios",
     project: .tuist(
         compatibleXcodeVersions: .all,
         swiftVersion: nil,

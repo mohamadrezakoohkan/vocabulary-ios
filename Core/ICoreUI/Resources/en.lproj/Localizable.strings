@@ -1,0 +1,41 @@
+/*
+  Localizable.strings
+  DrovaCoreUI
+
+  English translations for DrovaCoreUI components.
+*/
+
+// MARK: - Common Actions
+"common.save" = "Save";
+"common.cancel" = "Cancel";
+"common.done" = "Done";
+"common.edit" = "Edit";
+"common.delete" = "Delete";
+"common.close" = "Close";
+"common.back" = "Back";
+"common.next" = "Next";
+"common.continue" = "Continue";
+"common.retry" = "Retry";
+
+// MARK: - States
+"state.loading" = "Loading...";
+"state.empty" = "No items";
+"state.error" = "Something went wrong";
+"state.greeting" = "Hello %@";
+
+// MARK: - Scaffold
+"scaffold.empty.title" = "Nothing here yet";
+"scaffold.empty.message" = "Content will appear here once available.";
+
+// MARK: - Capture
+"capture.title" = "Plant a Seed";
+"capture.streak" = "🔥 %@ days";
+"capture.placeholder" = "Write down your ideas...";
+"capture.plantButton" = "Plant This Seed";
+"capture.recentSeeds" = "RECENT SEEDS";
+"capture.sample.quote1" = "Friction isn't always bad UX. Sometimes it's a filter for intent.";
+"capture.sample.quote2" = "The best products feel like they were always there. Invisible design.";
+
+// MARK: - Time
+"time.hoursAgo" = "%@h ago";
+"time.yesterday" = "yesterday";

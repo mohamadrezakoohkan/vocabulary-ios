@@ -1,12 +1,11 @@
 import SwiftUI
 import SwiftData
 
-import DrovaCoreUI
+import ICoreUI
+import SharedCommon
 
-import Capture
-import Revisit
-import Lineage
-import Evolve
+import Splash
+
 
 @Model
 final class Item {
@@ -19,7 +18,7 @@ final class Item {
 
 
 @main
-struct DrovaApp: App {
+struct MainApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -33,9 +32,12 @@ struct DrovaApp: App {
         }
     }()
 
+    let serviceProvider = ServiceProvider()
+
     var body: some Scene {
         WindowGroup {
             MainView()
+                .environment(\.serviceProvider, serviceProvider)
         }
         .modelContainer(sharedModelContainer)
     }
@@ -48,30 +50,8 @@ private struct MainView: View {
     @Environment(\.colorScheme) var colorScheme
 
     var body: some View {
-        TabView {
-            Tab("Capture", systemImage: Icons.sparkle.id) {
-                NavigationStack {
-                    CaptureView()
-                }
-            }
-
-            Tab("Revisit", systemImage: Icons.arrowClockwise.id) {
-                NavigationStack {
-                    RevisitView()
-                }
-            }
-
-            Tab("Lineage", systemImage: Icons.arrowBranch.id) {
-                NavigationStack {
-                    LineageView()
-                }
-            }
-
-            Tab("Evolve", systemImage: Icons.buttonProgrammable.id) {
-                NavigationStack {
-                    EvolveView()
-                }
-            }
+        Group {
+            SplashView()
         }
         .tint(colorScheme.theme.accentPrimary)
         .symbolEffect(.bounce.up.wholeSymbol, options: .nonRepeating)

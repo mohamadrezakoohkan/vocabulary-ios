@@ -26,7 +26,7 @@ public extension Module {
      */
     func makeTarget() -> Target {
         .target(
-            name: name,
+            name: rawValue,
             destinations: .iOS,
             product: product,
             bundleId: bundleId,
@@ -38,36 +38,38 @@ public extension Module {
             dependencies: dependencies
         )
     }
-    
+
+    /// Generates a Example Target for this module
+    ///
+    func makeExampleTarget() -> Target {
+        .target(
+            name: "\(rawValue)Example",
+            destinations: .iOS,
+            product: .app,
+            bundleId: "\(bundleId)Example",
+            infoPlist: .extendingDefault(with: [
+                "UILaunchScreen": [
+                    "UIColorName": "",
+                    "UIImageName": "",
+                ],
+            ]),
+            buildableFolders: [
+                .folder(.path(examplePath)),
+            ],
+            dependencies: [.target(name: rawValue), .target(name: SharedModule.sharedExample.rawValue)]
+        )
+    }
+
     /// Generates a test Target for this module
+    /// 
     func makeTestTarget() -> Target {
         .target(
-            name: "\(name)Tests",
+            name: "\(rawValue)Tests",
             destinations: .iOS,
             product: .unitTests,
             bundleId: "\(bundleId)Tests",
             buildableFolders: [.folder(.path(testsPath))],
-            dependencies: [.target(name: name), .target(name: Module.sharedTesting.name)]
+            dependencies: [.target(name: rawValue), .target(name: SharedModule.sharedTesting.rawValue)]
         )
     }
 }
-
-// MARK: - Project Helper
-
-public enum TargetProvider {
-    
-    /// Generates all module targets
-    public static func makeModuleTargets() -> [Target] {
-        Module.allCases.flatMap { module in
-            [module.makeTarget(), module.makeTestTarget()]
-        }
-    }
-    
-    /// Generates targets for specific modules
-    public static func makeTargets(for modules: [Module]) -> [Target] {
-        modules.flatMap { module in
-            [module.makeTarget(), module.makeTestTarget()]
-        }
-    }
-}
-
