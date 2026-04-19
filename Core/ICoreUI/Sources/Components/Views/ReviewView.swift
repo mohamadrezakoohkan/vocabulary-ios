@@ -1,54 +1,57 @@
 //
 //  ReviewView.swift
-//  DrovaCoreUI
+//  ICoreUI
 //
-//  Created by Mohammad reza on 8/3/26.
+//  Apple HIG review card — tinted badge header, editorial quote body,
+//  optional description, and a row of tinted icon-label action buttons.
+//
+//  AI Instructions:
+//  - This component follows Apple Human Interface Guidelines.
+//  - Container: Color.surface, continuous .large corners (16pt), .small soft
+//    shadow, NO border. Do NOT add 2-3pt borders or hard offset shadows.
+//  - Quote text uses .title3.weight(.semibold) — editorial but not "black".
+//    Do NOT wrap the text in literal "..." quotes; use a decorative
+//    "quote.opening" SF Symbol (matches QuoteView).
+//  - Description uses .subheadline in .foregroundMuted with line spacing.
+//  - Header: BadgeView (style .accent) keeps soft tinted look — never swap
+//    in a thick-bordered chip here.
+//  - Actions: a horizontal row of three tinted icon-over-label buttons
+//    (ReviewActionButton). Each uses a soft tinted background (12% of role
+//    color), matching role color content (semantic, not Bauhaus-flat):
+//      • Evolve  → primaryGreen (growth)
+//      • Rest    → primaryBlue  (calm)
+//      • Archive → foregroundMuted (neutral)
+//    Do NOT use solid filled backgrounds for these in-card actions.
+//  - Buttons reserve a 44pt min tap target and animate via spring on press
+//    (opacity + small scale). Do NOT animate shadow or border.
+//  - When an action handler is nil, render the button disabled (lower
+//    opacity, no haptic), do not hide it — keeps the layout stable.
+//  - Divider above the action row is a hairline using foregroundMuted at
+//    low opacity; do NOT use a solid 1pt foreground line.
+//  - Respect Dynamic Type — font sizes are textStyles, never hardcoded.
+//  - Accessibility: each action has its own accessibilityLabel; the card
+//    itself does not become a button (actions live inside).
+//  - Public API is backwards compatible: badgeText, badgeEmoji, quoteText,
+//    descriptionText, onEvolve, onRest, onArchive. New options must be
+//    additive.
+//  - Previews: light + dark, including no-description and missing-handler
+//    states to verify disabled visuals.
+//  - Demo: Core/ICoreUI/Example/Components/Views/ReviewViewDemo.swift
+//    Update the Interactive controls and Combinations gallery there
+//    whenever a new init parameter, action, or disabled state is added.
 //
 
 import SwiftUI
-/// A card component for revisiting seeds
-/// Displays a badge, quote, description text, and action buttons (Evolve, Rest, Archive)
+
 public struct ReviewView: View {
-    @Environment(\.colorScheme) private var colorScheme
-    
-    private var colors: any ColorTheme {
-        colorScheme.theme
-    }
-    
-    // MARK: - Properties
-    
-    /// The badge text (e.g., "Planted 23 days ago")
     private let badgeText: String
-    
-    /// The badge emoji
     private let badgeEmoji: String
-    
-    /// The main quote text
     private let quoteText: String
-    
-    /// The description text below the quote
     private let descriptionText: String
-    
-    /// Action when Evolve button is tapped
     private let onEvolve: (() -> Void)?
-    
-    /// Action when Rest button is tapped
     private let onRest: (() -> Void)?
-    
-    /// Action when Archive button is tapped
     private let onArchive: (() -> Void)?
-    
-    // MARK: - Initialization
-    
-    /// Creates a revisit card
-    /// - Parameters:
-    ///   - badgeText: The badge text (e.g., "Planted 23 days ago")
-    ///   - badgeEmoji: The badge emoji
-    ///   - quoteText: The main quote text
-    ///   - descriptionText: The description text below the quote
-    ///   - onEvolve: Action when Evolve button is tapped
-    ///   - onRest: Action when Rest button is tapped
-    ///   - onArchive: Action when Archive button is tapped
+
     public init(
         badgeText: String,
         badgeEmoji: String = "🌱",
@@ -66,216 +69,161 @@ public struct ReviewView: View {
         self.onRest = onRest
         self.onArchive = onArchive
     }
-    
-    // MARK: - Body
 
     public var body: some View {
-        ZStack {
-            VStack(alignment: .leading, spacing: medium) {
-                // Badge
-                BadgeView(badgeText, emoji: badgeEmoji, style: .accent)
+        VStack(alignment: .leading, spacing: medium) {
+            BadgeView(badgeText, emoji: badgeEmoji, style: .accent)
 
-                // Quote text
-                Text("\"\(quoteText)\"")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .fontDesign(.serif)
-                    .foregroundStyle(colors.content1)
+            quoteBody
+
+            if !descriptionText.isEmpty {
+                Text(descriptionText)
+                    .font(.subheadline)
+                    .foregroundStyle(Color.foregroundMuted)
+                    .lineSpacing(2)
                     .multilineTextAlignment(.leading)
-
-                // Description text
-                if !descriptionText.isEmpty {
-                    Text(descriptionText)
-                        .font(.subheadline)
-                        .foregroundStyle(colors.content2)
-                        .multilineTextAlignment(.leading)
-                }
-
-                // Action buttons
-                HStack(spacing: smallMedium) {
-                    actionButton(
-                        icon: .leafFill,
-                        label: "Evolve",
-                        iconColor: colors.accentContent,
-                        variant: .accent,
-                        action: onEvolve
-                    )
-
-                    actionButton(
-                        icon: .zzz,
-                        label: "Rest",
-                        iconColor: colors.alertWarningContent,
-                        variant: .warning,
-                        action: onRest
-                    )
-
-                    actionButton(
-                        icon: .tornado,
-                        label: "Archive",
-                        iconColor: colors.alertDangerContent,
-                        variant: .danger,
-                        action: onArchive
-                    )
-                }
-                .frame(maxWidth: .infinity)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .fixedSize(horizontal: false, vertical: true)
             }
-            .cardStyle(
-                paddingHorizontal: mediumBig,
-                paddingVertical: mediumBig,
-                backgroundColor: colors.background2,
-                borderColor: colors.border1,
-                cornerStyle: CornerStyle.rounded(12)
-            )
-            RoundedRectangle(cornerRadius: medium)
-                .stroke(colors.accentPrimary, lineWidth: 5)
-                .mask(
-                    VStack(spacing: 0) {
-                        Rectangle()
-                            .frame(height: 3)
-                        Spacer()
-                    }
-                )
+
+            Divider()
+                .overlay(Color.foregroundMuted.opacity(0.15))
+                .padding(.top, extraSmall)
+
+            actionsRow
+        }
+        .cardStyle(
+            paddingHorizontal: mediumPlus,
+            paddingVertical: mediumPlus,
+            backgroundColor: .surface,
+            borderColor: nil,
+            cornerStyle: .large,
+            shadow: .small
+        )
+    }
+
+    // MARK: - Quote Body
+
+    private var quoteBody: some View {
+        HStack(alignment: .top, spacing: small) {
+            Image(systemName: "quote.opening")
+                .font(.title3.weight(.semibold))
+                .foregroundStyle(Color.primaryBlue.opacity(0.9))
+                .padding(.top, 2)
+                .accessibilityHidden(true)
+
+            Text(quoteText)
+                .font(.title3.weight(.semibold))
+                .foregroundStyle(.foreground)
+                .lineSpacing(2)
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .fixedSize(horizontal: false, vertical: true)
         }
     }
-    
-    // MARK: - Private Views
-    
-    @ViewBuilder
-    private func actionButton(
-        icon: Icons,
-        label: String,
-        iconColor: Color,
-        variant: ButtonVariant,
-        action: (() -> Void)?
-    ) -> some View {
+
+    // MARK: - Actions
+
+    private var actionsRow: some View {
+        HStack(spacing: smallMedium) {
+            ReviewActionButton(
+                icon: .leafFill,
+                label: "Evolve",
+                tint: .primaryGreen,
+                action: onEvolve
+            )
+            ReviewActionButton(
+                icon: .zzz,
+                label: "Rest",
+                tint: .primaryBlue,
+                action: onRest
+            )
+            ReviewActionButton(
+                icon: .tornado,
+                label: "Archive",
+                tint: .foregroundMuted,
+                action: onArchive
+            )
+        }
+    }
+}
+
+// MARK: - Review Action Button
+
+private struct ReviewActionButton: View {
+    let icon: Icons
+    let label: String
+    let tint: Color
+    let action: (() -> Void)?
+
+    var body: some View {
         Button {
             action?()
         } label: {
-            GeometryReader { proxy in
-                VStack(spacing: small) {
-                    Icon(icon, size: .large, color: iconColor)
-                    Text(label)
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                }
-                .frame(maxWidth: .infinity)
+            VStack(spacing: extraSmall + 2) {
+                Icon(icon, size: .normal, color: tint)
+                Text(label)
+                    .font(.footnote.weight(.semibold))
+                    .foregroundStyle(tint)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.85)
             }
+            .frame(maxWidth: .infinity, minHeight: 44)
+            .padding(.vertical, small)
+            .background(tint.opacity(0.12))
+            .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+            .contentShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
         }
-        .buttonStyle(.app(variant: variant))
-        .aspectRatio(1, contentMode: .fill)
+        .buttonStyle(ReviewActionButtonStyle())
+        .disabled(action == nil)
+        .opacity(action == nil ? 0.45 : 1.0)
+        .accessibilityLabel(label)
+        .accessibilityAddTraits(.isButton)
+    }
+}
+
+private struct ReviewActionButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .opacity(configuration.isPressed ? 0.75 : 1.0)
+            .scaleEffect(configuration.isPressed ? 0.96 : 1.0)
+            .animation(.spring(response: 0.3, dampingFraction: 0.75), value: configuration.isPressed)
     }
 }
 
 // MARK: - Preview
 
-private struct RevisitPreview: View {
-    @Environment(\.colorScheme) private var colorScheme
-    
-    private var colors: any ColorTheme {
-        colorScheme.theme
-    }
-    
+private struct ReviewPreview: View {
     var body: some View {
         ScrollView {
             VStack(spacing: mediumBig) {
-                
-                // Example from the screenshot
-                VStack(alignment: .leading, spacing: smallMedium) {
-                    Text("Screenshot Example")
-                        .font(.caption)
-                        .foregroundStyle(colors.content2)
-                    
-                    ReviewView(
-                        badgeText: "Planted 23 days ago",
-                        quoteText: "Friction isn't always bad UX. Sometimes it's a filter for intent.",
-                        descriptionText: "This seed has been revisited 2× and evolved once into \"Intentional Friction Patterns\""
-                    )
-                }
-                
-                // Without description
-                VStack(alignment: .leading, spacing: smallMedium) {
-                    Text("Without Description")
-                        .font(.caption)
-                        .foregroundStyle(colors.content2)
-                    
-                    ReviewView(
-                        badgeText: "Planted 5 days ago",
-                        quoteText: "The best code is no code at all."
-                    )
-                }
-                
-                // With custom emoji
-                VStack(alignment: .leading, spacing: smallMedium) {
-                    Text("Custom Emoji")
-                        .font(.caption)
-                        .foregroundStyle(colors.content2)
-                    
-                    ReviewView(
-                        badgeText: "Growing strong",
-                        badgeEmoji: "🌿",
-                        quoteText: "Design is not just what it looks like. Design is how it works.",
-                        descriptionText: "Evolved from initial thoughts on product design"
-                    )
-                }
-                
-                // Interactive example
-                VStack(alignment: .leading, spacing: smallMedium) {
-                    Text("Interactive")
-                        .font(.caption)
-                        .foregroundStyle(colors.content2)
-                    
-                    InteractiveRevisitDemo()
-                }
-            }
-            .padding()
-        }
-        .background(colors.background1)
-    }
-}
+                ReviewView(
+                    badgeText: "Planted 23 days ago",
+                    quoteText: "Friction isn't always bad UX. Sometimes it's a filter for intent.",
+                    descriptionText: "Revisited 2× and evolved into \"Intentional Friction Patterns\".",
+                    onEvolve: {},
+                    onRest: {},
+                    onArchive: {}
+                )
 
-// MARK: - Interactive Demo
-
-private struct InteractiveRevisitDemo: View {
-    @Environment(\.colorScheme) private var colorScheme
-    @State private var lastAction: String = ""
-    
-    private var colors: any ColorTheme {
-        colorScheme.theme
-    }
-    
-    var body: some View {
-        VStack(alignment: .leading, spacing: smallMedium) {
-            ReviewView(
-                badgeText: "Planted 10 days ago",
-                quoteText: "Every good design begins with an even better story.",
-                descriptionText: "Ready for evolution",
-                onEvolve: {
-                    lastAction = "Evolve tapped"
-                },
-                onRest: {
-                    lastAction = "Rest tapped"
-                },
-                onArchive: {
-                    lastAction = "Archive tapped"
-                }
-            )
-            
-            if !lastAction.isEmpty {
-                Text(lastAction)
-                    .font(.subheadline)
-                    .foregroundStyle(colors.accentSecondary)
+                ReviewView(
+                    badgeText: "Surfaced today",
+                    badgeEmoji: "✨",
+                    quoteText: "Simplicity is the ultimate sophistication.",
+                    onEvolve: {},
+                    onRest: {}
+                )
             }
+            .padding(medium)
         }
+        .background(.background)
     }
 }
 
 #Preview("Light Mode") {
-    RevisitPreview()
-        .preferredColorScheme(.light)
+    ReviewPreview().preferredColorScheme(.light)
 }
 
 #Preview("Dark Mode") {
-    RevisitPreview()
-        .preferredColorScheme(.dark)
+    ReviewPreview().preferredColorScheme(.dark)
 }
-

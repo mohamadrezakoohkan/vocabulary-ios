@@ -1,8 +1,14 @@
 //
 //  CardStyle.swift
-//  DrovaCoreUI
+//  ICoreUI
 //
-//  Created by Mohammad reza on 7/3/26.
+//  Cards with continuous corners, soft shadows, and subtle borders.
+//
+//  AI Instructions:
+//  - Demo: Core/ICoreUI/Example/Components/Styles/CardStyleDemo.swift
+//    Update the Interactive controls and Combinations gallery there
+//    whenever a parameter on `cardStyle(...)` / `CardModifier` is
+//    added, removed, or renamed.
 //
 
 import SwiftUI
@@ -14,41 +20,47 @@ public struct CardModifier: ViewModifier {
     private let paddingVertical: CGFloat
     private let backgroundColor: Color
     private let borderColor: Color?
+    private let borderWidth: CGFloat
     private let cornerStyle: CornerStyle
-    
+    private let shadow: ShadowSize?
+
     public init(
         paddingHorizontal: CGFloat = medium,
         paddingVertical: CGFloat = smallMedium,
-        backgroundColor: Color = .clear,
+        backgroundColor: Color = .surface,
         borderColor: Color? = nil,
-        cornerStyle: CornerStyle = .rounded(small)
+        borderWidth: CGFloat = 1,
+        cornerStyle: CornerStyle = .medium,
+        shadow: ShadowSize? = nil
     ) {
         self.paddingHorizontal = paddingHorizontal
         self.paddingVertical = paddingVertical
         self.backgroundColor = backgroundColor
         self.borderColor = borderColor
+        self.borderWidth = borderWidth
         self.cornerStyle = cornerStyle
+        self.shadow = shadow
     }
-    
+
     public func body(content: Content) -> some View {
         content
             .padding(.horizontal, paddingHorizontal)
             .padding(.vertical, paddingVertical)
             .background(backgroundColor)
-            .if(cornerStyle.isCapsule, then: { view in
-                view.clipShape(Capsule())
-                    .ifLet(borderColor) { v, color in
-                        v.overlay(Capsule().stroke(color, lineWidth: 1))
+            .clipCornerStyle(cornerStyle)
+            .overlay {
+                if let borderColor {
+                    if cornerStyle.isCapsule {
+                        Capsule().stroke(borderColor, lineWidth: borderWidth)
+                    } else {
+                        RoundedRectangle(cornerRadius: cornerStyle.radius, style: .continuous)
+                            .stroke(borderColor, lineWidth: borderWidth)
                     }
-            }, else: { view in
-                view.clipShape(RoundedRectangle(cornerRadius: cornerStyle.radius))
-                    .ifLet(borderColor) { v, color in
-                        v.overlay(
-                            RoundedRectangle(cornerRadius: cornerStyle.radius)
-                                .stroke(color, lineWidth: 1)
-                        )
-                    }
-            })
+                }
+            }
+            .if(shadow != nil) { view in
+                view.softShadow(shadow ?? .medium)
+            }
     }
 }
 
@@ -58,16 +70,20 @@ public extension View {
     func cardStyle(
         paddingHorizontal: CGFloat = medium,
         paddingVertical: CGFloat = smallMedium,
-        backgroundColor: Color = .clear,
+        backgroundColor: Color = .surface,
         borderColor: Color? = nil,
-        cornerStyle: CornerStyle = .rounded(small)
+        borderWidth: CGFloat = 1,
+        cornerStyle: CornerStyle = .medium,
+        shadow: ShadowSize? = nil
     ) -> some View {
         modifier(CardModifier(
             paddingHorizontal: paddingHorizontal,
             paddingVertical: paddingVertical,
             backgroundColor: backgroundColor,
             borderColor: borderColor,
-            cornerStyle: cornerStyle
+            borderWidth: borderWidth,
+            cornerStyle: cornerStyle,
+            shadow: shadow
         ))
     }
 }
@@ -75,134 +91,81 @@ public extension View {
 // MARK: - Preview
 
 private struct CardStylePreview: View {
-    @Environment(\.colorScheme) var colorScheme
-    
-    private var colors: any ColorTheme {
-        colorScheme.theme
-    }
-    
     var body: some View {
         ScrollView {
             VStack(spacing: medium) {
-                // Info Alert
-                HStack(spacing: small) {
-                    Image(systemName: "info.circle.fill")
-                    Text("This is an info message")
-                    Spacer()
-                }
-                .foregroundStyle(colors.alertInfoContent)
-                .cardStyle(
-                    backgroundColor: colors.alertInfoBackground,
-                    borderColor: colors.alertInfoBorder,
-                    cornerStyle: .rounded(smallMedium)
-                )
-                
-                // Danger Alert
-                HStack(spacing: small) {
-                    Image(systemName: "exclamationmark.triangle.fill")
-                    Text("This is a danger message")
-                    Spacer()
-                }
-                .foregroundStyle(colors.alertDangerContent)
-                .cardStyle(
-                    backgroundColor: colors.alertDangerBackground,
-                    borderColor: colors.alertDangerBorder,
-                    cornerStyle: .rounded(smallMedium)
-                )
-                
-                // Warning Alert
-                HStack(spacing: small) {
-                    Image(systemName: "exclamationmark.circle.fill")
-                    Text("This is a warning message")
-                    Spacer()
-                }
-                .foregroundStyle(colors.alertWarningContent)
-                .cardStyle(
-                    backgroundColor: colors.alertWarningBackground,
-                    borderColor: colors.alertWarningBorder,
-                    cornerStyle: .rounded(smallMedium)
-                )
-                
-                // Capsule style tags
-                HStack(spacing: small) {
-                    Text("Info")
-                        .font(.caption)
-                        .foregroundStyle(colors.alertInfoContent)
-                        .cardStyle(
-                            paddingHorizontal: smallMedium,
-                            paddingVertical: extraSmall,
-                            backgroundColor: colors.alertInfoBackground,
-                            borderColor: colors.alertInfoBorder,
-                            cornerStyle: .capsule
-                        )
-                    
-                    Text("Danger")
-                        .font(.caption)
-                        .foregroundStyle(colors.alertDangerContent)
-                        .cardStyle(
-                            paddingHorizontal: smallMedium,
-                            paddingVertical: extraSmall,
-                            backgroundColor: colors.alertDangerBackground,
-                            borderColor: colors.alertDangerBorder,
-                            cornerStyle: .capsule
-                        )
-                    
-                    Text("Warning")
-                        .font(.caption)
-                        .foregroundStyle(colors.alertWarningContent)
-                        .cardStyle(
-                            paddingHorizontal: smallMedium,
-                            paddingVertical: extraSmall,
-                            backgroundColor: colors.alertWarningBackground,
-                            borderColor: colors.alertWarningBorder,
-                            cornerStyle: .capsule
-                        )
-                    
-                    Spacer()
-                }
-                
-                // Accent card
                 VStack(alignment: .leading, spacing: small) {
-                    Text("Accent Card")
+                    Text("Elevated Card")
                         .font(.headline)
-                    Text("This card uses accent colors from the theme.")
+                    Text("Surface background with a soft shadow.")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .cardStyle(shadow: .medium)
+
+                VStack(alignment: .leading, spacing: small) {
+                    Text("A1 — Beginner")
+                        .font(.headline)
+                    Text("Yellow accent card.")
                         .font(.subheadline)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .foregroundStyle(colors.accentContent)
+                .foregroundStyle(Color.onYellow)
                 .cardStyle(
-                    backgroundColor: colors.accentBackground,
-                    borderColor: colors.accentBorder,
-                    cornerStyle: .rounded(medium)
+                    backgroundColor: .primaryYellow,
+                    shadow: .medium
                 )
-                
-                // Simple bordered card
+
                 VStack(alignment: .leading, spacing: small) {
-                    Text("Bordered Card")
+                    Text("A2 — Elementary")
                         .font(.headline)
-                    Text("A simple card with border only.")
+                    Text("Red accent card.")
                         .font(.subheadline)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .foregroundStyle(colors.content1)
+                .foregroundStyle(Color.onRed)
                 .cardStyle(
-                    backgroundColor: colors.background2,
-                    borderColor: colors.border1,
-                    cornerStyle: .rounded(medium)
+                    backgroundColor: .primaryRed,
+                    shadow: .medium
+                )
+
+                VStack(alignment: .leading, spacing: small) {
+                    Text("B1 — Intermediate")
+                        .font(.headline)
+                    Text("Blue accent card.")
+                        .font(.subheadline)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .foregroundStyle(Color.onBlue)
+                .cardStyle(
+                    backgroundColor: .primaryBlue,
+                    shadow: .medium
+                )
+
+                VStack(alignment: .leading, spacing: small) {
+                    Text("Success")
+                        .font(.headline)
+                    Text("Green accent card.")
+                        .font(.subheadline)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .foregroundStyle(Color.onGreen)
+                .cardStyle(
+                    backgroundColor: .primaryGreen,
+                    shadow: .medium
                 )
             }
-            .padding()
+            .padding(medium)
         }
-        .background(colors.background1)
+        .background(Color.background)
     }
 }
-#Preview("Light Mode") {
-    CardStylePreview()
-        .preferredColorScheme(.light)
+
+#Preview("Light") {
+    CardStylePreview().preferredColorScheme(.light)
 }
 
-#Preview("Dark Mode") {
-    CardStylePreview()
-        .preferredColorScheme(.dark)
+#Preview("Dark") {
+    CardStylePreview().preferredColorScheme(.dark)
 }
-

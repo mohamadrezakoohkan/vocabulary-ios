@@ -10,7 +10,15 @@ import ProjectDescription
 
 // MARK: - Module Target Generation
 
-public extension Module {
+extension Module {
+
+    public var targets: [Target] {
+        let productTarget: Target? = includeProductTarget ? makeTarget() : nil
+        let testTarget: Target? = includeTestTarget ? makeTestTarget() : nil
+        let exampleTarget: Target? = includeExampleTarget ? makeExampleTarget() : nil
+        return [productTarget, testTarget, exampleTarget].compactMap { $0 }
+    }
+
     /**
      Generates a Target for this module.
      
@@ -24,7 +32,7 @@ public extension Module {
      ```
      Note: `sources`/`resources` and `buildableFolders` are mutually exclusive.
      */
-    func makeTarget() -> Target {
+    private func makeTarget() -> Target {
         .target(
             name: rawValue,
             destinations: .iOS,
@@ -41,7 +49,7 @@ public extension Module {
 
     /// Generates a Example Target for this module
     ///
-    func makeExampleTarget() -> Target {
+    private func makeExampleTarget() -> Target {
         .target(
             name: "\(rawValue)Example",
             destinations: .iOS,
@@ -56,13 +64,13 @@ public extension Module {
             buildableFolders: [
                 .folder(.path(examplePath)),
             ],
-            dependencies: [.target(name: rawValue), .target(name: SharedModule.sharedExample.rawValue)]
+            dependencies: rawValue == CoreModule.coreUI.rawValue ? [.target(name: rawValue)] : [.target(name: rawValue), .target(name: SharedModule.sharedExample.rawValue)]
         )
     }
 
     /// Generates a test Target for this module
     /// 
-    func makeTestTarget() -> Target {
+    private func makeTestTarget() -> Target {
         .target(
             name: "\(rawValue)Tests",
             destinations: .iOS,

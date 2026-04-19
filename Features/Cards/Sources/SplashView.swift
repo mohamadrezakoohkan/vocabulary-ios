@@ -10,10 +10,6 @@ import ICoreUI
 
 public struct SplashView: ScaffoldView {
 
-    // MARK: - Color Scheme
-
-    @Environment(\.colorScheme) var colorScheme
-
     public var header: ScaffoldHeaderConfig? {
         ScaffoldHeaderConfig(
             title: Strings.Capture.title,
@@ -52,7 +48,7 @@ public struct SplashView: ScaffoldView {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .font(.subheadline)
                 .fontDesign(.monospaced)
-                .foregroundStyle(colorScheme.theme.content2)
+                .foregroundStyle(Color.foregroundMuted)
             QuoteView(
                 text: Strings.Capture.Sample.quote1,
                 timestamp: Strings.Time.hoursAgo("2"),

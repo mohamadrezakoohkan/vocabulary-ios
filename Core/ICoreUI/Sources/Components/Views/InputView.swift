@@ -1,257 +1,225 @@
 //
 //  InputView.swift
-//  DrovaCoreUI
+//  ICoreUI
 //
-//  Created by Mohammad reza on 7/3/26.
+//  Apple HIG multi-line text input — surface background, hairline border,
+//  smooth focus tint, optional character counter and inline clear button.
+//
+//  AI Instructions:
+//  - This component follows Apple Human Interface Guidelines.
+//  - Background: Color.surface — never a heavy fill or hard contrast.
+//  - Border: hairline (1pt) using a low-opacity foreground tint; on focus
+//    it animates to the accent color. Do NOT use thick (2-3pt) borders or
+//    abrupt width swaps — animate color only so the layout never shifts.
+//  - Corners: continuous .medium (12pt). Do NOT use square corners.
+//  - Shadow: none by default (HIG inputs sit flat on the surface).
+//  - Typography: .body for input + placeholder so they align perfectly.
+//  - Placeholder padding MUST match TextEditor's intrinsic textContainerInset
+//    (≈5pt horizontal, ≈8pt vertical) — adjust here if iOS changes defaults.
+//  - Focus animation uses .easeInOut(0.2) on isFocused only — never animate
+//    on text changes (it causes typing jank).
+//  - Character counter appears only when maxLength is set; turns
+//    .primaryRed when within 10% of the limit.
+//  - Clear button appears only while focused AND text is non-empty; keep
+//    the tap target ≥ 28pt and use a soft scale press feedback.
+//  - Respect Dynamic Type — never hardcode font sizes.
+//  - Accessibility: forward placeholder as accessibility label when empty
+//    and announce character count via accessibilityValue.
+//  - Keep the public init backwards compatible (text, placeholder,
+//    minHeight, maxHeight, maxLength). New options must be additive.
+//  - Previews: light + dark, showing empty / typed / counter / error-ish states.
+//  - Demo: Core/ICoreUI/Example/Components/Views/InputViewDemo.swift
+//    Update the Interactive controls and Combinations gallery there
+//    whenever a new init parameter or visual state is introduced.
 //
 
 import SwiftUI
 
-/// A reusable input component with a vertical scrolling text field
-/// Supports placeholder text, customizable height, and text binding
 public struct InputView: View {
-    
-    @Environment(\.colorScheme) private var colorScheme
-    
-    private var colors: any ColorTheme {
-        colorScheme.theme
-    }
-
-    // MARK: - Properties
-    
-    /// The text binding for the input field
     @Binding private var text: String
-    
-    /// Placeholder text to display when the input is empty
     private let placeholder: String
-    
-    /// Minimum height for the text editor
     private let minHeight: CGFloat
-
-    /// Maximum height for the text editor
     private let maxHeight: CGFloat
-    
-    /// Maximum character length (nil for unlimited)
     private let maxLength: Int?
+    private let accentColor: Color
+    private let showsClearButton: Bool
 
-    /// Whether the input is focused
     @FocusState private var isFocused: Bool
-    
-    // MARK: - Initialization
-    
-    /// Creates an input field with text binding
-    /// - Parameters:
-    ///   - text: Binding to the text value
-    ///   - placeholder: Placeholder text to display when empty (default: "Enter text...")
-    ///   - minHeight: Minimum height for the text editor (default: 120)
-    ///   - maxHeight: Maximum height for the text editor (default: 500)
-    ///   - maxLength: Maximum character length (default: nil for unlimited)
+
+    // Matches TextEditor's intrinsic textContainerInset so the placeholder
+    // sits exactly on top of the first character the user will type.
+    private let textInsetHorizontal: CGFloat = 5
+    private let textInsetVertical: CGFloat = 8
+
     public init(
         text: Binding<String>,
         placeholder: String = "Enter text...",
         minHeight: CGFloat = 120,
         maxHeight: CGFloat = 500,
-        maxLength: Int? = nil
+        maxLength: Int? = nil,
+        accentColor: Color = .primaryBlue,
+        showsClearButton: Bool = true
     ) {
         self._text = text
         self.placeholder = placeholder
         self.minHeight = minHeight
         self.maxHeight = maxHeight
         self.maxLength = maxLength
+        self.accentColor = accentColor
+        self.showsClearButton = showsClearButton
     }
-    
-    // MARK: - Body
-    
+
     public var body: some View {
+        VStack(alignment: .trailing, spacing: extraSmall) {
+            editor
+                .cardStyle(
+                    paddingHorizontal: small,
+                    paddingVertical: small,
+                    backgroundColor: .surface,
+                    borderColor: borderColor,
+                    borderWidth: 1,
+                    cornerStyle: .medium,
+                    shadow: nil
+                )
+                .animation(.easeInOut(duration: 0.2), value: isFocused)
+
+            if let maxLength {
+                counter(maxLength: maxLength)
+                    .padding(.horizontal, extraSmall)
+                    .transition(.opacity)
+            }
+        }
+    }
+
+    // MARK: - Editor
+
+    private var editor: some View {
         ZStack(alignment: .topLeading) {
-            // Placeholder text
             if text.isEmpty {
                 Text(placeholder)
                     .font(.body)
-                    .foregroundStyle(colors.content2)
-                    .padding(small)
+                    .foregroundStyle(Color.foregroundMuted)
+                    .padding(.horizontal, textInsetHorizontal)
+                    .padding(.vertical, textInsetVertical)
+                    .allowsHitTesting(false)
+                    .accessibilityHidden(true)
+                    .transition(.opacity)
             }
 
-            // Text editor with vertical scrolling
             TextEditor(text: $text)
                 .font(.body)
-                .foregroundStyle(colors.content1)
+                .foregroundStyle(.foreground)
                 .scrollContentBackground(.hidden)
-                .lineSpacing(4)
                 .background(Color.clear)
+                .tint(accentColor)
+                .lineSpacing(2)
                 .frame(minHeight: minHeight, maxHeight: maxHeight)
                 .focused($isFocused)
-                .onChange(of: text) { oldValue, newValue in
-                    if let maxLength, newValue.count > maxLength {
-                        text = String(newValue.prefix(maxLength))
-                    }
+                .onChange(of: text) { _, newValue in
+                    guard let maxLength, newValue.count > maxLength else { return }
+                    text = String(newValue.prefix(maxLength))
                 }
+                .accessibilityLabel(text.isEmpty ? placeholder : "")
+                .accessibilityValue(accessibilityValue)
+
+            if showsClearButton, isFocused, !text.isEmpty {
+                clearButton
+                    .padding(.top, textInsetVertical)
+                    .padding(.trailing, textInsetHorizontal)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                    .transition(.opacity.combined(with: .scale(scale: 0.8)))
+            }
         }
-        .cardStyle(
-            paddingHorizontal: medium,
-            paddingVertical: smallMedium,
-            backgroundColor: colors.background2,
-            borderColor: isFocused ? colors.accentBorder : colors.border1,
-            cornerStyle: .rounded(smallMedium)
-        )
+        .animation(.easeInOut(duration: 0.15), value: text.isEmpty)
+        .animation(.easeInOut(duration: 0.15), value: isFocused)
+    }
+
+    private var clearButton: some View {
+        Button {
+            text = ""
+        } label: {
+            Image(systemName: "xmark.circle.fill")
+                .font(.body)
+                .symbolRenderingMode(.hierarchical)
+                .foregroundStyle(Color.foregroundMuted)
+                .frame(width: 28, height: 28)
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(ClearButtonStyle())
+        .accessibilityLabel("Clear text")
+    }
+
+    // MARK: - Counter
+
+    private func counter(maxLength: Int) -> some View {
+        let count = text.count
+        let remaining = maxLength - count
+        let isNearLimit = remaining <= max(10, maxLength / 10)
+
+        return Text("\(count)/\(maxLength)")
+            .font(.caption2.monospacedDigit())
+            .foregroundStyle(isNearLimit ? Color.primaryRed : Color.foregroundMuted)
+            .animation(.easeInOut(duration: 0.15), value: isNearLimit)
+            .accessibilityHidden(true)
+    }
+
+    // MARK: - Helpers
+
+    private var borderColor: Color {
+        isFocused ? accentColor : Color.foregroundMuted.opacity(0.2)
+    }
+
+    private var accessibilityValue: String {
+        guard let maxLength else { return text }
+        return "\(text), \(text.count) of \(maxLength) characters"
+    }
+}
+
+// MARK: - Button Style
+
+private struct ClearButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .opacity(configuration.isPressed ? 0.6 : 1.0)
+            .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
+            .animation(.spring(response: 0.25, dampingFraction: 0.8), value: configuration.isPressed)
     }
 }
 
 // MARK: - Preview
 
 private struct InputPreview: View {
-    @Environment(\.colorScheme) private var colorScheme
-    
-    private var colors: any ColorTheme {
-        colorScheme.theme
-    }
-    
+    @State private var empty: String = ""
+    @State private var typed: String = "Typed content example."
+    @State private var counted: String = "Almost at the limit of this short input field."
+
     var body: some View {
         ScrollView {
             VStack(spacing: mediumBig) {
-                
-                // Interactive demo
-                VStack(alignment: .leading, spacing: smallMedium) {
-                    Text("Interactive Example")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(colors.content2)
-                    
-                    InteractiveInputDemo()
-                }
-                
-                // Standard input
-                VStack(alignment: .leading, spacing: smallMedium) {
-                    Text("Standard Input")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(colors.content2)
-                    
-                    InputView(text: .constant(""))
-                }
-                
-                // Input with text
-                VStack(alignment: .leading, spacing: smallMedium) {
-                    Text("With Text")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(colors.content2)
-                    
-                    InputView(
-                        text: .constant("This is some example text that demonstrates the input component with content. The text editor supports vertical scrolling when content exceeds the minimum height.")
-                    )
-                }
-                
-                // Custom placeholder
-                VStack(alignment: .leading, spacing: smallMedium) {
-                    Text("Custom Placeholder")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(colors.content2)
-                    
-                    InputView(
-                        text: .constant(""),
-                        placeholder: "Write your seed here..."
-                    )
-                }
-                
-                // Max length demo
-                VStack(alignment: .leading, spacing: smallMedium) {
-                    Text("With Max Length (50 chars)")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(colors.content2)
-                    
-                    MaxLengthInputDemo()
-                }
+                InputView(text: $empty, placeholder: "Write your word here...")
+                InputView(text: $typed)
+                InputView(
+                    text: $counted,
+                    placeholder: "With character counter",
+                    minHeight: 80,
+                    maxLength: 60
+                )
+                InputView(
+                    text: .constant(""),
+                    placeholder: "Red accent variant",
+                    accentColor: .primaryRed
+                )
             }
-            .padding()
+            .padding(medium)
         }
-        .background(colors.background1)
-    }
-}
-
-// MARK: - Interactive Demo
-
-/// Demo component showing interactive input behavior
-private struct InteractiveInputDemo: View {
-    @Environment(\.colorScheme) private var colorScheme
-    @State private var inputText: String = ""
-    
-    private var colors: any ColorTheme {
-        colorScheme.theme
-    }
-    
-    var body: some View {
-        VStack(alignment: .leading, spacing: smallMedium) {
-            InputView(
-                text: $inputText,
-                placeholder: "Type something to see the character count...",
-                minHeight: 100
-            )
-            
-            // Character count display
-            HStack {
-                Text("Characters: \(inputText.count)")
-                    .font(.caption)
-                    .foregroundStyle(colors.content2)
-                
-                Spacer()
-                
-                if !inputText.isEmpty {
-                    Button(action: {
-                        inputText = ""
-                    }) {
-                        Text("Clear")
-                            .font(.caption)
-                            .fontWeight(.semibold)
-                            .foregroundStyle(colors.alertDangerContent)
-                    }
-                }
-            }
-        }
-    }
-}
-// MARK: - Max Length Demo
-
-/// Demo component showing max length behavior
-private struct MaxLengthInputDemo: View {
-    @Environment(\.colorScheme) private var colorScheme
-    @State private var inputText: String = ""
-    
-    private let maxLength = 50
-    
-    private var colors: any ColorTheme {
-        colorScheme.theme
-    }
-    
-    var body: some View {
-        VStack(alignment: .leading, spacing: smallMedium) {
-            InputView(
-                text: $inputText,
-                placeholder: "Limited to 50 characters...",
-                minHeight: 80,
-                maxLength: maxLength
-            )
-            
-            HStack {
-                Text("\(inputText.count)/\(maxLength)")
-                    .font(.caption)
-                    .foregroundStyle(inputText.count >= maxLength ? colors.alertDangerContent : colors.content2)
-                
-                Spacer()
-            }
-        }
+        .background(.background)
     }
 }
 
 #Preview("Light Mode") {
-    InputPreview()
-        .preferredColorScheme(.light)
+    InputPreview().preferredColorScheme(.light)
 }
 
 #Preview("Dark Mode") {
-    InputPreview()
-        .preferredColorScheme(.dark)
+    InputPreview().preferredColorScheme(.dark)
 }
-

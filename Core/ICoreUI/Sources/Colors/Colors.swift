@@ -1,206 +1,19 @@
 //
 //  Colors.swift
-//  DrovaCoreUI
+//  ICoreUI
 //
-//  Created by Mohammad reza on 7/3/26.
+//  Bauhaus design system — primary red/blue/yellow, foreground borders,
+//  hard offset shadows, CEFR level accents (A1/A2/B1/B2).
+//
+//  AI Instructions:
+//  - Demo: Core/ICoreUI/Example/Components/Foundations/ColorsDemo.swift
+//    Update the `allColors` catalog there whenever a Color extension
+//    is added/removed/renamed (and add it to NamedColor in
+//    Example/Shared/DemoEnums.swift if it should be pickable from
+//    other demos).
 //
 
 import SwiftUI
-
-// MARK: - Color Theme Protocol
-
-/// Protocol defining the color requirements for a theme
-public protocol ColorTheme {
-    // Content colors
-    var content1: Color { get }
-    var content2: Color { get }
-    var content3: Color { get }
-    var contentInverse: Color { get }
-    
-    // Accent colors
-    var accentPrimary: Color { get }
-    var accentSecondary: Color { get }
-    var accentContent: Color { get }
-    var accentBackground: Color { get }
-    var accentBorder: Color { get }
-    
-    // Background colors
-    var background1: Color { get }
-    var background2: Color { get }
-    var background3: Color { get }
-    var backgroundInverse: Color { get }
-    
-    // Border colors
-    var border1: Color { get }
-    var border2: Color { get }
-    
-    // Alert - Info
-    var alertInfoContent: Color { get }
-    var alertInfoBackground: Color { get }
-    var alertInfoBorder: Color { get }
-    
-    // Alert - Danger
-    var alertDangerContent: Color { get }
-    var alertDangerBackground: Color { get }
-    var alertDangerBorder: Color { get }
-    
-    // Alert - Warning
-    var alertWarningContent: Color { get }
-    var alertWarningBackground: Color { get }
-    var alertWarningBorder: Color { get }
-    
-    // Button
-    var buttonBackgroundStart: Color { get }
-    var buttonBackgroundEnd: Color { get }
-    var buttonContent: Color { get }
-}
-
-// MARK: - Light Theme
-
-private struct LightTheme: ColorTheme {
-    // Content
-    var content1: Color { Color(hex: "#091B0A") }
-    var content2: Color { Color(hex: "#6D7C6D") }
-    var content3: Color { Color(hex: "#999999") }
-    var contentInverse: Color { Color(hex: "#071C0E") }
-    
-    // Accent
-    var accentPrimary: Color { Color(hex: "#00DE3C") }
-    var accentSecondary: Color { Color(hex: "#00C358") }
-    var accentContent: Color { Color(hex: "#FFFFFF") }
-    var accentBackground: Color { Color(hex: "#30D158") }
-    var accentBorder: Color { Color(hex: "#28A745") }
-    
-    // Background
-    var background1: Color { Color(hex: "#FFFFFF") }
-    var background2: Color { Color(hex: "#F5F6F7") }
-    var background3: Color { Color(hex: "#E7E9EB") }
-    var backgroundInverse: Color { Color(hex: "#0E1410") }
-    
-    // Border
-    var border1: Color { Color(hex: "#E7E9EB") }
-    var border2: Color { Color(hex: "#CFD3D6") }
-    
-    // Alert - Info
-    var alertInfoContent: Color { Color(hex: "#FFFFFF") }
-    var alertInfoBackground: Color { Color(hex: "#708FFF") }
-    var alertInfoBorder: Color { Color(hex: "#4F76FF") }
-    
-    // Alert - Danger
-    var alertDangerContent: Color { Color(hex: "#FFFFFF") }
-    var alertDangerBackground: Color { Color(hex: "#FF3B57") }
-    var alertDangerBorder: Color { Color(hex: "#FF0024") }
-    
-    // Alert - Warning
-    var alertWarningContent: Color { Color(hex: "#FFFFFF") }
-    var alertWarningBackground: Color { Color(hex: "#FFB930") }
-    var alertWarningBorder: Color { Color(hex: "#FFA900") }
-    
-    // Button
-    var buttonBackgroundStart: Color { accentPrimary }
-    var buttonBackgroundEnd: Color { accentSecondary }
-    var buttonContent: Color { Color(hex: "#FFFFFF") }
-}
-
-// MARK: - Dark Theme
-
-private struct DarkTheme: ColorTheme {
-    // Content
-    var content1: Color { Color(hex: "#FFFFFF") }
-    var content2: Color { Color(hex: "#808E80") }
-    var content3: Color { Color(hex: "#505050") }
-    var contentInverse: Color { Color(hex: "#071C0E") }
-    
-    // Accent
-    var accentPrimary: Color { Color(hex: "#00DE3C") }
-    var accentSecondary: Color { Color(hex: "#00C358") }
-    var accentContent: Color { Color(hex: "#00E275") }
-    var accentBackground: Color { Color(hex: "#15261B") }
-    var accentBorder: Color { Color(hex: "#0A4726") }
-    
-    // Background
-    var background1: Color { Color(hex: "#141414") }
-    var background2: Color { Color(hex: "#1A1A1A") }
-    var background3: Color { Color(hex: "#232323") }
-    var backgroundInverse: Color { Color(hex: "#FFFFFF") }
-    
-    // Border
-    var border1: Color { Color(hex: "#262626") }
-    var border2: Color { Color(hex: "#323232") }
-    
-    // Alert - Info
-    var alertInfoContent: Color { Color(hex: "#5B9BFF") }
-    var alertInfoBackground: Color { Color(hex: "#1E2D4D") }
-    var alertInfoBorder: Color { Color(hex: "#2E4470") }
-    
-    // Alert - Danger
-    var alertDangerContent: Color { Color(hex: "#FF666C") }
-    var alertDangerBackground: Color { Color(hex: "#2E2021") }
-    var alertDangerBorder: Color { Color(hex: "#492A29") }
-    
-    // Alert - Warning
-    var alertWarningContent: Color { Color(hex: "#FFBD00") }
-    var alertWarningBackground: Color { Color(hex: "#322B1B") }
-    var alertWarningBorder: Color { Color(hex: "#52411B") }
-
-    // Button
-    var buttonBackgroundStart: Color { accentPrimary }
-    var buttonBackgroundEnd: Color { accentSecondary }
-    var buttonContent: Color { Color(hex: "#FFFFFF") }
-}
-
-// MARK: - ColorScheme Extension
-
-public extension ColorScheme {
-
-    var light: any ColorTheme {
-        LightTheme()
-    }
-
-    var dark: any ColorTheme {
-        DarkTheme()
-    }
-    /// Returns the current theme colors based on the color scheme
-    var theme: any ColorTheme {
-        switch self {
-        case .light:
-            return light
-        case .dark:
-            return dark
-        @unknown default:
-            return light
-        }
-    }
-}
-
-public extension Optional where Wrapped == ColorScheme {
-    /// Returns the current theme colors, defaulting to light theme if nil
-    var theme: any ColorTheme {
-        switch self {
-        case .light:
-            return LightTheme()
-        case .dark:
-            return DarkTheme()
-        case .none:
-            return LightTheme()
-        @unknown default:
-            return LightTheme()
-        }
-    }
-}
-
-// MARK: - Button Gradient Helper
-
-public extension ColorTheme {
-    /// Convenience gradient for buttons
-    var buttonGradient: LinearGradient {
-        LinearGradient(
-            colors: [buttonBackgroundStart, buttonBackgroundEnd],
-            startPoint: .leading,
-            endPoint: .trailing
-        )
-    }
-}
 
 // MARK: - Color Hex Extension
 
@@ -211,11 +24,11 @@ public extension Color {
         Scanner(string: hex).scanHexInt64(&int)
         let a, r, g, b: UInt64
         switch hex.count {
-        case 3: // RGB (12-bit)
+        case 3:
             (a, r, g, b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
-        case 6: // RGB (24-bit)
+        case 6:
             (a, r, g, b) = (255, int >> 16, int >> 8 & 0xFF, int & 0xFF)
-        case 8: // ARGB (32-bit)
+        case 8:
             (a, r, g, b) = (int >> 24, int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF)
         default:
             (a, r, g, b) = (255, 0, 0, 0)
@@ -230,18 +43,18 @@ public extension Color {
     }
 }
 
-public extension UIColor {
+private extension UIColor {
     convenience init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int: UInt64 = 0
         Scanner(string: hex).scanHexInt64(&int)
         let a, r, g, b: UInt64
         switch hex.count {
-        case 3: // RGB (12-bit)
+        case 3:
             (a, r, g, b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
-        case 6: // RGB (24-bit)
+        case 6:
             (a, r, g, b) = (255, int >> 16, int >> 8 & 0xFF, int & 0xFF)
-        case 8: // ARGB (32-bit)
+        case 8:
             (a, r, g, b) = (int >> 24, int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF)
         default:
             (a, r, g, b) = (255, 0, 0, 0)
@@ -255,140 +68,104 @@ public extension UIColor {
     }
 }
 
+// MARK: - Adaptive Colors (Auto Light/Dark)
+
+public extension Color {
+    // Neutrals
+    static let background = Color(.systemGroupedBackground)
+    static let surface = adaptive(light: "#FFFFFF", dark: "#1E1E1E")
+    static let foreground = adaptive(light: "#121212", dark: "#F0F0F0")
+    static let foregroundMuted = adaptive(light: "#4A4A4A", dark: "#A0A0A0")
+    static let muted = adaptive(light: "#E0E0E0", dark: "#2A2A2A")
+    static let border = adaptive(light: "#121212", dark: "#F0F0F0")
+    static let shadow = adaptive(light: "#121212", dark: "#000000")
+
+    // Primary Bauhaus colors
+    static let primaryRed = adaptive(light: "#AA151B", dark: "#E63946")
+    static let primaryBlue = Color.blue // adaptive(light: "#1040C0", dark: "#3A6FE0")
+    static let primaryYellow = adaptive(light: "#F1BF00", dark: "#F5CC3A")
+
+    // Primary green
+    static let primaryGreen = Color(.systemGreen)
+    static let onGreen = adaptive(light: "#FFFFFF", dark: "#FFFFFF")
+
+    // On-color text
+    static let onRed = adaptive(light: "#FFFFFF", dark: "#FFFFFF")
+    static let onBlue = adaptive(light: "#FFFFFF", dark: "#FFFFFF")
+    static let onYellow = adaptive(light: "#121212", dark: "#121212")
+
+    // CEFR level accents
+    static let levelA1 = primaryYellow
+    static let levelA2 = primaryRed
+    static let levelB1 = primaryBlue
+    static let levelB2 = foreground
+
+    private static func adaptive(light: String, dark: String) -> Color {
+        Color(UIColor { traits in
+            traits.userInterfaceStyle == .dark
+                ? UIColor(hex: dark)
+                : UIColor(hex: light)
+        })
+    }
+}
+
 // MARK: - Preview
 
 private struct ColorsPreview: View {
-    @Environment(\.colorScheme) var colorScheme
-    
-    private var colors: any ColorTheme {
-        colorScheme.theme
-    }
-    
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: medium) {
-                Text("Current: \(colorScheme == .dark ? "Dark" : "Light") Mode")
-                    .font(.headline)
-                    .foregroundStyle(colors.content1)
-                    .padding(.horizontal)
-                
-                colorSection(title: "Content", items: [
-                    ("content1", colors.content1),
-                    ("content2", colors.content2),
-                    ("content3", colors.content3),
-                    ("contentInverse", colors.contentInverse),
-                ])
-                
-                colorSection(title: "Accent", items: [
-                    ("accentPrimary", colors.accentPrimary),
-                    ("accentSecondary", colors.accentSecondary),
-                    ("accentContent", colors.accentContent),
-                    ("accentBackground", colors.accentBackground),
-                    ("accentBorder", colors.accentBorder),
-                ])
-                
-                colorSection(title: "Background", items: [
-                    ("background1", colors.background1),
-                    ("background2", colors.background2),
-                    ("background3", colors.background3),
-                    ("backgroundInverse", colors.backgroundInverse),
-                ])
-                
-                colorSection(title: "Border", items: [
-                    ("border1", colors.border1),
-                    ("border2", colors.border2),
-                ])
-                
-                colorSection(title: "Alert - Info", items: [
-                    ("alertInfoContent", colors.alertInfoContent),
-                    ("alertInfoBackground", colors.alertInfoBackground),
-                    ("alertInfoBorder", colors.alertInfoBorder),
-                ])
-                
-                colorSection(title: "Alert - Danger", items: [
-                    ("alertDangerContent", colors.alertDangerContent),
-                    ("alertDangerBackground", colors.alertDangerBackground),
-                    ("alertDangerBorder", colors.alertDangerBorder),
-                ])
-                
-                colorSection(title: "Alert - Warning", items: [
-                    ("alertWarningContent", colors.alertWarningContent),
-                    ("alertWarningBackground", colors.alertWarningBackground),
-                    ("alertWarningBorder", colors.alertWarningBorder),
-                ])
-                
-                // Button with gradient
-                VStack(alignment: .leading, spacing: small) {
-                    Text("Button")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(colors.content2)
-                    
-                    Button(action: {}) {
-                        Text("Button Example")
-                            .font(.headline)
-                            .foregroundStyle(colors.buttonContent)
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            .background(colors.buttonGradient)
-                            .clipShape(RoundedRectangle(cornerRadius: smallMedium))
-                    }
-                }
-                .padding()
-                .background(colors.background2)
-                .clipShape(RoundedRectangle(cornerRadius: smallMedium))
+        List {
+            Section("Neutrals") {
+                colorRow("background", color: .background)
+                colorRow("surface", color: .surface)
+                colorRow("foreground", color: .foreground)
+                colorRow("foregroundMuted", color: .foregroundMuted)
+                colorRow("muted", color: .muted)
+                colorRow("border", color: .border)
+                colorRow("shadow", color: .shadow)
+            }
+
+            Section("Primaries") {
+                colorRow("primaryRed", color: .primaryRed)
+                colorRow("primaryBlue", color: .primaryBlue)
+                colorRow("primaryYellow", color: .primaryYellow)
+                colorRow("primaryGreen", color: .primaryGreen)
+            }
+
+            Section("On-Colors") {
+                colorRow("onRed", color: .onRed)
+                colorRow("onBlue", color: .onBlue)
+                colorRow("onYellow", color: .onYellow)
+                colorRow("onGreen", color: .onGreen)
+            }
+
+            Section("CEFR Levels") {
+                colorRow("levelA1", color: .levelA1)
+                colorRow("levelA2", color: .levelA2)
+                colorRow("levelB1", color: .levelB1)
+                colorRow("levelB2", color: .levelB2)
+            }
+        }
+    }
+
+    private func colorRow(_ name: String, color: Color) -> some View {
+        HStack {
+            RoundedRectangle(cornerRadius: 6)
+                .fill(color)
+                .frame(width: 40, height: 40)
                 .overlay(
-                    RoundedRectangle(cornerRadius: smallMedium)
-                        .stroke(colors.border1, lineWidth: 1)
+                    RoundedRectangle(cornerRadius: 6)
+                        .strokeBorder(.quaternary, lineWidth: 1)
                 )
-            }
-            .padding()
+            Text(name)
+                .font(.body)
         }
-        .background(colors.background1)
-    }
-    
-    @ViewBuilder
-    private func colorSection(title: String, items: [(String, Color)]) -> some View {
-        VStack(alignment: .leading, spacing: small) {
-            Text(title)
-                .font(.subheadline)
-                .fontWeight(.semibold)
-                .foregroundStyle(colors.content2)
-            
-            ForEach(items, id: \.0) { name, color in
-                HStack {
-                    RoundedRectangle(cornerRadius: small)
-                        .fill(color)
-                        .frame(width: extraBig, height: extraBig)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: small)
-                                .stroke(colors.border1, lineWidth: 1)
-                        )
-                    
-                    Text(name)
-                        .font(.caption)
-                        .foregroundStyle(colors.content1)
-                    
-                    Spacer()
-                }
-            }
-        }
-        .padding()
-        .background(colors.background2)
-        .clipShape(RoundedRectangle(cornerRadius: smallMedium))
-        .overlay(
-            RoundedRectangle(cornerRadius: smallMedium)
-                .stroke(colors.border1, lineWidth: 1)
-        )
     }
 }
 
-#Preview("Light Mode") {
-    ColorsPreview()
-        .preferredColorScheme(.light)
+#Preview("Light") {
+    ColorsPreview().preferredColorScheme(.light)
 }
 
-#Preview("Dark Mode") {
-    ColorsPreview()
-        .preferredColorScheme(.dark)
+#Preview("Dark") {
+    ColorsPreview().preferredColorScheme(.dark)
 }

@@ -46,14 +46,11 @@ struct MainApp: App {
 
 
 private struct MainView: View {
-
-    @Environment(\.colorScheme) var colorScheme
-
     var body: some View {
         Group {
             SplashView()
         }
-        .tint(colorScheme.theme.accentPrimary)
+        .tint(.primaryRed)
         .symbolEffect(.bounce.up.wholeSymbol, options: .nonRepeating)
     }
 }

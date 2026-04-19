@@ -4,6 +4,12 @@
 //
 //  Created by Mohammad reza on 7/3/26.
 //
+//  AI Instructions:
+//  - Demo: Core/ICoreUI/Example/Components/Foundations/IconsDemo.swift
+//    Whenever an `Icons` case is added/removed/renamed, also update
+//    the `iconCaseName` mapping in Example/Shared/DemoEnums.swift —
+//    the demo uses it to render the case name and generate code.
+//
 
 import SwiftUI
 import Foundation
