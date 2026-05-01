@@ -136,60 +136,70 @@ vocabulary-ios/
 
 ## Architecture
 
-The codebase follows a **strict, layered modular architecture** where each layer can only depend on the layers below it. The dependency direction is enforced by [ModuleProperties.swift](Tuist/ProjectDescriptionHelpers/ModuleProperties.swift).
+The codebase follows a **strict, layered modular architecture** where each layer only depends on layers below it. The dependency direction is enforced by [ModuleProperties.swift](Tuist/ProjectDescriptionHelpers/ModuleProperties.swift).
 
-```
-┌────────────────────────────────────────────────────────┐
-│                          App                           │  ← composition root
-│      (depends on every Feature + Core + SharedCommon)  │
-└────────────────────────────────────────────────────────┘
-                            │
-       ┌───────────────┬────┴────┬────────────────┐
-       ▼               ▼         ▼                ▼
-   ┌────────┐    ┌────────┐  ┌────────┐    ┌────────┐
-   │ Splash │    │  Deck  │  │ Study  │    │ Stats  │      Feature layer
-   └────────┘    └────────┘  └────────┘    └────────┘
-       │ each Feature depends on every Core module
-       ▼
-┌────────────────────────────────────────────────────────┐
-│                       Core layer                        │
-│                                                         │
-│  ICoreNetwork ──┐                                       │
-│      │          ├──► ICoreDatabase ──► ICoreModels      │
-│      │          │                          │            │
-│  ICoreAnalytics─┘                          ▼            │
-│                                      ICoreFoundation    │
-│                                                         │
-│  ICoreUI (independent — no Core deps)                   │
-└────────────────────────────────────────────────────────┘
-                            │
-                            ▼
-              ┌──────────────────────────┐
-              │        Shared layer       │
-              │  SharedCommon / Testing  │
-              │   (build on Core)         │
-              └──────────────────────────┘
+```mermaid
+flowchart TD
+    App["<b>App</b><br/>(composition root)"]:::app
+
+    subgraph Features ["Feature layer"]
+        direction LR
+        Splash
+        Deck
+        Study
+        Stats
+    end
+
+    subgraph Shared ["Shared layer"]
+        direction LR
+        SharedCommon
+        SharedTesting
+        SharedExample
+    end
+
+    subgraph Core ["Core layer"]
+        direction LR
+        ICoreUI
+        ICoreNetwork --> ICoreDatabase
+        ICoreAnalytics --> ICoreModels
+        ICoreDatabase --> ICoreModels
+        ICoreNetwork --> ICoreModels
+        ICoreModels --> ICoreFoundation
+        ICoreAnalytics --> ICoreFoundation
+        ICoreDatabase --> ICoreFoundation
+    end
+
+    App --> Features
+    App --> Core
+    App --> SharedCommon
+    Features --> Core
+    SharedCommon --> Core
+    SharedTesting --> ICoreFoundation
+    SharedTesting --> ICoreModels
+    SharedExample --> SharedCommon
+
+    classDef app fill:#2b3a55,stroke:#7aa2f7,color:#fff;
 ```
 
 ### Layer rules
 
-| Layer        | Allowed dependencies                                                       |
-| ------------ | -------------------------------------------------------------------------- |
-| **App**      | All Features, all Core modules, `SharedCommon`                             |
-| **Features** | All Core modules (no other Features, no Shared)                            |
-| **Core**     | Only lower Core modules — see graph below                                  |
-| **Shared**   | Core modules; `SharedExample` additionally depends on `SharedCommon`       |
+| Layer        | Allowed dependencies                                                  |
+| ------------ | --------------------------------------------------------------------- |
+| **App**      | All Features, all Core modules, `SharedCommon`                        |
+| **Features** | All Core modules (no other Features, no Shared)                       |
+| **Core**     | Only lower Core modules — see graph below                             |
+| **Shared**   | Core modules; `SharedExample` additionally depends on `SharedCommon`  |
 
 ### Core dependency graph
 
-```
-ICoreFoundation         (leaf — no deps)
-ICoreUI                 (leaf — no deps; design system)
-ICoreModels             → ICoreFoundation
-ICoreAnalytics          → ICoreFoundation, ICoreModels
-ICoreDatabase           → ICoreFoundation, ICoreModels, [SQLiteData]
-ICoreNetwork            → ICoreFoundation, ICoreModels, ICoreDatabase
-```
+| Module             | Depends on                                              |
+| ------------------ | ------------------------------------------------------- |
+| `ICoreFoundation`  | _none_ (leaf)                                           |
+| `ICoreUI`          | _none_ (leaf — design system)                           |
+| `ICoreModels`      | `ICoreFoundation`                                       |
+| `ICoreAnalytics`   | `ICoreFoundation`, `ICoreModels`                        |
+| `ICoreDatabase`    | `ICoreFoundation`, `ICoreModels`, `SQLiteData` (SPM)    |
+| `ICoreNetwork`     | `ICoreFoundation`, `ICoreModels`, `ICoreDatabase`       |
 
 ### Composition
 
