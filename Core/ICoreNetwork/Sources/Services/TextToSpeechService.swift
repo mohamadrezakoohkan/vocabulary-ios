@@ -51,8 +51,8 @@ public final class TextToSpeechService: ITextToSpeechService {
 
     public init(
         language: String? = "es-ES",
-        rate: Float = 0.05,
-        pitchMultiplier: Float = 0.5,
+        rate: Float = 0.1,
+        pitchMultiplier: Float = 0.6,
         volume: Float = 1.0
     ) {
         self.language = language

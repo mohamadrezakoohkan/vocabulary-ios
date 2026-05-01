@@ -5,6 +5,9 @@ import ICoreUI
 import SharedCommon
 
 import Splash
+import Deck
+import Stats
+import Study
 
 
 @Model
@@ -47,10 +50,30 @@ struct MainApp: App {
 
 private struct MainView: View {
     var body: some View {
-        Group {
-            SplashView()
+        TabView {
+            DeckView()
+                .tabItem {
+                    Icon(.deckTab)
+                }
+
+            StudyView()
+                .tabItem {
+                    Icon(.studyTab)
+                }
+
+            StatsView()
+                .tabItem {
+                    Icon(.statsTab)
+                }
         }
-        .tint(.primaryRed)
-        .symbolEffect(.bounce.up.wholeSymbol, options: .nonRepeating)
+        .symbolRenderingMode(.palette)
+        .foregroundStyle(Color.primaryYellow, Color.primaryRed)
+        .onAppear {
+            let appearance = UITabBarAppearance()
+            appearance.stackedLayoutAppearance.normal.iconColor = UIColor(Color.primaryRed)
+            appearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor(Color.primaryRed)]
+            UITabBar.appearance().standardAppearance = appearance
+            UITabBar.appearance().scrollEdgeAppearance = appearance
+        }
     }
 }

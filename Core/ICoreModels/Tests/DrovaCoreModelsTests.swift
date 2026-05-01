@@ -1,10 +1,15 @@
 import Testing
-@testable import DrovaCoreModels
+@testable import ICoreModels
 
-struct DrovaCoreModelsTests {
+struct WordTests {
 
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    @Test func word_derivesIDFromTermAndTranslation() {
+        let word = Word(term: "Hola", translation: "Hello")
+        #expect(word.id == "hola_hello")
     }
 
+    @Test func word_acceptsExplicitID() {
+        let word = Word(id: "custom-id", term: "hola", translation: "hello")
+        #expect(word.id == "custom-id")
+    }
 }

@@ -1,15 +1,31 @@
 import Foundation
 
-/// A vocabulary word with its Spanish term and English translation.
-///
+/// A vocabulary word along with phonetic transcription, translation, an example sentence,
+/// and the categories it belongs to.
 public struct Word: Identifiable, Hashable, Codable, Sendable {
     public let id: String
-    public let spanish: String
-    public let english: String
+    public let term: String
+    public let phonetic: String?
+    public let translation: String
+    public let example: String?
+    public let exampleTranslation: String?
+    public let categories: [Category]
 
-    public init(spanish: String, english: String) {
-        self.id = "\(spanish.lowercased())_\(english.lowercased())"
-        self.spanish = spanish
-        self.english = english
+    public init(
+        id: String? = nil,
+        term: String,
+        phonetic: String? = nil,
+        translation: String,
+        example: String? = nil,
+        exampleTranslation: String? = nil,
+        categories: [Category] = []
+    ) {
+        self.id = id ?? "\(term.lowercased())_\(translation.lowercased())"
+        self.term = term
+        self.phonetic = phonetic
+        self.translation = translation
+        self.example = example
+        self.exampleTranslation = exampleTranslation
+        self.categories = categories
     }
 }

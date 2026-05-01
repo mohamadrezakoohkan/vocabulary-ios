@@ -1,0 +1,3548 @@
+{
+  "a la derecha de": {
+    "phonetic": "/a la deˈɾe.t͡ʃa de/",
+    "example": "El banco está a la derecha de la farmacia.",
+    "exampleTranslation": "The bank is to the right of the pharmacy."
+  },
+  "a la izquierda de": {
+    "phonetic": "/a la isˈkjeɾ.ða de/",
+    "example": "La cocina está a la izquierda de la sala.",
+    "exampleTranslation": "The kitchen is to the left of the living room."
+  },
+  "a través de": {
+    "phonetic": "/a tɾaˈβes de/",
+    "example": "Aprendí español a través de películas.",
+    "exampleTranslation": "I learned Spanish through movies."
+  },
+  "abierto": {
+    "phonetic": "/aˈβjeɾ.to/",
+    "example": "El museo está abierto los domingos.",
+    "exampleTranslation": "The museum is open on Sundays."
+  },
+  "abrigar": {
+    "phonetic": "/a.βɾiˈɣaɾ/",
+    "example": "Esta manta abriga mucho en invierno.",
+    "exampleTranslation": "This blanket keeps you very warm in winter."
+  },
+  "abrir": {
+    "phonetic": "/aˈβɾiɾ/",
+    "example": "¿Puedes abrir la ventana, por favor?",
+    "exampleTranslation": "Can you open the window, please?"
+  },
+  "acerca de": {
+    "phonetic": "/aˈseɾ.ka de/",
+    "example": "Hablamos acerca de tu viaje.",
+    "exampleTranslation": "We talked about your trip."
+  },
+  "activo": {
+    "phonetic": "/akˈti.βo/",
+    "example": "Mi abuelo es muy activo para su edad.",
+    "exampleTranslation": "My grandfather is very active for his age."
+  },
+  "adecuado": {
+    "phonetic": "/a.ðeˈkwa.ðo/",
+    "example": "Este libro es adecuado para principiantes.",
+    "exampleTranslation": "This book is suitable for beginners."
+  },
+  "además": {
+    "phonetic": "/a.ðeˈmas/",
+    "example": "Es inteligente y, además, muy amable.",
+    "exampleTranslation": "He is smart and, besides, very kind."
+  },
+  "adinerado": {
+    "phonetic": "/a.ði.neˈɾa.ðo/",
+    "example": "Vive en un barrio adinerado.",
+    "exampleTranslation": "He lives in a wealthy neighborhood."
+  },
+  "adónde": {
+    "phonetic": "/aˈðon.de/",
+    "example": "¿Adónde vamos esta noche?",
+    "exampleTranslation": "Where are we going tonight?"
+  },
+  "afuera": {
+    "phonetic": "/aˈfwe.ɾa/",
+    "example": "Los niños están jugando afuera.",
+    "exampleTranslation": "The children are playing outside."
+  },
+  "agarrar": {
+    "phonetic": "/a.ɣaˈraɾ/",
+    "example": "Agarra mi mano para no caerte.",
+    "exampleTranslation": "Grab my hand so you don't fall."
+  },
+  "agradable": {
+    "phonetic": "/a.ɣɾaˈða.βle/",
+    "example": "Hace un día muy agradable.",
+    "exampleTranslation": "It's a very pleasant day."
+  },
+  "agradecer": {
+    "phonetic": "/a.ɣɾa.ðeˈseɾ/",
+    "example": "Quiero agradecer tu ayuda.",
+    "exampleTranslation": "I want to thank you for your help."
+  },
+  "agrícola": {
+    "phonetic": "/aˈɣɾi.ko.la/",
+    "example": "Esta región es principalmente agrícola.",
+    "exampleTranslation": "This region is mainly agricultural."
+  },
+  "aislar": {
+    "phonetic": "/aj.sˈlaɾ/",
+    "example": "Hay que aislar las paredes para el frío.",
+    "exampleTranslation": "We need to insulate the walls against the cold."
+  },
+  "ajustar": {
+    "phonetic": "/a.xusˈtaɾ/",
+    "example": "Voy a ajustar el volumen de la radio.",
+    "exampleTranslation": "I'm going to adjust the volume of the radio."
+  },
+  "al lado de": {
+    "phonetic": "/al ˈla.ðo de/",
+    "example": "Mi casa está al lado de la escuela.",
+    "exampleTranslation": "My house is next to the school."
+  },
+  "al tiempo": {
+    "phonetic": "/al ˈtjem.po/",
+    "example": "Llegó al tiempo que yo me iba.",
+    "exampleTranslation": "He arrived at the same time I was leaving."
+  },
+  "alcanzar": {
+    "phonetic": "/al.kanˈsaɾ/",
+    "example": "No alcanzo el estante de arriba.",
+    "exampleTranslation": "I can't reach the top shelf."
+  },
+  "alegre": {
+    "phonetic": "/aˈle.ɣɾe/",
+    "example": "Es una persona muy alegre.",
+    "exampleTranslation": "She is a very cheerful person."
+  },
+  "alerta": {
+    "phonetic": "/aˈleɾ.ta/",
+    "example": "Mantente alerta en la calle.",
+    "exampleTranslation": "Stay alert on the street."
+  },
+  "algo": {
+    "phonetic": "/ˈal.ɣo/",
+    "example": "Necesito algo de comer.",
+    "exampleTranslation": "I need something to eat."
+  },
+  "alguien": {
+    "phonetic": "/ˈal.ɣjen/",
+    "example": "¿Hay alguien en casa?",
+    "exampleTranslation": "Is there someone at home?"
+  },
+  "alguno": {
+    "phonetic": "/alˈɣu.no/",
+    "example": "Algunos estudiantes llegaron tarde.",
+    "exampleTranslation": "Some students arrived late."
+  },
+  "alisar": {
+    "phonetic": "/a.liˈsaɾ/",
+    "example": "Voy a alisar mi cabello.",
+    "exampleTranslation": "I'm going to smooth my hair."
+  },
+  "alrededor": {
+    "phonetic": "/al.re.ðeˈðoɾ/",
+    "example": "Miré alrededor pero no vi a nadie.",
+    "exampleTranslation": "I looked around but I didn't see anyone."
+  },
+  "alrededor de": {
+    "phonetic": "/al.re.ðeˈðoɾ de/",
+    "example": "Hay árboles alrededor de la casa.",
+    "exampleTranslation": "There are trees around the house."
+  },
+  "alterar": {
+    "phonetic": "/al.teˈɾaɾ/",
+    "example": "No quiero alterar tus planes.",
+    "exampleTranslation": "I don't want to change your plans."
+  },
+  "alto": {
+    "phonetic": "/ˈal.to/",
+    "example": "Mi hermano es muy alto.",
+    "exampleTranslation": "My brother is very tall."
+  },
+  "amable": {
+    "phonetic": "/aˈma.βle/",
+    "example": "Es muy amable conmigo.",
+    "exampleTranslation": "He is very kind to me."
+  },
+  "amoroso": {
+    "phonetic": "/a.moˈɾo.so/",
+    "example": "Tienen una relación muy amorosa.",
+    "exampleTranslation": "They have a very loving relationship."
+  },
+  "anterior": {
+    "phonetic": "/an.teˈɾjoɾ/",
+    "example": "El capítulo anterior fue mejor.",
+    "exampleTranslation": "The previous chapter was better."
+  },
+  "antes": {
+    "phonetic": "/ˈan.tes/",
+    "example": "Antes vivía en Madrid.",
+    "exampleTranslation": "Before, I used to live in Madrid."
+  },
+  "antes de": {
+    "phonetic": "/ˈan.tes de/",
+    "example": "Lávate las manos antes de comer.",
+    "exampleTranslation": "Wash your hands before eating."
+  },
+  "apartar": {
+    "phonetic": "/a.paɾˈtaɾ/",
+    "example": "Aparta los libros de la mesa.",
+    "exampleTranslation": "Move the books away from the table."
+  },
+  "aplicado": {
+    "phonetic": "/a.pliˈka.ðo/",
+    "example": "Es un estudiante muy aplicado.",
+    "exampleTranslation": "He is a very diligent student."
+  },
+  "aplicar": {
+    "phonetic": "/a.pliˈkaɾ/",
+    "example": "Aplica la crema dos veces al día.",
+    "exampleTranslation": "Apply the cream twice a day."
+  },
+  "apoyar": {
+    "phonetic": "/a.poˈʝaɾ/",
+    "example": "Siempre apoyo a mis amigos.",
+    "exampleTranslation": "I always support my friends."
+  },
+  "asar": {
+    "phonetic": "/aˈsaɾ/",
+    "example": "Vamos a asar carne en el jardín.",
+    "exampleTranslation": "We're going to grill meat in the garden."
+  },
+  "asir": {
+    "phonetic": "/aˈsiɾ/",
+    "example": "Asió el bolso con fuerza.",
+    "exampleTranslation": "She grabbed the bag tightly."
+  },
+  "asistir": {
+    "phonetic": "/a.sisˈtiɾ/",
+    "example": "Voy a asistir a la conferencia.",
+    "exampleTranslation": "I'm going to attend the conference."
+  },
+  "así": {
+    "phonetic": "/aˈsi/",
+    "example": "No me hables así.",
+    "exampleTranslation": "Don't talk to me like that."
+  },
+  "atravesar": {
+    "phonetic": "/a.tɾa.βeˈsaɾ/",
+    "example": "Hay que atravesar el puente.",
+    "exampleTranslation": "We have to cross the bridge."
+  },
+  "atrás": {
+    "phonetic": "/aˈtɾas/",
+    "example": "El gato se escondió atrás.",
+    "exampleTranslation": "The cat hid in the back."
+  },
+  "aunque": {
+    "phonetic": "/ˈaun.ke/",
+    "example": "Voy aunque esté lloviendo.",
+    "exampleTranslation": "I'll go even though it's raining."
+  },
+  "bello": {
+    "phonetic": "/ˈbe.ʝo/",
+    "example": "Es un paisaje muy bello.",
+    "exampleTranslation": "It's a very beautiful landscape."
+  },
+  "bien": {
+    "phonetic": "/bjen/",
+    "example": "Estoy bien, gracias.",
+    "exampleTranslation": "I'm well, thank you."
+  },
+  "bienvenido": {
+    "phonetic": "/bjen.beˈni.ðo/",
+    "example": "¡Bienvenido a nuestra casa!",
+    "exampleTranslation": "Welcome to our home!"
+  },
+  "bilingüe": {
+    "phonetic": "/biˈliŋ.gwe/",
+    "example": "Mi hermana es bilingüe.",
+    "exampleTranslation": "My sister is bilingual."
+  },
+  "bonito": {
+    "phonetic": "/boˈni.to/",
+    "example": "¡Qué vestido tan bonito!",
+    "exampleTranslation": "What a pretty dress!"
+  },
+  "borrar": {
+    "phonetic": "/boˈraɾ/",
+    "example": "Voy a borrar este archivo.",
+    "exampleTranslation": "I'm going to delete this file."
+  },
+  "breve": {
+    "phonetic": "/ˈbɾe.βe/",
+    "example": "Será una reunión breve.",
+    "exampleTranslation": "It will be a brief meeting."
+  },
+  "bueno": {
+    "phonetic": "/ˈbwe.no/",
+    "example": "Es un buen amigo.",
+    "exampleTranslation": "He is a good friend."
+  },
+  "bullicioso": {
+    "phonetic": "/bu.ʝiˈsjo.so/",
+    "example": "Vivimos en un barrio bullicioso.",
+    "exampleTranslation": "We live in a noisy neighborhood."
+  },
+  "buscar": {
+    "phonetic": "/busˈkaɾ/",
+    "example": "Estoy buscando mis llaves.",
+    "exampleTranslation": "I'm looking for my keys."
+  },
+  "caer": {
+    "phonetic": "/kaˈeɾ/",
+    "example": "Cuidado, no te vayas a caer.",
+    "exampleTranslation": "Be careful, don't fall."
+  },
+  "calentar": {
+    "phonetic": "/ka.lenˈtaɾ/",
+    "example": "Voy a calentar la sopa.",
+    "exampleTranslation": "I'm going to heat up the soup."
+  },
+  "canoso": {
+    "phonetic": "/kaˈno.so/",
+    "example": "Tiene el pelo canoso.",
+    "exampleTranslation": "He has gray hair."
+  },
+  "casado": {
+    "phonetic": "/kaˈsa.ðo/",
+    "example": "Mi hermano está casado.",
+    "exampleTranslation": "My brother is married."
+  },
+  "casarse": {
+    "phonetic": "/kaˈsaɾ.se/",
+    "example": "Se van a casar en junio.",
+    "exampleTranslation": "They are going to get married in June."
+  },
+  "celoso": {
+    "phonetic": "/seˈlo.so/",
+    "example": "No seas celoso.",
+    "exampleTranslation": "Don't be jealous."
+  },
+  "cerrado": {
+    "phonetic": "/seˈra.ðo/",
+    "example": "La tienda está cerrada hoy.",
+    "exampleTranslation": "The store is closed today."
+  },
+  "cerrar": {
+    "phonetic": "/seˈraɾ/",
+    "example": "Por favor, cierra la puerta.",
+    "exampleTranslation": "Please close the door."
+  },
+  "cierto": {
+    "phonetic": "/ˈsjeɾ.to/",
+    "example": "Es cierto lo que dices.",
+    "exampleTranslation": "What you say is true."
+  },
+  "claro": {
+    "phonetic": "/ˈkla.ɾo/",
+    "example": "El cielo está claro hoy.",
+    "exampleTranslation": "The sky is clear today."
+  },
+  "coger": {
+    "phonetic": "/koˈxeɾ/",
+    "example": "Coge una silla y siéntate.",
+    "exampleTranslation": "Grab a chair and sit down."
+  },
+  "coincidir": {
+    "phonetic": "/koin.siˈðiɾ/",
+    "example": "Coincidimos en muchas cosas.",
+    "exampleTranslation": "We agree on many things."
+  },
+  "colocar": {
+    "phonetic": "/ko.loˈkaɾ/",
+    "example": "Coloca los libros en el estante.",
+    "exampleTranslation": "Place the books on the shelf."
+  },
+  "comilón": {
+    "phonetic": "/ko.miˈlon/",
+    "example": "Mi hijo es muy comilón.",
+    "exampleTranslation": "My son is a big eater."
+  },
+  "como": {
+    "phonetic": "/ˈko.mo/",
+    "example": "Habla como su madre.",
+    "exampleTranslation": "He speaks like his mother."
+  },
+  "comparar": {
+    "phonetic": "/kom.paˈɾaɾ/",
+    "example": "No me gusta comparar a las personas.",
+    "exampleTranslation": "I don't like to compare people."
+  },
+  "completar": {
+    "phonetic": "/kom.pleˈtaɾ/",
+    "example": "Tengo que completar el formulario.",
+    "exampleTranslation": "I have to complete the form."
+  },
+  "componente": {
+    "phonetic": "/kom.poˈnen.te/",
+    "example": "Este componente está roto.",
+    "exampleTranslation": "This component is broken."
+  },
+  "comprobar": {
+    "phonetic": "/kom.pɾoˈβaɾ/",
+    "example": "Quiero comprobar la información.",
+    "exampleTranslation": "I want to verify the information."
+  },
+  "comunicado": {
+    "phonetic": "/ko.mu.niˈka.ðo/",
+    "example": "El barrio está bien comunicado.",
+    "exampleTranslation": "The neighborhood is well connected."
+  },
+  "comunicativo": {
+    "phonetic": "/ko.mu.ni.kaˈti.βo/",
+    "example": "Es un niño muy comunicativo.",
+    "exampleTranslation": "He is a very communicative child."
+  },
+  "comunitario": {
+    "phonetic": "/ko.mu.niˈta.ɾjo/",
+    "example": "Hay un jardín comunitario en el barrio.",
+    "exampleTranslation": "There is a community garden in the neighborhood."
+  },
+  "común": {
+    "phonetic": "/koˈmun/",
+    "example": "Es un nombre muy común.",
+    "exampleTranslation": "It is a very common name."
+  },
+  "conceder": {
+    "phonetic": "/kon.seˈðeɾ/",
+    "example": "Le concedieron el premio.",
+    "exampleTranslation": "They granted him the prize."
+  },
+  "concordar": {
+    "phonetic": "/koŋ.koɾˈðaɾ/",
+    "example": "El verbo debe concordar con el sujeto.",
+    "exampleTranslation": "The verb must agree with the subject."
+  },
+  "concreto": {
+    "phonetic": "/koŋˈkɾe.to/",
+    "example": "Necesito un ejemplo concreto.",
+    "exampleTranslation": "I need a concrete example."
+  },
+  "conjunto": {
+    "phonetic": "/koŋˈxun.to/",
+    "example": "Trabajamos en conjunto.",
+    "exampleTranslation": "We work together."
+  },
+  "conocido": {
+    "phonetic": "/ko.noˈsi.ðo/",
+    "example": "Es un escritor muy conocido.",
+    "exampleTranslation": "He is a very famous writer."
+  },
+  "construir": {
+    "phonetic": "/konsˈtɾwiɾ/",
+    "example": "Vamos a construir una casa.",
+    "exampleTranslation": "We're going to build a house."
+  },
+  "contaminante": {
+    "phonetic": "/kon.ta.miˈnan.te/",
+    "example": "Este producto es contaminante.",
+    "exampleTranslation": "This product is polluting."
+  },
+  "contaminar": {
+    "phonetic": "/kon.ta.miˈnaɾ/",
+    "example": "Las fábricas contaminan el aire.",
+    "exampleTranslation": "Factories pollute the air."
+  },
+  "contrario": {
+    "phonetic": "/konˈtɾa.ɾjo/",
+    "example": "Pensamos lo contrario.",
+    "exampleTranslation": "We think the opposite."
+  },
+  "conveniente": {
+    "phonetic": "/kom.beˈnjen.te/",
+    "example": "Sería conveniente hablar con él.",
+    "exampleTranslation": "It would be advisable to talk to him."
+  },
+  "cool": {
+    "phonetic": "/kul/",
+    "example": "Esa chaqueta es muy cool.",
+    "exampleTranslation": "That jacket is very cool."
+  },
+  "correspondiente": {
+    "phonetic": "/ko.res.ponˈdjen.te/",
+    "example": "Recibirás el correo correspondiente.",
+    "exampleTranslation": "You will receive the corresponding email."
+  },
+  "corriente": {
+    "phonetic": "/koˈrjen.te/",
+    "example": "Es una práctica corriente.",
+    "exampleTranslation": "It is a common practice."
+  },
+  "cortar": {
+    "phonetic": "/koɾˈtaɾ/",
+    "example": "Voy a cortar el pan.",
+    "exampleTranslation": "I'm going to cut the bread."
+  },
+  "corto": {
+    "phonetic": "/ˈkoɾ.to/",
+    "example": "El viaje fue muy corto.",
+    "exampleTranslation": "The trip was very short."
+  },
+  "costar": {
+    "phonetic": "/kosˈtaɾ/",
+    "example": "¿Cuánto cuesta esto?",
+    "exampleTranslation": "How much does this cost?"
+  },
+  "creer": {
+    "phonetic": "/kɾeˈeɾ/",
+    "example": "No te puedo creer.",
+    "exampleTranslation": "I can't believe you."
+  },
+  "cruzar": {
+    "phonetic": "/kɾuˈsaɾ/",
+    "example": "Hay que cruzar la calle con cuidado.",
+    "exampleTranslation": "You have to cross the street carefully."
+  },
+  "cual": {
+    "phonetic": "/kwal/",
+    "example": "¿Cuál prefieres?",
+    "exampleTranslation": "Which one do you prefer?"
+  },
+  "cualquier": {
+    "phonetic": "/kwalˈkjeɾ/",
+    "example": "Llámame a cualquier hora.",
+    "exampleTranslation": "Call me any time."
+  },
+  "cubrir": {
+    "phonetic": "/kuˈβɾiɾ/",
+    "example": "Cubre la olla con una tapa.",
+    "exampleTranslation": "Cover the pot with a lid."
+  },
+  "cuánto": {
+    "phonetic": "/ˈkwan.to/",
+    "example": "¿Cuánto tiempo necesitas?",
+    "exampleTranslation": "How much time do you need?"
+  },
+  "dar": {
+    "phonetic": "/daɾ/",
+    "example": "Quiero dar un regalo a mi madre.",
+    "exampleTranslation": "I want to give a gift to my mother."
+  },
+  "dar las gracias": {
+    "phonetic": "/daɾ las ˈɡɾa.sjas/",
+    "example": "Quiero dar las gracias por la cena.",
+    "exampleTranslation": "I want to say thanks for the dinner."
+  },
+  "de dónde": {
+    "phonetic": "/de ˈðon.de/",
+    "example": "¿De dónde eres?",
+    "exampleTranslation": "Where are you from?"
+  },
+  "debajo": {
+    "phonetic": "/deˈβa.xo/",
+    "example": "El gato duerme debajo.",
+    "exampleTranslation": "The cat sleeps underneath."
+  },
+  "debajo de": {
+    "phonetic": "/deˈβa.xo de/",
+    "example": "Las llaves están debajo de la mesa.",
+    "exampleTranslation": "The keys are under the table."
+  },
+  "deber": {
+    "phonetic": "/deˈβeɾ/",
+    "example": "Debes estudiar más.",
+    "exampleTranslation": "You must study more."
+  },
+  "dedicar": {
+    "phonetic": "/de.ðiˈkaɾ/",
+    "example": "Le dedico este libro a mis padres.",
+    "exampleTranslation": "I dedicate this book to my parents."
+  },
+  "dedicarse": {
+    "phonetic": "/de.ðiˈkaɾ.se/",
+    "example": "¿A qué te dedicas?",
+    "exampleTranslation": "What do you do for a living?"
+  },
+  "dejado": {
+    "phonetic": "/deˈxa.ðo/",
+    "example": "Es un poco dejado con su ropa.",
+    "exampleTranslation": "He is a bit careless with his clothes."
+  },
+  "delante de": {
+    "phonetic": "/deˈlan.te de/",
+    "example": "Hay un coche delante de la casa.",
+    "exampleTranslation": "There is a car in front of the house."
+  },
+  "deletrear": {
+    "phonetic": "/de.le.tɾeˈaɾ/",
+    "example": "¿Puedes deletrear tu nombre?",
+    "exampleTranslation": "Can you spell your name?"
+  },
+  "delgado": {
+    "phonetic": "/delˈɣa.ðo/",
+    "example": "Mi hermano es muy delgado.",
+    "exampleTranslation": "My brother is very thin."
+  },
+  "demasiado": {
+    "phonetic": "/de.maˈsja.ðo/",
+    "example": "Hace demasiado calor hoy.",
+    "exampleTranslation": "It's too hot today."
+  },
+  "demás": {
+    "phonetic": "/deˈmas/",
+    "example": "Los demás ya se fueron.",
+    "exampleTranslation": "The others already left."
+  },
+  "dentro": {
+    "phonetic": "/ˈden.tɾo/",
+    "example": "Las manzanas están dentro del refrigerador.",
+    "exampleTranslation": "The apples are inside the fridge."
+  },
+  "deprisa": {
+    "phonetic": "/deˈpɾi.sa/",
+    "example": "Camina deprisa o llegaremos tarde.",
+    "exampleTranslation": "Walk fast or we'll be late."
+  },
+  "derecho": {
+    "phonetic": "/deˈɾe.t͡ʃo/",
+    "example": "Tienes derecho a opinar.",
+    "exampleTranslation": "You have the right to give your opinion."
+  },
+  "desagradable": {
+    "phonetic": "/de.sa.ɣɾaˈða.βle/",
+    "example": "Fue una experiencia desagradable.",
+    "exampleTranslation": "It was an unpleasant experience."
+  },
+  "desaparecer": {
+    "phonetic": "/de.sa.pa.ɾeˈseɾ/",
+    "example": "El sol desapareció detrás de las nubes.",
+    "exampleTranslation": "The sun disappeared behind the clouds."
+  },
+  "descansar": {
+    "phonetic": "/des.kanˈsaɾ/",
+    "example": "Necesito descansar un poco.",
+    "exampleTranslation": "I need to rest a little."
+  },
+  "desconocido": {
+    "phonetic": "/des.ko.noˈsi.ðo/",
+    "example": "Un hombre desconocido tocó la puerta.",
+    "exampleTranslation": "An unknown man knocked at the door."
+  },
+  "descubierto": {
+    "phonetic": "/des.kuˈβjeɾ.to/",
+    "example": "Compramos una piscina al descubierto.",
+    "exampleTranslation": "We bought an open-air pool."
+  },
+  "desde": {
+    "phonetic": "/ˈdes.de/",
+    "example": "Vivo aquí desde 2010.",
+    "exampleTranslation": "I have lived here since 2010."
+  },
+  "desear": {
+    "phonetic": "/de.seˈaɾ/",
+    "example": "Te deseo mucha suerte.",
+    "exampleTranslation": "I wish you good luck."
+  },
+  "designar": {
+    "phonetic": "/de.siɣˈnaɾ/",
+    "example": "La empresa designó un nuevo director.",
+    "exampleTranslation": "The company appointed a new director."
+  },
+  "desinteresado": {
+    "phonetic": "/de.sin.te.ɾeˈsa.ðo/",
+    "example": "Hizo un favor desinteresado.",
+    "exampleTranslation": "He did a selfless favor."
+  },
+  "despedirse": {
+    "phonetic": "/des.peˈðiɾ.se/",
+    "example": "Tengo que despedirme de mis amigos.",
+    "exampleTranslation": "I have to say goodbye to my friends."
+  },
+  "despistado": {
+    "phonetic": "/des.pisˈta.ðo/",
+    "example": "Mi padre es muy despistado.",
+    "exampleTranslation": "My father is very absent-minded."
+  },
+  "desplazar": {
+    "phonetic": "/des.plaˈsaɾ/",
+    "example": "Voy a desplazar el sofá.",
+    "exampleTranslation": "I'm going to move the sofa."
+  },
+  "después": {
+    "phonetic": "/desˈpwes/",
+    "example": "Te llamo después.",
+    "exampleTranslation": "I'll call you later."
+  },
+  "determinado": {
+    "phonetic": "/de.teɾ.miˈna.ðo/",
+    "example": "En un momento determinado, decidí cambiar.",
+    "exampleTranslation": "At a certain moment, I decided to change."
+  },
+  "detrás": {
+    "phonetic": "/deˈtɾas/",
+    "example": "El niño está detrás.",
+    "exampleTranslation": "The child is behind."
+  },
+  "detrás de": {
+    "phonetic": "/deˈtɾas de/",
+    "example": "El gato se escondió detrás del sofá.",
+    "exampleTranslation": "The cat hid behind the sofa."
+  },
+  "digno": {
+    "phonetic": "/ˈdiɣ.no/",
+    "example": "Es un hombre digno de respeto.",
+    "exampleTranslation": "He is a man worthy of respect."
+  },
+  "dirigirse": {
+    "phonetic": "/di.ɾiˈxiɾ.se/",
+    "example": "Se dirigió al público con una sonrisa.",
+    "exampleTranslation": "He addressed the audience with a smile."
+  },
+  "distinguir": {
+    "phonetic": "/dis.tiŋˈɡiɾ/",
+    "example": "No puedo distinguir los colores.",
+    "exampleTranslation": "I can't tell the colors apart."
+  },
+  "divertido": {
+    "phonetic": "/di.βeɾˈti.ðo/",
+    "example": "La fiesta fue muy divertida.",
+    "exampleTranslation": "The party was very fun."
+  },
+  "divorciado": {
+    "phonetic": "/di.βoɾˈsja.ðo/",
+    "example": "Mis padres están divorciados.",
+    "exampleTranslation": "My parents are divorced."
+  },
+  "dominar": {
+    "phonetic": "/do.miˈnaɾ/",
+    "example": "Quiero dominar el español.",
+    "exampleTranslation": "I want to master Spanish."
+  },
+  "donde": {
+    "phonetic": "/ˈdon.de/",
+    "example": "Esta es la casa donde nací.",
+    "exampleTranslation": "This is the house where I was born."
+  },
+  "dramático": {
+    "phonetic": "/dɾaˈma.ti.ko/",
+    "example": "Fue un cambio dramático.",
+    "exampleTranslation": "It was a dramatic change."
+  },
+  "dulce": {
+    "phonetic": "/ˈdul.se/",
+    "example": "Este pastel está muy dulce.",
+    "exampleTranslation": "This cake is very sweet."
+  },
+  "durante": {
+    "phonetic": "/duˈɾan.te/",
+    "example": "Estudié durante tres horas.",
+    "exampleTranslation": "I studied for three hours."
+  },
+  "día a día": {
+    "phonetic": "/ˈdi.a a ˈdi.a/",
+    "example": "Mejora día a día.",
+    "exampleTranslation": "He improves day by day."
+  },
+  "educar": {
+    "phonetic": "/e.ðuˈkaɾ/",
+    "example": "Hay que educar a los niños con amor.",
+    "exampleTranslation": "You have to bring up children with love."
+  },
+  "ejercer": {
+    "phonetic": "/e.xeɾˈseɾ/",
+    "example": "Ejerce como abogado en Madrid.",
+    "exampleTranslation": "He practices as a lawyer in Madrid."
+  },
+  "el abogado": {
+    "phonetic": "/el a.βoˈɣa.ðo/",
+    "example": "El abogado defendió bien a su cliente.",
+    "exampleTranslation": "The lawyer defended his client well."
+  },
+  "el abrigo": {
+    "phonetic": "/el aˈβɾi.ɣo/",
+    "example": "Hace frío, ponte el abrigo.",
+    "exampleTranslation": "It's cold, put on your coat."
+  },
+  "el aficionado": {
+    "phonetic": "/el a.fi.sjoˈna.ðo/",
+    "example": "Es un gran aficionado al fútbol.",
+    "exampleTranslation": "He is a big football fan."
+  },
+  "el alias": {
+    "phonetic": "/el ˈa.ljas/",
+    "example": "Su alias en internet es muy gracioso.",
+    "exampleTranslation": "His alias online is very funny."
+  },
+  "el alimento": {
+    "phonetic": "/el a.liˈmen.to/",
+    "example": "El pan es un alimento básico.",
+    "exampleTranslation": "Bread is a basic food."
+  },
+  "el almuerzo": {
+    "phonetic": "/el alˈmweɾ.so/",
+    "example": "El almuerzo está listo.",
+    "exampleTranslation": "Lunch is ready."
+  },
+  "el alojamiento": {
+    "phonetic": "/el a.lo.xaˈmjen.to/",
+    "example": "Buscamos alojamiento para esta noche.",
+    "exampleTranslation": "We're looking for accommodations for tonight."
+  },
+  "el alquiler": {
+    "phonetic": "/el al.kiˈleɾ/",
+    "example": "El alquiler sube cada año.",
+    "exampleTranslation": "The rent goes up every year."
+  },
+  "el alumno": {
+    "phonetic": "/el aˈlum.no/",
+    "example": "El alumno hizo muchas preguntas.",
+    "exampleTranslation": "The student asked many questions."
+  },
+  "el amo de casa": {
+    "phonetic": "/el ˈa.mo de ˈka.sa/",
+    "example": "Mi tío es amo de casa.",
+    "exampleTranslation": "My uncle is a househusband."
+  },
+  "el anuncio": {
+    "phonetic": "/el aˈnun.sjo/",
+    "example": "Vi tu anuncio en el periódico.",
+    "exampleTranslation": "I saw your ad in the newspaper."
+  },
+  "el aparcamiento": {
+    "phonetic": "/el a.paɾ.kaˈmjen.to/",
+    "example": "El aparcamiento está lleno.",
+    "exampleTranslation": "The parking lot is full."
+  },
+  "el arenal": {
+    "phonetic": "/el a.ɾeˈnal/",
+    "example": "Caminamos por el arenal de la playa.",
+    "exampleTranslation": "We walked along the sandy area of the beach."
+  },
+  "el armario": {
+    "phonetic": "/el aɾˈma.ɾjo/",
+    "example": "Guardo la ropa en el armario.",
+    "exampleTranslation": "I keep my clothes in the closet."
+  },
+  "el aroma": {
+    "phonetic": "/el aˈɾo.ma/",
+    "example": "Me encanta el aroma del café.",
+    "exampleTranslation": "I love the aroma of coffee."
+  },
+  "el asiento": {
+    "phonetic": "/el aˈsjen.to/",
+    "example": "Por favor, tome asiento.",
+    "exampleTranslation": "Please, take a seat."
+  },
+  "el aumento": {
+    "phonetic": "/el auˈmen.to/",
+    "example": "Hubo un aumento en el precio.",
+    "exampleTranslation": "There was an increase in price."
+  },
+  "el ayuntamiento": {
+    "phonetic": "/el a.ʝun.taˈmjen.to/",
+    "example": "El ayuntamiento está en el centro.",
+    "exampleTranslation": "The city hall is in the center."
+  },
+  "el barrio": {
+    "phonetic": "/el ˈba.rjo/",
+    "example": "Vivo en un barrio tranquilo.",
+    "exampleTranslation": "I live in a quiet neighborhood."
+  },
+  "el baño": {
+    "phonetic": "/el ˈba.ɲo/",
+    "example": "¿Dónde está el baño?",
+    "exampleTranslation": "Where is the bathroom?"
+  },
+  "el bien": {
+    "phonetic": "/el bjen/",
+    "example": "Trabaja por el bien común.",
+    "exampleTranslation": "He works for the common good."
+  },
+  "el billete": {
+    "phonetic": "/el biˈʝe.te/",
+    "example": "Compré un billete para el tren.",
+    "exampleTranslation": "I bought a ticket for the train."
+  },
+  "el bocadillo": {
+    "phonetic": "/el bo.kaˈði.ʝo/",
+    "example": "Quiero un bocadillo de jamón.",
+    "exampleTranslation": "I want a ham sandwich."
+  },
+  "el brazo": {
+    "phonetic": "/el ˈbɾa.so/",
+    "example": "Me duele el brazo izquierdo.",
+    "exampleTranslation": "My left arm hurts."
+  },
+  "el cajón": {
+    "phonetic": "/el kaˈxon/",
+    "example": "Las llaves están en el cajón.",
+    "exampleTranslation": "The keys are in the drawer."
+  },
+  "el calzado": {
+    "phonetic": "/el kalˈsa.ðo/",
+    "example": "Esta tienda vende calzado de cuero.",
+    "exampleTranslation": "This store sells leather footwear."
+  },
+  "el cambio": {
+    "phonetic": "/el ˈkam.bjo/",
+    "example": "Necesito un cambio en mi vida.",
+    "exampleTranslation": "I need a change in my life."
+  },
+  "el camión": {
+    "phonetic": "/el kaˈmjon/",
+    "example": "El camión transporta verduras.",
+    "exampleTranslation": "The truck carries vegetables."
+  },
+  "el campo": {
+    "phonetic": "/el ˈkam.po/",
+    "example": "Mis abuelos viven en el campo.",
+    "exampleTranslation": "My grandparents live in the countryside."
+  },
+  "el cartel": {
+    "phonetic": "/el kaɾˈtel/",
+    "example": "Pegué un cartel en la pared.",
+    "exampleTranslation": "I put up a poster on the wall."
+  },
+  "el caso": {
+    "phonetic": "/el ˈka.so/",
+    "example": "Es un caso muy interesante.",
+    "exampleTranslation": "It is a very interesting case."
+  },
+  "el castellano": {
+    "phonetic": "/el kas.teˈʝa.no/",
+    "example": "Estudio castellano desde hace dos años.",
+    "exampleTranslation": "I have been studying Spanish for two years."
+  },
+  "el cilindro": {
+    "phonetic": "/el siˈlin.dɾo/",
+    "example": "El motor tiene cuatro cilindros.",
+    "exampleTranslation": "The engine has four cylinders."
+  },
+  "el cirujano": {
+    "phonetic": "/el si.ɾuˈxa.no/",
+    "example": "El cirujano operó al paciente.",
+    "exampleTranslation": "The surgeon operated on the patient."
+  },
+  "el coche": {
+    "phonetic": "/el ˈko.t͡ʃe/",
+    "example": "Mi coche es nuevo.",
+    "exampleTranslation": "My car is new."
+  },
+  "el comedor": {
+    "phonetic": "/el ko.meˈðoɾ/",
+    "example": "Cenamos en el comedor.",
+    "exampleTranslation": "We have dinner in the dining room."
+  },
+  "el comilón": {
+    "phonetic": "/el ko.miˈlon/",
+    "example": "Mi sobrino es un comilón.",
+    "exampleTranslation": "My nephew is a big eater."
+  },
+  "el compañero": {
+    "phonetic": "/el kom.paˈɲe.ɾo/",
+    "example": "Mi compañero de trabajo es muy amable.",
+    "exampleTranslation": "My coworker is very kind."
+  },
+  "el compositor": {
+    "phonetic": "/el kom.po.siˈtoɾ/",
+    "example": "El compositor escribió una sinfonía.",
+    "exampleTranslation": "The composer wrote a symphony."
+  },
+  "el conjunto": {
+    "phonetic": "/el koŋˈxun.to/",
+    "example": "Compré un conjunto de copas.",
+    "exampleTranslation": "I bought a set of glasses."
+  },
+  "el contaminante": {
+    "phonetic": "/el kon.ta.miˈnan.te/",
+    "example": "El humo es un contaminante.",
+    "exampleTranslation": "Smoke is a contaminant."
+  },
+  "el contenedor": {
+    "phonetic": "/el kon.te.neˈðoɾ/",
+    "example": "Tira la basura en el contenedor.",
+    "exampleTranslation": "Throw the garbage in the container."
+  },
+  "el contrario": {
+    "phonetic": "/el konˈtɾa.ɾjo/",
+    "example": "Mi contrario en el juego era muy bueno.",
+    "exampleTranslation": "My opponent in the game was very good."
+  },
+  "el contraste": {
+    "phonetic": "/el konˈtɾas.te/",
+    "example": "Hay un gran contraste entre las dos ciudades.",
+    "exampleTranslation": "There is a big contrast between the two cities."
+  },
+  "el corazón": {
+    "phonetic": "/el ko.ɾaˈson/",
+    "example": "Mi corazón late muy rápido.",
+    "exampleTranslation": "My heart beats very fast."
+  },
+  "el correo": {
+    "phonetic": "/el koˈre.o/",
+    "example": "Recibí tu correo esta mañana.",
+    "exampleTranslation": "I received your email this morning."
+  },
+  "el cruce": {
+    "phonetic": "/el ˈkɾu.se/",
+    "example": "Espera en el cruce.",
+    "exampleTranslation": "Wait at the intersection."
+  },
+  "el cuaderno": {
+    "phonetic": "/el kwaˈðeɾ.no/",
+    "example": "Escribo en mi cuaderno todos los días.",
+    "exampleTranslation": "I write in my notebook every day."
+  },
+  "el cuadro": {
+    "phonetic": "/el ˈkwa.ðɾo/",
+    "example": "Compré un cuadro para mi sala.",
+    "exampleTranslation": "I bought a painting for my living room."
+  },
+  "el cuello": {
+    "phonetic": "/el ˈkwe.ʝo/",
+    "example": "Me duele el cuello.",
+    "exampleTranslation": "My neck hurts."
+  },
+  "el cuerpo": {
+    "phonetic": "/el ˈkweɾ.po/",
+    "example": "El ejercicio fortalece el cuerpo.",
+    "exampleTranslation": "Exercise strengthens the body."
+  },
+  "el cuñado": {
+    "phonetic": "/el kuˈɲa.ðo/",
+    "example": "Mi cuñado vive en Barcelona.",
+    "exampleTranslation": "My brother-in-law lives in Barcelona."
+  },
+  "el daño": {
+    "phonetic": "/el ˈda.ɲo/",
+    "example": "La tormenta causó mucho daño.",
+    "exampleTranslation": "The storm caused a lot of damage."
+  },
+  "el dependiente": {
+    "phonetic": "/el de.penˈdjen.te/",
+    "example": "El dependiente fue muy amable.",
+    "exampleTranslation": "The salesperson was very kind."
+  },
+  "el derecho": {
+    "phonetic": "/el deˈɾe.t͡ʃo/",
+    "example": "Estudio el derecho en la universidad.",
+    "exampleTranslation": "I study law at university."
+  },
+  "el descanso": {
+    "phonetic": "/el desˈkan.so/",
+    "example": "Necesito un descanso después de trabajar.",
+    "exampleTranslation": "I need a rest after working."
+  },
+  "el deseo": {
+    "phonetic": "/el deˈse.o/",
+    "example": "Tengo el deseo de viajar.",
+    "exampleTranslation": "I have the desire to travel."
+  },
+  "el despistado": {
+    "phonetic": "/el des.pisˈta.ðo/",
+    "example": "El despistado olvidó las llaves otra vez.",
+    "exampleTranslation": "The scatterbrain forgot the keys again."
+  },
+  "el dibujo": {
+    "phonetic": "/el diˈβu.xo/",
+    "example": "Me gusta tu dibujo.",
+    "exampleTranslation": "I like your drawing."
+  },
+  "el diminutivo": {
+    "phonetic": "/el di.mi.nuˈti.βo/",
+    "example": "Pepito es el diminutivo de Pepe.",
+    "exampleTranslation": "Pepito is the diminutive of Pepe."
+  },
+  "el discurso": {
+    "phonetic": "/el disˈkuɾ.so/",
+    "example": "El presidente dio un discurso largo.",
+    "exampleTranslation": "The president gave a long speech."
+  },
+  "el diseñador": {
+    "phonetic": "/el di.se.ɲaˈðoɾ/",
+    "example": "El diseñador es muy creativo.",
+    "exampleTranslation": "The designer is very creative."
+  },
+  "el dolor": {
+    "phonetic": "/el doˈloɾ/",
+    "example": "Tengo dolor de cabeza.",
+    "exampleTranslation": "I have a headache."
+  },
+  "el día a día": {
+    "phonetic": "/el ˈdi.a a ˈdi.a/",
+    "example": "El día a día puede ser estresante.",
+    "exampleTranslation": "The daily routine can be stressful."
+  },
+  "el edificio": {
+    "phonetic": "/el e.ðiˈfi.sjo/",
+    "example": "Este edificio es muy alto.",
+    "exampleTranslation": "This building is very tall."
+  },
+  "el empleado": {
+    "phonetic": "/el em.pleˈa.ðo/",
+    "example": "El empleado llegó temprano hoy.",
+    "exampleTranslation": "The employee arrived early today."
+  },
+  "el encargado": {
+    "phonetic": "/el eŋ.kaɾˈɣa.ðo/",
+    "example": "Quiero hablar con el encargado.",
+    "exampleTranslation": "I want to speak with the manager."
+  },
+  "el enfermero": {
+    "phonetic": "/el em.feɾˈme.ɾo/",
+    "example": "El enfermero me puso la inyección.",
+    "exampleTranslation": "The nurse gave me the injection."
+  },
+  "el entorno": {
+    "phonetic": "/el enˈtoɾ.no/",
+    "example": "Debemos cuidar el entorno.",
+    "exampleTranslation": "We must take care of the environment."
+  },
+  "el equipo": {
+    "phonetic": "/el eˈki.po/",
+    "example": "Mi equipo ganó el partido.",
+    "exampleTranslation": "My team won the game."
+  },
+  "el escritor": {
+    "phonetic": "/el es.kɾiˈtoɾ/",
+    "example": "El escritor publicó un nuevo libro.",
+    "exampleTranslation": "The writer published a new book."
+  },
+  "el espacio": {
+    "phonetic": "/el esˈpa.sjo/",
+    "example": "No hay espacio en el coche.",
+    "exampleTranslation": "There is no space in the car."
+  },
+  "el espectáculo": {
+    "phonetic": "/el es.pekˈta.ku.lo/",
+    "example": "El espectáculo fue increíble.",
+    "exampleTranslation": "The show was amazing."
+  },
+  "el espejo": {
+    "phonetic": "/el esˈpe.xo/",
+    "example": "Me miro en el espejo.",
+    "exampleTranslation": "I look at myself in the mirror."
+  },
+  "el establecimiento": {
+    "phonetic": "/el es.ta.βle.siˈmjen.to/",
+    "example": "Es un establecimiento muy popular.",
+    "exampleTranslation": "It is a very popular establishment."
+  },
+  "el estado": {
+    "phonetic": "/el esˈta.ðo/",
+    "example": "El paciente está en estado estable.",
+    "exampleTranslation": "The patient is in a stable condition."
+  },
+  "el estado civil": {
+    "phonetic": "/el esˈta.ðo siˈβil/",
+    "example": "Indique su estado civil en el formulario.",
+    "exampleTranslation": "Indicate your marital status on the form."
+  },
+  "el estrés": {
+    "phonetic": "/el esˈtɾes/",
+    "example": "El estrés afecta mi salud.",
+    "exampleTranslation": "Stress affects my health."
+  },
+  "el extranjero": {
+    "phonetic": "/el eks.tɾaŋˈxe.ɾo/",
+    "example": "Voy a vivir en el extranjero.",
+    "exampleTranslation": "I'm going to live abroad."
+  },
+  "el florero": {
+    "phonetic": "/el floˈɾe.ɾo/",
+    "example": "Puse las flores en el florero.",
+    "exampleTranslation": "I put the flowers in the vase."
+  },
+  "el fregadero": {
+    "phonetic": "/el fɾe.ɣaˈðe.ɾo/",
+    "example": "Lavé los platos en el fregadero.",
+    "exampleTranslation": "I washed the dishes in the sink."
+  },
+  "el gesto": {
+    "phonetic": "/el ˈxes.to/",
+    "example": "Hizo un gesto de aprobación.",
+    "exampleTranslation": "He made a gesture of approval."
+  },
+  "el gordito": {
+    "phonetic": "/el ɡoɾˈði.to/",
+    "example": "Ven aquí, mi gordito.",
+    "exampleTranslation": "Come here, my darling."
+  },
+  "el habitante": {
+    "phonetic": "/el a.βiˈtan.te/",
+    "example": "Madrid tiene millones de habitantes.",
+    "exampleTranslation": "Madrid has millions of inhabitants."
+  },
+  "el hablador": {
+    "phonetic": "/el a.βlaˈðoɾ/",
+    "example": "El hablador no para de contar historias.",
+    "exampleTranslation": "The chatterbox doesn't stop telling stories."
+  },
+  "el hecho": {
+    "phonetic": "/el ˈe.t͡ʃo/",
+    "example": "El hecho es que no fue posible.",
+    "exampleTranslation": "The fact is that it wasn't possible."
+  },
+  "el hierro": {
+    "phonetic": "/el ˈje.ro/",
+    "example": "Esta puerta es de hierro.",
+    "exampleTranslation": "This door is made of iron."
+  },
+  "el horno": {
+    "phonetic": "/el ˈoɾ.no/",
+    "example": "El pan está en el horno.",
+    "exampleTranslation": "The bread is in the oven."
+  },
+  "el hueco": {
+    "phonetic": "/el ˈwe.ko/",
+    "example": "Hay un hueco en la pared.",
+    "exampleTranslation": "There is a hole in the wall."
+  },
+  "el inodoro": {
+    "phonetic": "/el i.noˈðo.ɾo/",
+    "example": "El inodoro está roto.",
+    "exampleTranslation": "The toilet is broken."
+  },
+  "el interés": {
+    "phonetic": "/el in.teˈɾes/",
+    "example": "Tengo mucho interés en aprender.",
+    "exampleTranslation": "I have a lot of interest in learning."
+  },
+  "el invierno": {
+    "phonetic": "/el imˈbjeɾ.no/",
+    "example": "El invierno aquí es muy frío.",
+    "exampleTranslation": "The winter here is very cold."
+  },
+  "el jardinero": {
+    "phonetic": "/el xaɾ.ðiˈne.ɾo/",
+    "example": "El jardinero corta el césped los lunes.",
+    "exampleTranslation": "The gardener cuts the lawn on Mondays."
+  },
+  "el jersey": {
+    "phonetic": "/el xeɾˈsej/",
+    "example": "Mi jersey es de lana.",
+    "exampleTranslation": "My sweater is made of wool."
+  },
+  "el lavabo": {
+    "phonetic": "/el laˈβa.βo/",
+    "example": "El lavabo del baño está sucio.",
+    "exampleTranslation": "The bathroom sink is dirty."
+  },
+  "el lavavajillas": {
+    "phonetic": "/el la.βa.βaˈxi.ʝas/",
+    "example": "Pon los platos en el lavavajillas.",
+    "exampleTranslation": "Put the dishes in the dishwasher."
+  },
+  "el limón": {
+    "phonetic": "/el liˈmon/",
+    "example": "Necesito un limón para la receta.",
+    "exampleTranslation": "I need a lemon for the recipe."
+  },
+  "el lugar": {
+    "phonetic": "/el luˈɣaɾ/",
+    "example": "Este es mi lugar favorito.",
+    "exampleTranslation": "This is my favorite place."
+  },
+  "el lujo": {
+    "phonetic": "/el ˈlu.xo/",
+    "example": "Vive con mucho lujo.",
+    "exampleTranslation": "He lives in great luxury."
+  },
+  "el mapa": {
+    "phonetic": "/el ˈma.pa/",
+    "example": "Necesito un mapa de la ciudad.",
+    "exampleTranslation": "I need a map of the city."
+  },
+  "el mecanismo": {
+    "phonetic": "/el me.kaˈnis.mo/",
+    "example": "El mecanismo del reloj es complicado.",
+    "exampleTranslation": "The mechanism of the clock is complicated."
+  },
+  "el medioambiente": {
+    "phonetic": "/el me.djoamˈbjen.te/",
+    "example": "Cuidemos el medioambiente.",
+    "exampleTranslation": "Let's take care of the environment."
+  },
+  "el mediodía": {
+    "phonetic": "/el me.djoˈði.a/",
+    "example": "Comemos al mediodía.",
+    "exampleTranslation": "We eat at noon."
+  },
+  "el microondas": {
+    "phonetic": "/el mi.kɾoˈon.das/",
+    "example": "Caliéntalo en el microondas.",
+    "exampleTranslation": "Heat it in the microwave."
+  },
+  "el miedo": {
+    "phonetic": "/el ˈmje.ðo/",
+    "example": "Tengo miedo de las arañas.",
+    "exampleTranslation": "I'm afraid of spiders."
+  },
+  "el monumento": {
+    "phonetic": "/el mo.nuˈmen.to/",
+    "example": "Visitamos un monumento histórico.",
+    "exampleTranslation": "We visited a historic monument."
+  },
+  "el mueble": {
+    "phonetic": "/el ˈmwe.βle/",
+    "example": "Compré un mueble nuevo para la sala.",
+    "exampleTranslation": "I bought a new piece of furniture for the living room."
+  },
+  "el nacimiento": {
+    "phonetic": "/el na.siˈmjen.to/",
+    "example": "El nacimiento del bebé fue una alegría.",
+    "exampleTranslation": "The birth of the baby was a joy."
+  },
+  "el nieto": {
+    "phonetic": "/el ˈnje.to/",
+    "example": "Mi nieto tiene tres años.",
+    "exampleTranslation": "My grandson is three years old."
+  },
+  "el novio": {
+    "phonetic": "/el ˈno.βjo/",
+    "example": "Mi novio es muy simpático.",
+    "exampleTranslation": "My boyfriend is very nice."
+  },
+  "el ocio": {
+    "phonetic": "/el ˈo.sjo/",
+    "example": "El ocio es importante para la salud mental.",
+    "exampleTranslation": "Leisure is important for mental health."
+  },
+  "el odio": {
+    "phonetic": "/el ˈo.ðjo/",
+    "example": "El odio no lleva a nada bueno.",
+    "exampleTranslation": "Hate leads to nothing good."
+  },
+  "el olor": {
+    "phonetic": "/el oˈloɾ/",
+    "example": "El olor a café me despierta.",
+    "exampleTranslation": "The smell of coffee wakes me up."
+  },
+  "el ordenador": {
+    "phonetic": "/el oɾ.ðe.naˈðoɾ/",
+    "example": "Trabajo con el ordenador todo el día.",
+    "exampleTranslation": "I work with the computer all day."
+  },
+  "el oso": {
+    "phonetic": "/el ˈo.so/",
+    "example": "Vimos un oso en el bosque.",
+    "exampleTranslation": "We saw a bear in the forest."
+  },
+  "el oído": {
+    "phonetic": "/el oˈi.ðo/",
+    "example": "Tengo dolor de oído.",
+    "exampleTranslation": "I have an earache."
+  },
+  "el paraíso": {
+    "phonetic": "/el pa.ɾaˈi.so/",
+    "example": "Esta playa es un paraíso.",
+    "exampleTranslation": "This beach is a paradise."
+  },
+  "el pegamento": {
+    "phonetic": "/el pe.ɣaˈmen.to/",
+    "example": "Necesito pegamento para arreglarlo.",
+    "exampleTranslation": "I need glue to fix it."
+  },
+  "el peligro": {
+    "phonetic": "/el peˈli.ɣɾo/",
+    "example": "El peligro está en todas partes.",
+    "exampleTranslation": "Danger is everywhere."
+  },
+  "el pelo": {
+    "phonetic": "/el ˈpe.lo/",
+    "example": "Tiene el pelo largo.",
+    "exampleTranslation": "She has long hair."
+  },
+  "el peluquero": {
+    "phonetic": "/el pe.luˈke.ɾo/",
+    "example": "Voy al peluquero esta tarde.",
+    "exampleTranslation": "I'm going to the hairdresser this afternoon."
+  },
+  "el pensamiento": {
+    "phonetic": "/el pen.saˈmjen.to/",
+    "example": "Es un pensamiento interesante.",
+    "exampleTranslation": "It is an interesting thought."
+  },
+  "el personaje": {
+    "phonetic": "/el peɾ.soˈna.xe/",
+    "example": "Mi personaje favorito es el héroe.",
+    "exampleTranslation": "My favorite character is the hero."
+  },
+  "el peso": {
+    "phonetic": "/el ˈpe.so/",
+    "example": "El peso de la maleta es de veinte kilos.",
+    "exampleTranslation": "The weight of the suitcase is twenty kilos."
+  },
+  "el piso": {
+    "phonetic": "/el ˈpi.so/",
+    "example": "Vivo en un piso pequeño.",
+    "exampleTranslation": "I live in a small apartment."
+  },
+  "el plano": {
+    "phonetic": "/el ˈpla.no/",
+    "example": "Mira el plano de la ciudad.",
+    "exampleTranslation": "Look at the map of the city."
+  },
+  "el precio": {
+    "phonetic": "/el ˈpɾe.sjo/",
+    "example": "¿Cuál es el precio?",
+    "exampleTranslation": "What is the price?"
+  },
+  "el principio": {
+    "phonetic": "/el pɾinˈsi.pjo/",
+    "example": "Al principio fue difícil.",
+    "exampleTranslation": "At the beginning it was difficult."
+  },
+  "el problema": {
+    "phonetic": "/el pɾoˈβle.ma/",
+    "example": "El problema es complicado.",
+    "exampleTranslation": "The problem is complicated."
+  },
+  "el puesto": {
+    "phonetic": "/el ˈpwes.to/",
+    "example": "Compré fruta en el puesto del mercado.",
+    "exampleTranslation": "I bought fruit at the market stall."
+  },
+  "el pupitre": {
+    "phonetic": "/el puˈpi.tɾe/",
+    "example": "El alumno se sentó en su pupitre.",
+    "exampleTranslation": "The student sat at his desk."
+  },
+  "el quiosco": {
+    "phonetic": "/el ˈkjos.ko/",
+    "example": "Compré el periódico en el quiosco.",
+    "exampleTranslation": "I bought the newspaper at the kiosk."
+  },
+  "el recipiente": {
+    "phonetic": "/el re.siˈpjen.te/",
+    "example": "Pon la sopa en el recipiente.",
+    "exampleTranslation": "Put the soup in the container."
+  },
+  "el recurso": {
+    "phonetic": "/el reˈkuɾ.so/",
+    "example": "Es un recurso muy útil.",
+    "exampleTranslation": "It is a very useful resource."
+  },
+  "el respaldo": {
+    "phonetic": "/el resˈpal.do/",
+    "example": "El respaldo de la silla es cómodo.",
+    "exampleTranslation": "The back of the chair is comfortable."
+  },
+  "el resto": {
+    "phonetic": "/el ˈres.to/",
+    "example": "El resto del grupo se fue.",
+    "exampleTranslation": "The rest of the group left."
+  },
+  "el retirado": {
+    "phonetic": "/el re.tiˈɾa.ðo/",
+    "example": "El retirado disfruta de su tiempo libre.",
+    "exampleTranslation": "The retired person enjoys his free time."
+  },
+  "el ruido": {
+    "phonetic": "/el ˈrwi.ðo/",
+    "example": "El ruido no me deja dormir.",
+    "exampleTranslation": "The noise won't let me sleep."
+  },
+  "el sabor": {
+    "phonetic": "/el saˈβoɾ/",
+    "example": "Me encanta el sabor del chocolate.",
+    "exampleTranslation": "I love the flavor of chocolate."
+  },
+  "el sacapuntas": {
+    "phonetic": "/el sa.kaˈpun.tas/",
+    "example": "¿Tienes un sacapuntas?",
+    "exampleTranslation": "Do you have a pencil sharpener?"
+  },
+  "el secador": {
+    "phonetic": "/el se.kaˈðoɾ/",
+    "example": "Uso el secador después de ducharme.",
+    "exampleTranslation": "I use the hairdryer after showering."
+  },
+  "el sentido": {
+    "phonetic": "/el senˈti.ðo/",
+    "example": "No tiene sentido.",
+    "exampleTranslation": "It makes no sense."
+  },
+  "el sentimiento": {
+    "phonetic": "/el sen.tiˈmjen.to/",
+    "example": "Es un sentimiento muy fuerte.",
+    "exampleTranslation": "It is a very strong feeling."
+  },
+  "el servicio": {
+    "phonetic": "/el seɾˈβi.sjo/",
+    "example": "El servicio en el restaurante es excelente.",
+    "exampleTranslation": "The service at the restaurant is excellent."
+  },
+  "el signo": {
+    "phonetic": "/el ˈsiɣ.no/",
+    "example": "Es un signo de respeto.",
+    "exampleTranslation": "It is a sign of respect."
+  },
+  "el sillón": {
+    "phonetic": "/el siˈʝon/",
+    "example": "Me senté en el sillón a leer.",
+    "exampleTranslation": "I sat in the armchair to read."
+  },
+  "el sistema": {
+    "phonetic": "/el sisˈte.ma/",
+    "example": "El sistema funciona muy bien.",
+    "exampleTranslation": "The system works very well."
+  },
+  "el sobrino": {
+    "phonetic": "/el soˈβɾi.no/",
+    "example": "Mi sobrino tiene cinco años.",
+    "exampleTranslation": "My nephew is five years old."
+  },
+  "el submarinismo": {
+    "phonetic": "/el suβ.ma.ɾiˈnis.mo/",
+    "example": "Practico submarinismo en verano.",
+    "exampleTranslation": "I do scuba diving in summer."
+  },
+  "el suceso": {
+    "phonetic": "/el suˈse.so/",
+    "example": "Fue un suceso inesperado.",
+    "exampleTranslation": "It was an unexpected event."
+  },
+  "el suelo": {
+    "phonetic": "/el ˈswe.lo/",
+    "example": "Las llaves están en el suelo.",
+    "exampleTranslation": "The keys are on the floor."
+  },
+  "el sueño": {
+    "phonetic": "/el ˈswe.ɲo/",
+    "example": "Mi sueño es viajar por el mundo.",
+    "exampleTranslation": "My dream is to travel the world."
+  },
+  "el sujeto": {
+    "phonetic": "/el suˈxe.to/",
+    "example": "El sujeto de la oración es 'María'.",
+    "exampleTranslation": "The subject of the sentence is 'María'."
+  },
+  "el sur": {
+    "phonetic": "/el suɾ/",
+    "example": "Sevilla está en el sur de España.",
+    "exampleTranslation": "Seville is in the south of Spain."
+  },
+  "el tacón": {
+    "phonetic": "/el taˈkon/",
+    "example": "Se rompió el tacón del zapato.",
+    "exampleTranslation": "The heel of the shoe broke."
+  },
+  "el teatro": {
+    "phonetic": "/el teˈa.tɾo/",
+    "example": "Vamos al teatro esta noche.",
+    "exampleTranslation": "We are going to the theater tonight."
+  },
+  "el tema": {
+    "phonetic": "/el ˈte.ma/",
+    "example": "Cambiemos de tema.",
+    "exampleTranslation": "Let's change the subject."
+  },
+  "el tenedor": {
+    "phonetic": "/el te.neˈðoɾ/",
+    "example": "Falta un tenedor en la mesa.",
+    "exampleTranslation": "A fork is missing from the table."
+  },
+  "el terreno": {
+    "phonetic": "/el teˈre.no/",
+    "example": "Compraron un terreno cerca del río.",
+    "exampleTranslation": "They bought a piece of land near the river."
+  },
+  "el traslado": {
+    "phonetic": "/el tɾasˈla.ðo/",
+    "example": "El traslado a la nueva oficina fue rápido.",
+    "exampleTranslation": "The move to the new office was fast."
+  },
+  "el trayecto": {
+    "phonetic": "/el tɾaˈʝek.to/",
+    "example": "El trayecto al trabajo dura una hora.",
+    "exampleTranslation": "The journey to work takes an hour."
+  },
+  "el universitario": {
+    "phonetic": "/el u.ni.βeɾ.siˈta.ɾjo/",
+    "example": "El universitario estudia mucho.",
+    "exampleTranslation": "The university student studies a lot."
+  },
+  "el vago": {
+    "phonetic": "/el ˈβa.ɣo/",
+    "example": "Es un vago, no quiere trabajar.",
+    "exampleTranslation": "He is a slacker, he doesn't want to work."
+  },
+  "el valle": {
+    "phonetic": "/el ˈβa.ʝe/",
+    "example": "El valle es muy verde en primavera.",
+    "exampleTranslation": "The valley is very green in spring."
+  },
+  "el viaje": {
+    "phonetic": "/el ˈβja.xe/",
+    "example": "El viaje fue inolvidable.",
+    "exampleTranslation": "The trip was unforgettable."
+  },
+  "el árbol": {
+    "phonetic": "/el ˈaɾ.βol/",
+    "example": "Hay un árbol grande en el jardín.",
+    "exampleTranslation": "There is a big tree in the garden."
+  },
+  "el éxito": {
+    "phonetic": "/el ˈek.si.to/",
+    "example": "La película fue un éxito.",
+    "exampleTranslation": "The movie was a success."
+  },
+  "el órgano": {
+    "phonetic": "/el ˈoɾ.ɣa.no/",
+    "example": "El corazón es un órgano vital.",
+    "exampleTranslation": "The heart is a vital organ."
+  },
+  "el/la inferior": {
+    "phonetic": "/el la in.feˈɾjoɾ/",
+    "example": "El inferior debe respetar al superior.",
+    "exampleTranslation": "The subordinate must respect the superior."
+  },
+  "el/la mar": {
+    "phonetic": "/el la maɾ/",
+    "example": "El mar está tranquilo hoy.",
+    "exampleTranslation": "The sea is calm today."
+  },
+  "el/la masajista": {
+    "phonetic": "/el la ma.saˈxis.ta/",
+    "example": "El masajista alivió mi dolor de espalda.",
+    "exampleTranslation": "The masseur eased my back pain."
+  },
+  "el/la portátil": {
+    "phonetic": "/el la poɾˈta.til/",
+    "example": "Mi portátil es muy ligero.",
+    "exampleTranslation": "My laptop is very light."
+  },
+  "el/la protagonista": {
+    "phonetic": "/el la pɾo.ta.ɣoˈnis.ta/",
+    "example": "El protagonista de la novela es un héroe.",
+    "exampleTranslation": "The main character of the novel is a hero."
+  },
+  "el/la recipiente": {
+    "phonetic": "/el la re.siˈpjen.te/",
+    "example": "El recipiente del premio dio un discurso.",
+    "exampleTranslation": "The recipient of the award gave a speech."
+  },
+  "encargado": {
+    "phonetic": "/enkaɾɡˈaðo/",
+    "example": "La palabra \"encargado\" significa \"responsible or in charge\" en inglés.",
+    "exampleTranslation": "The word \"encargado\" means \"responsible or in charge\" in English."
+  },
+  "encenderse": {
+    "phonetic": "/ensendeɾse/",
+    "example": "El verbo \"encenderse\" significa \"to turn on\" en inglés.",
+    "exampleTranslation": "The verb \"encenderse\" means \"to turn on\" in English."
+  },
+  "encima": {
+    "phonetic": "/ensˈima/",
+    "example": "La palabra \"encima\" significa \"above, on, or on top\" en inglés.",
+    "exampleTranslation": "The word \"encima\" means \"above, on, or on top\" in English."
+  },
+  "encima de": {
+    "phonetic": "/ensˈima de/",
+    "example": "El libro está encima de la mesa.",
+    "exampleTranslation": "The book is on top of the table."
+  },
+  "encontrar": {
+    "phonetic": "/enkontɾˈaɾ/",
+    "example": "El verbo \"encontrar\" significa \"to find\" en inglés.",
+    "exampleTranslation": "The verb \"encontrar\" means \"to find\" in English."
+  },
+  "enfrente": {
+    "phonetic": "/enfɾente/",
+    "example": "La palabra \"enfrente\" significa \"in front or opposite\" en inglés.",
+    "exampleTranslation": "The word \"enfrente\" means \"in front or opposite\" in English."
+  },
+  "entender": {
+    "phonetic": "/entendeɾ/",
+    "example": "El verbo \"entender\" significa \"to understand\" en inglés.",
+    "exampleTranslation": "The verb \"entender\" means \"to understand\" in English."
+  },
+  "entre": {
+    "phonetic": "/entɾe/",
+    "example": "La palabra \"entre\" significa \"among or between\" en inglés.",
+    "exampleTranslation": "The word \"entre\" means \"among or between\" in English."
+  },
+  "entre sí": {
+    "phonetic": "/entɾe sˈi/",
+    "example": "Los estudiantes hablan entre sí.",
+    "exampleTranslation": "The students talk to each other."
+  },
+  "escoger": {
+    "phonetic": "/eskoxˈeɾ/",
+    "example": "El verbo \"escoger\" significa \"to choose\" en inglés.",
+    "exampleTranslation": "The verb \"escoger\" means \"to choose\" in English."
+  },
+  "escrito": {
+    "phonetic": "/eskɾˈito/",
+    "example": "La palabra \"escrito\" significa \"written\" en inglés.",
+    "exampleTranslation": "The word \"escrito\" means \"written\" in English."
+  },
+  "escuchar": {
+    "phonetic": "/eskut͡ʃˈaɾ/",
+    "example": "El verbo \"escuchar\" significa \"to listen to\" en inglés.",
+    "exampleTranslation": "The verb \"escuchar\" means \"to listen to\" in English."
+  },
+  "eslabonar": {
+    "phonetic": "/eslaβonˈaɾ/",
+    "example": "El verbo \"eslabonar\" significa \"to link\" en inglés.",
+    "exampleTranslation": "The verb \"eslabonar\" means \"to link\" in English."
+  },
+  "esperar": {
+    "phonetic": "/espeɾˈaɾ/",
+    "example": "El verbo \"esperar\" significa \"to hope or to wait for\" en inglés.",
+    "exampleTranslation": "The verb \"esperar\" means \"to hope or to wait for\" in English."
+  },
+  "estar de moda": {
+    "phonetic": "/estˈaɾ de mˈoða/",
+    "example": "Ese estilo está de moda ahora.",
+    "exampleTranslation": "That style is in fashion now."
+  },
+  "estrecho": {
+    "phonetic": "/estɾˈet͡ʃo/",
+    "example": "La palabra \"estrecho\" significa \"narrow or tight\" en inglés.",
+    "exampleTranslation": "The word \"estrecho\" means \"narrow or tight\" in English."
+  },
+  "exigir": {
+    "phonetic": "/eksixˈiɾ/",
+    "example": "El verbo \"exigir\" significa \"to demand\" en inglés.",
+    "exampleTranslation": "The verb \"exigir\" means \"to demand\" in English."
+  },
+  "experimentar": {
+    "phonetic": "/ekspeɾimentˈaɾ/",
+    "example": "El verbo \"experimentar\" significa \"to experience or to experiment\" en inglés.",
+    "exampleTranslation": "The verb \"experimentar\" means \"to experience or to experiment\" in English."
+  },
+  "exterior": {
+    "phonetic": "/eksteɾˈioɾ/",
+    "example": "La palabra \"exterior\" significa \"external or outside\" en inglés.",
+    "exampleTranslation": "The word \"exterior\" means \"external or outside\" in English."
+  },
+  "extranjero": {
+    "phonetic": "/ekstɾanxˈeɾo/",
+    "example": "La palabra \"extranjero\" significa \"foreign\" en inglés.",
+    "exampleTranslation": "The word \"extranjero\" means \"foreign\" in English."
+  },
+  "extraño": {
+    "phonetic": "/ekstɾˈaɲo/",
+    "example": "La palabra \"extraño\" significa \"odd or strange\" en inglés.",
+    "exampleTranslation": "The word \"extraño\" means \"odd or strange\" in English."
+  },
+  "extremo": {
+    "phonetic": "/ekstɾˈemo/",
+    "example": "La palabra \"extremo\" significa \"extreme or far\" en inglés.",
+    "exampleTranslation": "The word \"extremo\" means \"extreme or far\" in English."
+  },
+  "facilitar": {
+    "phonetic": "/fasilitˈaɾ/",
+    "example": "El verbo \"facilitar\" significa \"to facilitate or to provide\" en inglés.",
+    "exampleTranslation": "The verb \"facilitar\" means \"to facilitate or to provide\" in English."
+  },
+  "fijar": {
+    "phonetic": "/fixˈaɾ/",
+    "example": "El verbo \"fijar\" significa \"to fix\" en inglés.",
+    "exampleTranslation": "The verb \"fijar\" means \"to fix\" in English."
+  },
+  "fijo": {
+    "phonetic": "/fˈixo/",
+    "example": "La palabra \"fijo\" significa \"fixed\" en inglés.",
+    "exampleTranslation": "The word \"fijo\" means \"fixed\" in English."
+  },
+  "formar": {
+    "phonetic": "/foɾmˈaɾ/",
+    "example": "El verbo \"formar\" significa \"to form or to make\" en inglés.",
+    "exampleTranslation": "The verb \"formar\" means \"to form or to make\" in English."
+  },
+  "fuera": {
+    "phonetic": "/fˈueɾa/",
+    "example": "La palabra \"fuera\" significa \"out or outside\" en inglés.",
+    "exampleTranslation": "The word \"fuera\" means \"out or outside\" in English."
+  },
+  "ganar": {
+    "phonetic": "/ɡanˈaɾ/",
+    "example": "El verbo \"ganar\" significa \"to earn or to win\" en inglés.",
+    "exampleTranslation": "The verb \"ganar\" means \"to earn or to win\" in English."
+  },
+  "gestionar": {
+    "phonetic": "/xestionˈaɾ/",
+    "example": "El verbo \"gestionar\" significa \"to manage or to negotiate\" en inglés.",
+    "exampleTranslation": "The verb \"gestionar\" means \"to manage or to negotiate\" in English."
+  },
+  "girar": {
+    "phonetic": "/xiɾˈaɾ/",
+    "example": "El verbo \"girar\" significa \"to spin or to turn\" en inglés.",
+    "exampleTranslation": "The verb \"girar\" means \"to spin or to turn\" in English."
+  },
+  "gracias a Dios": {
+    "phonetic": "/ɡɾˈasias a ðˈios/",
+    "example": "Gracias a Dios, todos están bien.",
+    "exampleTranslation": "Thank goodness, everyone is fine."
+  },
+  "gracioso": {
+    "phonetic": "/ɡɾasˈioso/",
+    "example": "La palabra \"gracioso\" significa \"funny\" en inglés.",
+    "exampleTranslation": "The word \"gracioso\" means \"funny\" in English."
+  },
+  "gran": {
+    "phonetic": "/ɡɾˈan/",
+    "example": "La palabra \"gran\" significa \"large\" en inglés.",
+    "exampleTranslation": "The word \"gran\" means \"large\" in English."
+  },
+  "gratis": {
+    "phonetic": "/ɡɾˈatis/",
+    "example": "La palabra \"gratis\" significa \"free\" en inglés.",
+    "exampleTranslation": "The word \"gratis\" means \"free\" in English."
+  },
+  "guapo": {
+    "phonetic": "/ɡˈuapo/",
+    "example": "La palabra \"guapo\" significa \"handsome\" en inglés.",
+    "exampleTranslation": "The word \"guapo\" means \"handsome\" in English."
+  },
+  "guardar": {
+    "phonetic": "/ɡuaɾdˈaɾ/",
+    "example": "El verbo \"guardar\" significa \"to keep\" en inglés.",
+    "exampleTranslation": "The verb \"guardar\" means \"to keep\" in English."
+  },
+  "haber": {
+    "phonetic": "/aβˈeɾ/",
+    "example": "El verbo \"haber\" significa \"to have\" en inglés.",
+    "exampleTranslation": "The verb \"haber\" means \"to have\" in English."
+  },
+  "habitado": {
+    "phonetic": "/aβitˈaðo/",
+    "example": "La palabra \"habitado\" significa \"inhabited\" en inglés.",
+    "exampleTranslation": "The word \"habitado\" means \"inhabited\" in English."
+  },
+  "hablador": {
+    "phonetic": "/aβlaðˈoɾ/",
+    "example": "La palabra \"hablador\" significa \"talkative\" en inglés.",
+    "exampleTranslation": "The word \"hablador\" means \"talkative\" in English."
+  },
+  "hablar": {
+    "phonetic": "/aβlaɾ/",
+    "example": "El verbo \"hablar\" significa \"to talk or to speak\" en inglés.",
+    "exampleTranslation": "The verb \"hablar\" means \"to talk or to speak\" in English."
+  },
+  "hacia": {
+    "phonetic": "/ˈasia/",
+    "example": "La palabra \"hacia\" significa \"toward\" en inglés.",
+    "exampleTranslation": "The word \"hacia\" means \"toward\" in English."
+  },
+  "hallarse": {
+    "phonetic": "/aʝˈaɾse/",
+    "example": "El verbo \"hallarse\" significa \"to be\" en inglés.",
+    "exampleTranslation": "The verb \"hallarse\" means \"to be\" in English."
+  },
+  "hasta": {
+    "phonetic": "/ˈasta/",
+    "example": "Camina hasta la plaza.",
+    "exampleTranslation": "Walk up to the square."
+  },
+  "hay que": {
+    "phonetic": "/ˈaʝ ke/",
+    "example": "Hay que estudiar un poco cada día.",
+    "exampleTranslation": "One must study a little every day."
+  },
+  "hecho": {
+    "phonetic": "/ˈet͡ʃo/",
+    "example": "La palabra \"hecho\" significa \"made\" en inglés.",
+    "exampleTranslation": "The word \"hecho\" means \"made\" in English."
+  },
+  "hoy en día": {
+    "phonetic": "/ˈoʝ en ðˈia/",
+    "example": "Hoy en día usamos mucho internet.",
+    "exampleTranslation": "Nowadays we use the internet a lot."
+  },
+  "hueco": {
+    "phonetic": "/ˈueko/",
+    "example": "La palabra \"hueco\" significa \"hollow\" en inglés.",
+    "exampleTranslation": "The word \"hueco\" means \"hollow\" in English."
+  },
+  "igual": {
+    "phonetic": "/iɡˈual/",
+    "example": "La palabra \"igual\" significa \"equal\" en inglés.",
+    "exampleTranslation": "The word \"igual\" means \"equal\" in English."
+  },
+  "igualmente": {
+    "phonetic": "/iɡualmente/",
+    "example": "Hazlo igualmente, por favor.",
+    "exampleTranslation": "Do it likewise, the same to you, or equally, please."
+  },
+  "importar": {
+    "phonetic": "/impoɾtˈaɾ/",
+    "example": "El verbo \"importar\" significa \"to be important, to import, or to matter\" en inglés.",
+    "exampleTranslation": "The verb \"importar\" means \"to be important, to import, or to matter\" in English."
+  },
+  "impreso": {
+    "phonetic": "/impɾˈeso/",
+    "example": "La palabra \"impreso\" significa \"printed\" en inglés.",
+    "exampleTranslation": "The word \"impreso\" means \"printed\" in English."
+  },
+  "inclinado": {
+    "phonetic": "/inklinˈaðo/",
+    "example": "La palabra \"inclinado\" significa \"inclined or sloping\" en inglés.",
+    "exampleTranslation": "The word \"inclinado\" means \"inclined or sloping\" in English."
+  },
+  "incluir": {
+    "phonetic": "/inklˈuiɾ/",
+    "example": "El verbo \"incluir\" significa \"to contain or to include\" en inglés.",
+    "exampleTranslation": "The verb \"incluir\" means \"to contain or to include\" in English."
+  },
+  "indicar": {
+    "phonetic": "/indikˈaɾ/",
+    "example": "El verbo \"indicar\" significa \"to show or to indicate\" en inglés.",
+    "exampleTranslation": "The verb \"indicar\" means \"to show or to indicate\" in English."
+  },
+  "inesperado": {
+    "phonetic": "/inespeɾˈaðo/",
+    "example": "La palabra \"inesperado\" significa \"unexpected\" en inglés.",
+    "exampleTranslation": "The word \"inesperado\" means \"unexpected\" in English."
+  },
+  "inferior": {
+    "phonetic": "/infeɾˈioɾ/",
+    "example": "La palabra \"inferior\" significa \"bottom or lower\" en inglés.",
+    "exampleTranslation": "The word \"inferior\" means \"bottom or lower\" in English."
+  },
+  "iniciar": {
+    "phonetic": "/inisˈiaɾ/",
+    "example": "El verbo \"iniciar\" significa \"to begin\" en inglés.",
+    "exampleTranslation": "The verb \"iniciar\" means \"to begin\" in English."
+  },
+  "inquieto": {
+    "phonetic": "/inkieto/",
+    "example": "La palabra \"inquieto\" significa \"anxious or restless\" en inglés.",
+    "exampleTranslation": "The word \"inquieto\" means \"anxious or restless\" in English."
+  },
+  "interpretar": {
+    "phonetic": "/inteɾpɾetˈaɾ/",
+    "example": "El verbo \"interpretar\" significa \"to interpret or to perform\" en inglés.",
+    "exampleTranslation": "The verb \"interpretar\" means \"to interpret or to perform\" in English."
+  },
+  "interrogativo": {
+    "phonetic": "/interoɡatˈiβo/",
+    "example": "La palabra \"interrogativo\" significa \"interrogative\" en inglés.",
+    "exampleTranslation": "The word \"interrogativo\" means \"interrogative\" in English."
+  },
+  "interrumpir": {
+    "phonetic": "/interumpˈiɾ/",
+    "example": "El verbo \"interrumpir\" significa \"to suspend or to interrupt\" en inglés.",
+    "exampleTranslation": "The verb \"interrumpir\" means \"to suspend or to interrupt\" in English."
+  },
+  "introducirse": {
+    "phonetic": "/intɾoðusˈiɾse/",
+    "example": "El verbo \"introducirse\" significa \"to enter or to get into\" en inglés.",
+    "exampleTranslation": "The verb \"introducirse\" means \"to enter or to get into\" in English."
+  },
+  "jubilado": {
+    "phonetic": "/xuβilaðo/",
+    "example": "La palabra \"jubilado\" significa \"retired\" en inglés.",
+    "exampleTranslation": "The word \"jubilado\" means \"retired\" in English."
+  },
+  "jugar": {
+    "phonetic": "/xuɡˈaɾ/",
+    "example": "El verbo \"jugar\" significa \"to play\" en inglés.",
+    "exampleTranslation": "The verb \"jugar\" means \"to play\" in English."
+  },
+  "juntar": {
+    "phonetic": "/xuntˈaɾ/",
+    "example": "El verbo \"juntar\" significa \"to collect or to put together\" en inglés.",
+    "exampleTranslation": "The verb \"juntar\" means \"to collect or to put together\" in English."
+  },
+  "junto": {
+    "phonetic": "/xˈunto/",
+    "example": "La palabra \"junto\" significa \"nearby or together\" en inglés.",
+    "exampleTranslation": "The word \"junto\" means \"nearby or together\" in English."
+  },
+  "la abreviatura": {
+    "phonetic": "/la aβɾeβiatˈuɾa/",
+    "example": "Hablamos sobre la abreviatura en clase.",
+    "exampleTranslation": "We talked about the abbreviation in class."
+  },
+  "la abundancia": {
+    "phonetic": "/la aβundˈansia/",
+    "example": "Hablamos sobre la abundancia en clase.",
+    "exampleTranslation": "We talked about the abundance or plenty in class."
+  },
+  "la aclaración": {
+    "phonetic": "/la aklaɾasiˈon/",
+    "example": "Hablamos sobre la aclaración en clase.",
+    "exampleTranslation": "We talked about the clarification or explanation in class."
+  },
+  "la adquisición": {
+    "phonetic": "/la adkisisiˈon/",
+    "example": "Hablamos sobre la adquisición en clase.",
+    "exampleTranslation": "We talked about the purchase or acquisition in class."
+  },
+  "la aflicción": {
+    "phonetic": "/la afliksiˈon/",
+    "example": "Hablamos sobre la aflicción en clase.",
+    "exampleTranslation": "We talked about the affliction or grief in class."
+  },
+  "la agencia": {
+    "phonetic": "/la axensia/",
+    "example": "Hablamos sobre la agencia en clase.",
+    "exampleTranslation": "We talked about the agency in class."
+  },
+  "la alegría": {
+    "phonetic": "/la aleɡɾˈia/",
+    "example": "Hablamos sobre la alegría en clase.",
+    "exampleTranslation": "We talked about the happiness or joy in class."
+  },
+  "la almohada": {
+    "phonetic": "/la almoˈaða/",
+    "example": "Hablamos sobre la almohada en clase.",
+    "exampleTranslation": "We talked about the pillow in class."
+  },
+  "la amistad": {
+    "phonetic": "/la amistˈað/",
+    "example": "Hablamos sobre la amistad en clase.",
+    "exampleTranslation": "We talked about the friendship in class."
+  },
+  "la angustia": {
+    "phonetic": "/la anɡˈustia/",
+    "example": "Hablamos sobre la angustia en clase.",
+    "exampleTranslation": "We talked about the anxiety or distress in class."
+  },
+  "la aspiradora": {
+    "phonetic": "/la aspiɾaðˈoɾa/",
+    "example": "Hablamos sobre la aspiradora en clase.",
+    "exampleTranslation": "We talked about the vacuum in class."
+  },
+  "la atención": {
+    "phonetic": "/la atensiˈon/",
+    "example": "Hablamos sobre la atención en clase.",
+    "exampleTranslation": "We talked about the attention in class."
+  },
+  "la baja": {
+    "phonetic": "/la βˈaxa/",
+    "example": "Hablamos sobre la baja en clase.",
+    "exampleTranslation": "We talked about the drop in class."
+  },
+  "la base": {
+    "phonetic": "/la βˈase/",
+    "example": "Hablamos sobre la base en clase.",
+    "exampleTranslation": "We talked about the basis or foundation in class."
+  },
+  "la basura": {
+    "phonetic": "/la βasˈuɾa/",
+    "example": "Hablamos sobre la basura en clase.",
+    "exampleTranslation": "We talked about the garbage or trash in class."
+  },
+  "la bañera": {
+    "phonetic": "/la βaɲˈeɾa/",
+    "example": "Hablamos sobre la bañera en clase.",
+    "exampleTranslation": "We talked about the bathtub in class."
+  },
+  "la boca": {
+    "phonetic": "/la βˈoka/",
+    "example": "Hablamos sobre la boca en clase.",
+    "exampleTranslation": "We talked about the mouth in class."
+  },
+  "la boda": {
+    "phonetic": "/la βˈoða/",
+    "example": "Hablamos sobre la boda en clase.",
+    "exampleTranslation": "We talked about the wedding in class."
+  },
+  "la bufanda": {
+    "phonetic": "/la βufˈanda/",
+    "example": "Hablamos sobre la bufanda en clase.",
+    "exampleTranslation": "We talked about the scarf in class."
+  },
+  "la butaca": {
+    "phonetic": "/la βutˈaka/",
+    "example": "Hablamos sobre la butaca en clase.",
+    "exampleTranslation": "We talked about the armchair in class."
+  },
+  "la cabeza": {
+    "phonetic": "/la kaβˈesa/",
+    "example": "Hablamos sobre la cabeza en clase.",
+    "exampleTranslation": "We talked about the head in class."
+  },
+  "la calidad": {
+    "phonetic": "/la kaliðˈað/",
+    "example": "Hablamos sobre la calidad en clase.",
+    "exampleTranslation": "We talked about the quality or status in class."
+  },
+  "la cantidad": {
+    "phonetic": "/la kantiðˈað/",
+    "example": "Hablamos sobre la cantidad en clase.",
+    "exampleTranslation": "We talked about the number or quantity in class."
+  },
+  "la carta": {
+    "phonetic": "/la kˈaɾta/",
+    "example": "Hablamos sobre la carta en clase.",
+    "exampleTranslation": "We talked about the letter or menu in class."
+  },
+  "la cartulina": {
+    "phonetic": "/la kaɾtulˈina/",
+    "example": "Hablamos sobre la cartulina en clase.",
+    "exampleTranslation": "We talked about the poster board in class."
+  },
+  "la catedral": {
+    "phonetic": "/la katedɾˈal/",
+    "example": "Hablamos sobre la catedral en clase.",
+    "exampleTranslation": "We talked about the cathedral in class."
+  },
+  "la causa": {
+    "phonetic": "/la kˈausa/",
+    "example": "Hablamos sobre la causa en clase.",
+    "exampleTranslation": "We talked about the cause in class."
+  },
+  "la cintura": {
+    "phonetic": "/la sintˈuɾa/",
+    "example": "Hablamos sobre la cintura en clase.",
+    "exampleTranslation": "We talked about the waist in class."
+  },
+  "la claridad": {
+    "phonetic": "/la klaɾiðˈað/",
+    "example": "Hablamos sobre la claridad en clase.",
+    "exampleTranslation": "We talked about the clarity or light in class."
+  },
+  "la clave": {
+    "phonetic": "/la klaβe/",
+    "example": "Hablamos sobre la clave en clase.",
+    "exampleTranslation": "We talked about the code or key in class."
+  },
+  "la columna": {
+    "phonetic": "/la kolˈumna/",
+    "example": "Hablamos sobre la columna en clase.",
+    "exampleTranslation": "We talked about the column in class."
+  },
+  "la comisaría": {
+    "phonetic": "/la komisaɾˈia/",
+    "example": "Hablamos sobre la comisaría en clase.",
+    "exampleTranslation": "We talked about the police station in class."
+  },
+  "la comparación": {
+    "phonetic": "/la kompaɾasiˈon/",
+    "example": "Hablamos sobre la comparación en clase.",
+    "exampleTranslation": "We talked about the comparison in class."
+  },
+  "la comunidad": {
+    "phonetic": "/la komuniðˈað/",
+    "example": "Hablamos sobre la comunidad en clase.",
+    "exampleTranslation": "We talked about the community in class."
+  },
+  "la concordancia": {
+    "phonetic": "/la konkoɾdˈansia/",
+    "example": "Hablamos sobre la concordancia en clase.",
+    "exampleTranslation": "We talked about the concord or agreement in class."
+  },
+  "la confianza": {
+    "phonetic": "/la konfˈiansa/",
+    "example": "Hablamos sobre la confianza en clase.",
+    "exampleTranslation": "We talked about the confidence or trust in class."
+  },
+  "la construcción": {
+    "phonetic": "/la konstɾuksiˈon/",
+    "example": "Hablamos sobre la construcción en clase.",
+    "exampleTranslation": "We talked about the building or construction in class."
+  },
+  "la contaminación": {
+    "phonetic": "/la kontaminasiˈon/",
+    "example": "Hablamos sobre la contaminación en clase.",
+    "exampleTranslation": "We talked about the contamination or pollution in class."
+  },
+  "la corriente": {
+    "phonetic": "/la korˈiente/",
+    "example": "Hablamos sobre la corriente en clase.",
+    "exampleTranslation": "We talked about the current in class."
+  },
+  "la cortina": {
+    "phonetic": "/la koɾtˈina/",
+    "example": "Hablamos sobre la cortina en clase.",
+    "exampleTranslation": "We talked about the curtain in class."
+  },
+  "la costumbre": {
+    "phonetic": "/la kostˈumbɾe/",
+    "example": "Hablamos sobre la costumbre en clase.",
+    "exampleTranslation": "We talked about the custom or habit in class."
+  },
+  "la costura": {
+    "phonetic": "/la kostˈuɾa/",
+    "example": "Hablamos sobre la costura en clase.",
+    "exampleTranslation": "We talked about the sewing in class."
+  },
+  "la cuelga": {
+    "phonetic": "/la kˈuelɡa/",
+    "example": "Hablamos sobre la cuelga en clase.",
+    "exampleTranslation": "We talked about the hanging in class."
+  },
+  "la despedida": {
+    "phonetic": "/la ðespeðˈiða/",
+    "example": "Hablamos sobre la despedida en clase.",
+    "exampleTranslation": "We talked about the farewell or goodbye in class."
+  },
+  "la disminución": {
+    "phonetic": "/la ðisminusiˈon/",
+    "example": "Hablamos sobre la disminución en clase.",
+    "exampleTranslation": "We talked about the reduction or decrease in class."
+  },
+  "la elaboración": {
+    "phonetic": "/la elaβoɾasiˈon/",
+    "example": "Hablamos sobre la elaboración en clase.",
+    "exampleTranslation": "We talked about the making, manufacturing, or production in class."
+  },
+  "la elevación": {
+    "phonetic": "/la eleβasiˈon/",
+    "example": "Hablamos sobre la elevación en clase.",
+    "exampleTranslation": "We talked about the elevation in class."
+  },
+  "la empresa": {
+    "phonetic": "/la empɾˈesa/",
+    "example": "Hablamos sobre la empresa en clase.",
+    "exampleTranslation": "We talked about the company in class."
+  },
+  "la enseñanza": {
+    "phonetic": "/la enseɲˈansa/",
+    "example": "Hablamos sobre la enseñanza en clase.",
+    "exampleTranslation": "We talked about the education in class."
+  },
+  "la escultura": {
+    "phonetic": "/la eskultˈuɾa/",
+    "example": "Hablamos sobre la escultura en clase.",
+    "exampleTranslation": "We talked about the sculpture in class."
+  },
+  "la esmeralda": {
+    "phonetic": "/la esmeɾˈalda/",
+    "example": "Hablamos sobre la esmeralda en clase.",
+    "exampleTranslation": "We talked about the emerald in class."
+  },
+  "la esperanza": {
+    "phonetic": "/la espeɾˈansa/",
+    "example": "Hablamos sobre la esperanza en clase.",
+    "exampleTranslation": "We talked about the hope in class."
+  },
+  "la estancia": {
+    "phonetic": "/la estˈansia/",
+    "example": "Hablamos sobre la estancia en clase.",
+    "exampleTranslation": "We talked about the stay in class."
+  },
+  "la estructura": {
+    "phonetic": "/la estɾuktˈuɾa/",
+    "example": "Hablamos sobre la estructura en clase.",
+    "exampleTranslation": "We talked about the structure in class."
+  },
+  "la existencia": {
+    "phonetic": "/la eksistensia/",
+    "example": "Hablamos sobre la existencia en clase.",
+    "exampleTranslation": "We talked about the life or existence in class."
+  },
+  "la exposición": {
+    "phonetic": "/la eksposisiˈon/",
+    "example": "Hablamos sobre la exposición en clase.",
+    "exampleTranslation": "We talked about the exhibition or exposition in class."
+  },
+  "la extensión": {
+    "phonetic": "/la ekstensiˈon/",
+    "example": "Hablamos sobre la extensión en clase.",
+    "exampleTranslation": "We talked about the area or extension in class."
+  },
+  "la falta": {
+    "phonetic": "/la fˈalta/",
+    "example": "Hablamos sobre la falta en clase.",
+    "exampleTranslation": "We talked about the absence or lack in class."
+  },
+  "la farmacia": {
+    "phonetic": "/la faɾmˈasia/",
+    "example": "Hablamos sobre la farmacia en clase.",
+    "exampleTranslation": "We talked about the pharmacy in class."
+  },
+  "la felicidad": {
+    "phonetic": "/la felisiðˈað/",
+    "example": "Hablamos sobre la felicidad en clase.",
+    "exampleTranslation": "We talked about the happiness in class."
+  },
+  "la frase": {
+    "phonetic": "/la fɾˈase/",
+    "example": "Hablamos sobre la frase en clase.",
+    "exampleTranslation": "We talked about the phrase or sentence in class."
+  },
+  "la fresca": {
+    "phonetic": "/la fɾˈeska/",
+    "example": "Hablamos sobre la fresca en clase.",
+    "exampleTranslation": "We talked about the cool or fresh air in class."
+  },
+  "la frontera": {
+    "phonetic": "/la fɾontˈeɾa/",
+    "example": "Hablamos sobre la frontera en clase.",
+    "exampleTranslation": "We talked about the frontier or border in class."
+  },
+  "la física": {
+    "phonetic": "/la fˈisika/",
+    "example": "Hablamos sobre la física en clase.",
+    "exampleTranslation": "We talked about the physics in class."
+  },
+  "la gastronomía": {
+    "phonetic": "/la ɡastɾonomˈia/",
+    "example": "Hablamos sobre la gastronomía en clase.",
+    "exampleTranslation": "We talked about the gastronomy in class."
+  },
+  "la golosina": {
+    "phonetic": "/la ɡolosˈina/",
+    "example": "Hablamos sobre la golosina en clase.",
+    "exampleTranslation": "We talked about the candy in class."
+  },
+  "la gorra": {
+    "phonetic": "/la ɡˈora/",
+    "example": "Hablamos sobre la gorra en clase.",
+    "exampleTranslation": "We talked about the cap in class."
+  },
+  "la guerra": {
+    "phonetic": "/la ɡera/",
+    "example": "Hablamos sobre la guerra en clase.",
+    "exampleTranslation": "We talked about the war in class."
+  },
+  "la habitación": {
+    "phonetic": "/la aβitasiˈon/",
+    "example": "Hablamos sobre la habitación en clase.",
+    "exampleTranslation": "We talked about the room or bedroom in class."
+  },
+  "la hierba": {
+    "phonetic": "/la ˈieɾba/",
+    "example": "Hablamos sobre la hierba en clase.",
+    "exampleTranslation": "We talked about the grass or herb in class."
+  },
+  "la iglesia": {
+    "phonetic": "/la iɡlˈesia/",
+    "example": "Hablamos sobre la iglesia en clase.",
+    "exampleTranslation": "We talked about the church in class."
+  },
+  "la ilusión": {
+    "phonetic": "/la ilusiˈon/",
+    "example": "Hablamos sobre la ilusión en clase.",
+    "exampleTranslation": "We talked about the illusion or hope in class."
+  },
+  "la inferioridad": {
+    "phonetic": "/la infeɾioɾiðˈað/",
+    "example": "Hablamos sobre la inferioridad en clase.",
+    "exampleTranslation": "We talked about the inferiority in class."
+  },
+  "la informática": {
+    "phonetic": "/la infoɾmˈatika/",
+    "example": "Hablamos sobre la informática en clase.",
+    "exampleTranslation": "We talked about the information technology or computing in class."
+  },
+  "la intención": {
+    "phonetic": "/la intensiˈon/",
+    "example": "Hablamos sobre la intención en clase.",
+    "exampleTranslation": "We talked about the intention or motive in class."
+  },
+  "la isla": {
+    "phonetic": "/la ˈisla/",
+    "example": "Hablamos sobre la isla en clase.",
+    "exampleTranslation": "We talked about the island in class."
+  },
+  "la lavadora": {
+    "phonetic": "/la laβaðˈoɾa/",
+    "example": "Hablamos sobre la lavadora en clase.",
+    "exampleTranslation": "We talked about the washing machine in class."
+  },
+  "la lengua materna": {
+    "phonetic": "/la lenɡua matˈeɾna/",
+    "example": "Hablamos sobre la lengua materna en clase.",
+    "exampleTranslation": "We talked about the mother tongue in class."
+  },
+  "la letra": {
+    "phonetic": "/la lˈetɾa/",
+    "example": "Hablamos sobre la letra en clase.",
+    "exampleTranslation": "We talked about the letter in class."
+  },
+  "la literatura": {
+    "phonetic": "/la liteɾatˈuɾa/",
+    "example": "Hablamos sobre la literatura en clase.",
+    "exampleTranslation": "We talked about the literature in class."
+  },
+  "la longitud": {
+    "phonetic": "/la lonxitˈuð/",
+    "example": "Hablamos sobre la longitud en clase.",
+    "exampleTranslation": "We talked about the length in class."
+  },
+  "la luna": {
+    "phonetic": "/la lˈuna/",
+    "example": "Hablamos sobre la luna en clase.",
+    "exampleTranslation": "We talked about the moon in class."
+  },
+  "la luz": {
+    "phonetic": "/la lˈus/",
+    "example": "Hablamos sobre la luz en clase.",
+    "exampleTranslation": "We talked about the light in class."
+  },
+  "la lámpara": {
+    "phonetic": "/la lampaɾa/",
+    "example": "Hablamos sobre la lámpara en clase.",
+    "exampleTranslation": "We talked about the light bulb or lamp in class."
+  },
+  "la manta": {
+    "phonetic": "/la mˈanta/",
+    "example": "Hablamos sobre la manta en clase.",
+    "exampleTranslation": "We talked about the blanket in class."
+  },
+  "la maquinaria": {
+    "phonetic": "/la makinˈaɾia/",
+    "example": "Hablamos sobre la maquinaria en clase.",
+    "exampleTranslation": "We talked about the mechanism or machinery in class."
+  },
+  "la marca": {
+    "phonetic": "/la mˈaɾka/",
+    "example": "Hablamos sobre la marca en clase.",
+    "exampleTranslation": "We talked about the mark in class."
+  },
+  "la mayoría": {
+    "phonetic": "/la maʝoɾˈia/",
+    "example": "Hablamos sobre la mayoría en clase.",
+    "exampleTranslation": "We talked about the most or majority in class."
+  },
+  "la mentira": {
+    "phonetic": "/la mentˈiɾa/",
+    "example": "Hablamos sobre la mentira en clase.",
+    "exampleTranslation": "We talked about the lie in class."
+  },
+  "la mitad": {
+    "phonetic": "/la mitˈað/",
+    "example": "Hablamos sobre la mitad en clase.",
+    "exampleTranslation": "We talked about the middle or half in class."
+  },
+  "la moda": {
+    "phonetic": "/la mˈoða/",
+    "example": "Hablamos sobre la moda en clase.",
+    "exampleTranslation": "We talked about the fashion in class."
+  },
+  "la montaña": {
+    "phonetic": "/la montˈaɲa/",
+    "example": "Hablamos sobre la montaña en clase.",
+    "exampleTranslation": "We talked about the mountain in class."
+  },
+  "la moto": {
+    "phonetic": "/la mˈoto/",
+    "example": "Hablamos sobre la moto en clase.",
+    "exampleTranslation": "We talked about the motorcycle in class."
+  },
+  "la multinacional": {
+    "phonetic": "/la multinasionˈal/",
+    "example": "Hablamos sobre la multinacional en clase.",
+    "exampleTranslation": "We talked about the multinational company in class."
+  },
+  "la máquina": {
+    "phonetic": "/la mˈakina/",
+    "example": "Hablamos sobre la máquina en clase.",
+    "exampleTranslation": "We talked about the machine in class."
+  },
+  "la nacionalidad": {
+    "phonetic": "/la nasionaliðˈað/",
+    "example": "Hablamos sobre la nacionalidad en clase.",
+    "exampleTranslation": "We talked about the nationality in class."
+  },
+  "la natación": {
+    "phonetic": "/la natasiˈon/",
+    "example": "Hablamos sobre la natación en clase.",
+    "exampleTranslation": "We talked about the swimming in class."
+  },
+  "la negrita": {
+    "phonetic": "/la neɡɾˈita/",
+    "example": "Hablamos sobre la negrita en clase.",
+    "exampleTranslation": "We talked about the bold or bold type in class."
+  },
+  "la novela": {
+    "phonetic": "/la noβela/",
+    "example": "Hablamos sobre la novela en clase.",
+    "exampleTranslation": "We talked about the novel in class."
+  },
+  "la nube": {
+    "phonetic": "/la nˈuβe/",
+    "example": "Hablamos sobre la nube en clase.",
+    "exampleTranslation": "We talked about the cloud in class."
+  },
+  "la obligación": {
+    "phonetic": "/la oβliɡasiˈon/",
+    "example": "Hablamos sobre la obligación en clase.",
+    "exampleTranslation": "We talked about the obligation in class."
+  },
+  "la obra": {
+    "phonetic": "/la ˈoβɾa/",
+    "example": "Hablamos sobre la obra en clase.",
+    "exampleTranslation": "We talked about the deed or work in class."
+  },
+  "la opción": {
+    "phonetic": "/la opsiˈon/",
+    "example": "Hablamos sobre la opción en clase.",
+    "exampleTranslation": "We talked about the right or option in class."
+  },
+  "la ortografía": {
+    "phonetic": "/la oɾtoɡɾafˈia/",
+    "example": "Hablamos sobre la ortografía en clase.",
+    "exampleTranslation": "We talked about the orthography or spelling in class."
+  },
+  "la pantalla": {
+    "phonetic": "/la pantˈaʝa/",
+    "example": "Hablamos sobre la pantalla en clase.",
+    "exampleTranslation": "We talked about the screen in class."
+  },
+  "la papelera": {
+    "phonetic": "/la papelˈeɾa/",
+    "example": "Hablamos sobre la papelera en clase.",
+    "exampleTranslation": "We talked about the wastepaper basket in class."
+  },
+  "la papelería": {
+    "phonetic": "/la papeleɾˈia/",
+    "example": "Hablamos sobre la papelería en clase.",
+    "exampleTranslation": "We talked about the stationery store in class."
+  },
+  "la parada": {
+    "phonetic": "/la paɾˈaða/",
+    "example": "Hablamos sobre la parada en clase.",
+    "exampleTranslation": "We talked about the station or stop in class."
+  },
+  "la pared": {
+    "phonetic": "/la paɾˈeð/",
+    "example": "Hablamos sobre la pared en clase.",
+    "exampleTranslation": "We talked about the wall in class."
+  },
+  "la pareja": {
+    "phonetic": "/la paɾˈexa/",
+    "example": "Hablamos sobre la pareja en clase.",
+    "exampleTranslation": "We talked about the partner or couple in class."
+  },
+  "la paz": {
+    "phonetic": "/la pˈas/",
+    "example": "Hablamos sobre la paz en clase.",
+    "exampleTranslation": "We talked about the peace in class."
+  },
+  "la peluquería": {
+    "phonetic": "/la pelukeɾˈia/",
+    "example": "Hablamos sobre la peluquería en clase.",
+    "exampleTranslation": "We talked about the hairdressing in class."
+  },
+  "la percha": {
+    "phonetic": "/la pˈeɾt͡ʃa/",
+    "example": "Hablamos sobre la percha en clase.",
+    "exampleTranslation": "We talked about the hanger in class."
+  },
+  "la pertenencia": {
+    "phonetic": "/la peɾtenensia/",
+    "example": "Hablamos sobre la pertenencia en clase.",
+    "exampleTranslation": "We talked about the property, belonging, or membership in class."
+  },
+  "la petición": {
+    "phonetic": "/la petisiˈon/",
+    "example": "Hablamos sobre la petición en clase.",
+    "exampleTranslation": "We talked about the petition or request in class."
+  },
+  "la pierna": {
+    "phonetic": "/la pˈieɾna/",
+    "example": "Hablamos sobre la pierna en clase.",
+    "exampleTranslation": "We talked about the leg in class."
+  },
+  "la pieza": {
+    "phonetic": "/la pˈiesa/",
+    "example": "Hablamos sobre la pieza en clase.",
+    "exampleTranslation": "We talked about the piece in class."
+  },
+  "la piscina": {
+    "phonetic": "/la pissˈina/",
+    "example": "Hablamos sobre la piscina en clase.",
+    "exampleTranslation": "We talked about the swimming pool in class."
+  },
+  "la plancha": {
+    "phonetic": "/la plant͡ʃa/",
+    "example": "Hablamos sobre la plancha en clase.",
+    "exampleTranslation": "We talked about the iron in class."
+  },
+  "la planta": {
+    "phonetic": "/la planta/",
+    "example": "Hablamos sobre la planta en clase.",
+    "exampleTranslation": "We talked about the plant in class."
+  },
+  "la plata": {
+    "phonetic": "/la plata/",
+    "example": "Hablamos sobre la plata en clase.",
+    "exampleTranslation": "We talked about the silver in class."
+  },
+  "la población": {
+    "phonetic": "/la poβlasiˈon/",
+    "example": "Hablamos sobre la población en clase.",
+    "exampleTranslation": "We talked about the population in class."
+  },
+  "la policía": {
+    "phonetic": "/la polisˈia/",
+    "example": "Hablamos sobre la policía en clase.",
+    "exampleTranslation": "We talked about the police in class."
+  },
+  "la posesión": {
+    "phonetic": "/la posesiˈon/",
+    "example": "Hablamos sobre la posesión en clase.",
+    "exampleTranslation": "We talked about the possession in class."
+  },
+  "la preferencia": {
+    "phonetic": "/la pɾefeɾensia/",
+    "example": "Hablamos sobre la preferencia en clase.",
+    "exampleTranslation": "We talked about the priority or preference in class."
+  },
+  "la presencia": {
+    "phonetic": "/la pɾesensia/",
+    "example": "Hablamos sobre la presencia en clase.",
+    "exampleTranslation": "We talked about the presence in class."
+  },
+  "la presentación": {
+    "phonetic": "/la pɾesentasiˈon/",
+    "example": "Hablamos sobre la presentación en clase.",
+    "exampleTranslation": "We talked about the introduction or presentation in class."
+  },
+  "la profesión": {
+    "phonetic": "/la pɾofesiˈon/",
+    "example": "Hablamos sobre la profesión en clase.",
+    "exampleTranslation": "We talked about the occupation or profession in class."
+  },
+  "la rama": {
+    "phonetic": "/la rˈama/",
+    "example": "Hablamos sobre la rama en clase.",
+    "exampleTranslation": "We talked about the branch in class."
+  },
+  "la razón": {
+    "phonetic": "/la rasˈon/",
+    "example": "Hablamos sobre la razón en clase.",
+    "exampleTranslation": "We talked about the reason in class."
+  },
+  "la regla": {
+    "phonetic": "/la rˈeɡla/",
+    "example": "Hablamos sobre la regla en clase.",
+    "exampleTranslation": "We talked about the ruler in class."
+  },
+  "la relación": {
+    "phonetic": "/la relasiˈon/",
+    "example": "Hablamos sobre la relación en clase.",
+    "exampleTranslation": "We talked about the connection or relationship in class."
+  },
+  "la repetición": {
+    "phonetic": "/la repetisiˈon/",
+    "example": "Hablamos sobre la repetición en clase.",
+    "exampleTranslation": "We talked about the repeat or repetition in class."
+  },
+  "la representación": {
+    "phonetic": "/la repɾesentasiˈon/",
+    "example": "Hablamos sobre la representación en clase.",
+    "exampleTranslation": "We talked about the representation in class."
+  },
+  "la respuesta": {
+    "phonetic": "/la respˈuesta/",
+    "example": "Hablamos sobre la respuesta en clase.",
+    "exampleTranslation": "We talked about the response in class."
+  },
+  "la roca": {
+    "phonetic": "/la rˈoka/",
+    "example": "Hablamos sobre la roca en clase.",
+    "exampleTranslation": "We talked about the rock in class."
+  },
+  "la rutina": {
+    "phonetic": "/la rutˈina/",
+    "example": "Hablamos sobre la rutina en clase.",
+    "exampleTranslation": "We talked about the routine in class."
+  },
+  "la sala de estar": {
+    "phonetic": "/la sˈala de estˈaɾ/",
+    "example": "Hablamos sobre la sala de estar en clase.",
+    "exampleTranslation": "We talked about the living room in class."
+  },
+  "la salud": {
+    "phonetic": "/la salˈuð/",
+    "example": "Hablamos sobre la salud en clase.",
+    "exampleTranslation": "We talked about the health in class."
+  },
+  "la sanidad": {
+    "phonetic": "/la saniðˈað/",
+    "example": "Hablamos sobre la sanidad en clase.",
+    "exampleTranslation": "We talked about the health or public health in class."
+  },
+  "la sed": {
+    "phonetic": "/la sˈeð/",
+    "example": "Hablamos sobre la sed en clase.",
+    "exampleTranslation": "We talked about the thirst in class."
+  },
+  "la seguridad": {
+    "phonetic": "/la seɡuɾiðˈað/",
+    "example": "Hablamos sobre la seguridad en clase.",
+    "exampleTranslation": "We talked about the security or safety in class."
+  },
+  "la sensación": {
+    "phonetic": "/la sensasiˈon/",
+    "example": "Hablamos sobre la sensación en clase.",
+    "exampleTranslation": "We talked about the feeling or sensation in class."
+  },
+  "la seriedad": {
+    "phonetic": "/la seɾieðˈað/",
+    "example": "Hablamos sobre la seriedad en clase.",
+    "exampleTranslation": "We talked about the seriousness in class."
+  },
+  "la similitud": {
+    "phonetic": "/la similitˈuð/",
+    "example": "Hablamos sobre la similitud en clase.",
+    "exampleTranslation": "We talked about the similarity in class."
+  },
+  "la sobrina": {
+    "phonetic": "/la soβɾˈina/",
+    "example": "Hablamos sobre la sobrina en clase.",
+    "exampleTranslation": "We talked about the niece in class."
+  },
+  "la sonrisa": {
+    "phonetic": "/la sonrˈisa/",
+    "example": "Hablamos sobre la sonrisa en clase.",
+    "exampleTranslation": "We talked about the smile in class."
+  },
+  "la superficie": {
+    "phonetic": "/la supeɾfˈisie/",
+    "example": "Hablamos sobre la superficie en clase.",
+    "exampleTranslation": "We talked about the area or surface in class."
+  },
+  "la superioridad": {
+    "phonetic": "/la supeɾioɾiðˈað/",
+    "example": "Hablamos sobre la superioridad en clase.",
+    "exampleTranslation": "We talked about the superiority in class."
+  },
+  "la supervivencia": {
+    "phonetic": "/la supeɾbiβensia/",
+    "example": "Hablamos sobre la supervivencia en clase.",
+    "exampleTranslation": "We talked about the survival in class."
+  },
+  "la tarjeta": {
+    "phonetic": "/la taɾxˈeta/",
+    "example": "Hablamos sobre la tarjeta en clase.",
+    "exampleTranslation": "We talked about the card in class."
+  },
+  "la tela": {
+    "phonetic": "/la tela/",
+    "example": "Hablamos sobre la tela en clase.",
+    "exampleTranslation": "We talked about the fabric in class."
+  },
+  "la tendencia": {
+    "phonetic": "/la tendensia/",
+    "example": "Hablamos sobre la tendencia en clase.",
+    "exampleTranslation": "We talked about the tendency or trend in class."
+  },
+  "la tierra": {
+    "phonetic": "/la tˈiera/",
+    "example": "Hablamos sobre la tierra en clase.",
+    "exampleTranslation": "We talked about the earth or land in class."
+  },
+  "la tranquilidad": {
+    "phonetic": "/la tɾankiliðˈað/",
+    "example": "Hablamos sobre la tranquilidad en clase.",
+    "exampleTranslation": "We talked about the calm or peace in class."
+  },
+  "la tristeza": {
+    "phonetic": "/la tɾistˈesa/",
+    "example": "Hablamos sobre la tristeza en clase.",
+    "exampleTranslation": "We talked about the sadness in class."
+  },
+  "la unidad": {
+    "phonetic": "/la uniðˈað/",
+    "example": "Hablamos sobre la unidad en clase.",
+    "exampleTranslation": "We talked about the unit in class."
+  },
+  "la vela": {
+    "phonetic": "/la βela/",
+    "example": "Hablamos sobre la vela en clase.",
+    "exampleTranslation": "We talked about the candle in class."
+  },
+  "la venta": {
+    "phonetic": "/la βenta/",
+    "example": "Hablamos sobre la venta en clase.",
+    "exampleTranslation": "We talked about the sale in class."
+  },
+  "la ventaja": {
+    "phonetic": "/la βentˈaxa/",
+    "example": "Hablamos sobre la ventaja en clase.",
+    "exampleTranslation": "We talked about the advantage in class."
+  },
+  "la verdad": {
+    "phonetic": "/la βeɾdˈað/",
+    "example": "Hablamos sobre la verdad en clase.",
+    "exampleTranslation": "We talked about the fact, truth, or right in class."
+  },
+  "la vestimenta": {
+    "phonetic": "/la βestimenta/",
+    "example": "Hablamos sobre la vestimenta en clase.",
+    "exampleTranslation": "We talked about the clothes in class."
+  },
+  "la vida": {
+    "phonetic": "/la βˈiða/",
+    "example": "Hablamos sobre la vida en clase.",
+    "exampleTranslation": "We talked about the life in class."
+  },
+  "la vista": {
+    "phonetic": "/la βˈista/",
+    "example": "Hablamos sobre la vista en clase.",
+    "exampleTranslation": "We talked about the sight or view in class."
+  },
+  "la vivienda": {
+    "phonetic": "/la βiβˈienda/",
+    "example": "Hablamos sobre la vivienda en clase.",
+    "exampleTranslation": "We talked about the housing or house in class."
+  },
+  "la vía": {
+    "phonetic": "/la βˈia/",
+    "example": "Hablamos sobre la vía en clase.",
+    "exampleTranslation": "We talked about the road or route in class."
+  },
+  "la zona": {
+    "phonetic": "/la sˈona/",
+    "example": "Hablamos sobre la zona en clase.",
+    "exampleTranslation": "We talked about the area in class."
+  },
+  "la época": {
+    "phonetic": "/la ˈepoka/",
+    "example": "Hablamos sobre la época en clase.",
+    "exampleTranslation": "We talked about the period in class."
+  },
+  "laminar": {
+    "phonetic": "/laminˈaɾ/",
+    "example": "El verbo \"laminar\" significa \"to laminate\" en inglés.",
+    "exampleTranslation": "The verb \"laminar\" means \"to laminate\" in English."
+  },
+  "largo": {
+    "phonetic": "/laɾɡo/",
+    "example": "La palabra \"largo\" significa \"long\" en inglés.",
+    "exampleTranslation": "The word \"largo\" means \"long\" in English."
+  },
+  "las ganas": {
+    "phonetic": "/las ɡˈanas/",
+    "example": "Hablamos sobre las ganas en clase.",
+    "exampleTranslation": "We talked about the desire in class."
+  },
+  "las instalaciones": {
+    "phonetic": "/las instalasˈiones/",
+    "example": "Hablamos sobre las instalaciones en clase.",
+    "exampleTranslation": "We talked about the installations or facilities in class."
+  },
+  "las letras": {
+    "phonetic": "/las lˈetɾas/",
+    "example": "Hablamos sobre las letras en clase.",
+    "exampleTranslation": "We talked about the arts in class."
+  },
+  "las prácticas": {
+    "phonetic": "/las pɾˈaktikas/",
+    "example": "Hablamos sobre las prácticas en clase.",
+    "exampleTranslation": "We talked about the internship in class."
+  },
+  "lejos de": {
+    "phonetic": "/lˈexos de/",
+    "example": "Mi casa está lejos de la estación.",
+    "exampleTranslation": "My house is far from the station."
+  },
+  "lentamente": {
+    "phonetic": "/lentamente/",
+    "example": "Hazlo lentamente, por favor.",
+    "exampleTranslation": "Do it slowly, please."
+  },
+  "listo": {
+    "phonetic": "/lˈisto/",
+    "example": "La palabra \"listo\" significa \"clever, ready, or smart\" en inglés.",
+    "exampleTranslation": "The word \"listo\" means \"clever, ready, or smart\" in English."
+  },
+  "llamarse": {
+    "phonetic": "/ʝamˈaɾse/",
+    "example": "El verbo \"llamarse\" significa \"to be called\" en inglés.",
+    "exampleTranslation": "The verb \"llamarse\" means \"to be called\" in English."
+  },
+  "llegar": {
+    "phonetic": "/ʝeɡˈaɾ/",
+    "example": "El verbo \"llegar\" significa \"to arrive\" en inglés.",
+    "exampleTranslation": "The verb \"llegar\" means \"to arrive\" in English."
+  },
+  "lleno de": {
+    "phonetic": "/ʝeno de/",
+    "example": "El parque está lleno de gente.",
+    "exampleTranslation": "The park is full of people."
+  },
+  "llevar": {
+    "phonetic": "/ʝeβˈaɾ/",
+    "example": "El verbo \"llevar\" significa \"to wear, to carry, or to take\" en inglés.",
+    "exampleTranslation": "The verb \"llevar\" means \"to wear, to carry, or to take\" in English."
+  },
+  "local": {
+    "phonetic": "/lokˈal/",
+    "example": "La palabra \"local\" significa \"local\" en inglés.",
+    "exampleTranslation": "The word \"local\" means \"local\" in English."
+  },
+  "lograr": {
+    "phonetic": "/loɡɾˈaɾ/",
+    "example": "El verbo \"lograr\" significa \"to be able to or to reach\" en inglés.",
+    "exampleTranslation": "The verb \"lograr\" means \"to be able to or to reach\" in English."
+  },
+  "los complementos": {
+    "phonetic": "/los komplementos/",
+    "example": "Hablamos sobre los complementos en clase.",
+    "exampleTranslation": "We talked about the accessories in class."
+  },
+  "los datos": {
+    "phonetic": "/los ðˈatos/",
+    "example": "Hablamos sobre los datos en clase.",
+    "exampleTranslation": "We talked about the data in class."
+  },
+  "los lentes": {
+    "phonetic": "/los lentes/",
+    "example": "Hablamos sobre los lentes en clase.",
+    "exampleTranslation": "We talked about the glasses in class."
+  },
+  "los recursos": {
+    "phonetic": "/los rekˈuɾsos/",
+    "example": "Hablamos sobre los recursos en clase.",
+    "exampleTranslation": "We talked about the means in class."
+  },
+  "los sanitarios": {
+    "phonetic": "/los sanitˈaɾios/",
+    "example": "Hablamos sobre los sanitarios en clase.",
+    "exampleTranslation": "We talked about the bathroom fittings in class."
+  },
+  "los sentimientos": {
+    "phonetic": "/los sentimˈientos/",
+    "example": "Hablamos sobre los sentimientos en clase.",
+    "exampleTranslation": "We talked about the feelings in class."
+  },
+  "luego": {
+    "phonetic": "/lˈueɡo/",
+    "example": "La palabra \"luego\" significa \"later or then\" en inglés.",
+    "exampleTranslation": "The word \"luego\" means \"later or then\" in English."
+  },
+  "luminoso": {
+    "phonetic": "/luminˈoso/",
+    "example": "La palabra \"luminoso\" significa \"bright, brilliant, or light\" en inglés.",
+    "exampleTranslation": "The word \"luminoso\" means \"bright, brilliant, or light\" in English."
+  },
+  "mantener": {
+    "phonetic": "/mantenˈeɾ/",
+    "example": "El verbo \"mantener\" significa \"to maintain or to hold\" en inglés.",
+    "exampleTranslation": "The verb \"mantener\" means \"to maintain or to hold\" in English."
+  },
+  "mediante": {
+    "phonetic": "/meðˈiante/",
+    "example": "Aprendemos mediante ejemplos.",
+    "exampleTranslation": "We learn by means of examples."
+  },
+  "mejor": {
+    "phonetic": "/mexˈoɾ/",
+    "example": "La palabra \"mejor\" significa \"better\" en inglés.",
+    "exampleTranslation": "The word \"mejor\" means \"better\" in English."
+  },
+  "menos": {
+    "phonetic": "/menos/",
+    "example": "La palabra \"menos\" significa \"fewer or less\" en inglés.",
+    "exampleTranslation": "The word \"menos\" means \"fewer or less\" in English."
+  },
+  "moderno": {
+    "phonetic": "/modeɾno/",
+    "example": "La palabra \"moderno\" significa \"modern or up-to-date\" en inglés.",
+    "exampleTranslation": "The word \"moderno\" means \"modern or up-to-date\" in English."
+  },
+  "montar": {
+    "phonetic": "/montˈaɾ/",
+    "example": "El verbo \"montar\" significa \"to ride\" en inglés.",
+    "exampleTranslation": "The verb \"montar\" means \"to ride\" in English."
+  },
+  "morado": {
+    "phonetic": "/moɾˈaðo/",
+    "example": "La palabra \"morado\" significa \"purple\" en inglés.",
+    "exampleTranslation": "The word \"morado\" means \"purple\" in English."
+  },
+  "moreno": {
+    "phonetic": "/moɾeno/",
+    "example": "La palabra \"moreno\" significa \"dark-haired or dark-skinned\" en inglés.",
+    "exampleTranslation": "The word \"moreno\" means \"dark-haired or dark-skinned\" in English."
+  },
+  "morir": {
+    "phonetic": "/moɾˈiɾ/",
+    "example": "El verbo \"morir\" significa \"to die\" en inglés.",
+    "exampleTranslation": "The verb \"morir\" means \"to die\" in English."
+  },
+  "mostrar": {
+    "phonetic": "/mostɾˈaɾ/",
+    "example": "El verbo \"mostrar\" significa \"to display or to show\" en inglés.",
+    "exampleTranslation": "The verb \"mostrar\" means \"to display or to show\" in English."
+  },
+  "mover": {
+    "phonetic": "/moβˈeɾ/",
+    "example": "El verbo \"mover\" significa \"to move\" en inglés.",
+    "exampleTranslation": "The verb \"mover\" means \"to move\" in English."
+  },
+  "multinacional": {
+    "phonetic": "/multinasionˈal/",
+    "example": "La palabra \"multinacional\" significa \"multinational\" en inglés.",
+    "exampleTranslation": "The word \"multinacional\" means \"multinational\" in English."
+  },
+  "mundial": {
+    "phonetic": "/mundˈial/",
+    "example": "La palabra \"mundial\" significa \"world\" en inglés.",
+    "exampleTranslation": "The word \"mundial\" means \"world\" in English."
+  },
+  "mundialmente": {
+    "phonetic": "/mundialmente/",
+    "example": "Hazlo mundialmente, por favor.",
+    "exampleTranslation": "Do it worldwide, please."
+  },
+  "muy linda": {
+    "phonetic": "/mˈuʝ lˈinda/",
+    "example": "La expresión \"muy linda\" significa \"very pretty\" en inglés.",
+    "exampleTranslation": "The expression \"muy linda\" means \"very pretty\" in English."
+  },
+  "más": {
+    "phonetic": "/mˈas/",
+    "example": "La palabra \"más\" significa \"more or most\" en inglés.",
+    "exampleTranslation": "The word \"más\" means \"more or most\" in English."
+  },
+  "ninguno": {
+    "phonetic": "/ninɡˈuno/",
+    "example": "La palabra \"ninguno\" significa \"no one\" en inglés.",
+    "exampleTranslation": "The word \"ninguno\" means \"no one\" in English."
+  },
+  "nominado": {
+    "phonetic": "/nominˈaðo/",
+    "example": "La palabra \"nominado\" significa \"nominated\" en inglés.",
+    "exampleTranslation": "The word \"nominado\" means \"nominated\" in English."
+  },
+  "nuevo": {
+    "phonetic": "/nˈueβo/",
+    "example": "La palabra \"nuevo\" significa \"new\" en inglés.",
+    "exampleTranslation": "The word \"nuevo\" means \"new\" in English."
+  },
+  "ocasionar": {
+    "phonetic": "/okasionˈaɾ/",
+    "example": "El verbo \"ocasionar\" significa \"to cause\" en inglés.",
+    "exampleTranslation": "The verb \"ocasionar\" means \"to cause\" in English."
+  },
+  "ocupar": {
+    "phonetic": "/okupˈaɾ/",
+    "example": "El verbo \"ocupar\" significa \"to occupy, to spend, or to take\" en inglés.",
+    "exampleTranslation": "The verb \"ocupar\" means \"to occupy, to spend, or to take\" in English."
+  },
+  "ocurrir": {
+    "phonetic": "/okurˈiɾ/",
+    "example": "El verbo \"ocurrir\" significa \"to happen\" en inglés.",
+    "exampleTranslation": "The verb \"ocurrir\" means \"to happen\" in English."
+  },
+  "ofrecer": {
+    "phonetic": "/ofɾesˈeɾ/",
+    "example": "El verbo \"ofrecer\" significa \"to offer\" en inglés.",
+    "exampleTranslation": "The verb \"ofrecer\" means \"to offer\" in English."
+  },
+  "oler": {
+    "phonetic": "/olˈeɾ/",
+    "example": "El verbo \"oler\" significa \"to smell\" en inglés.",
+    "exampleTranslation": "The verb \"oler\" means \"to smell\" in English."
+  },
+  "olvidar": {
+    "phonetic": "/olbiðˈaɾ/",
+    "example": "El verbo \"olvidar\" significa \"to forget\" en inglés.",
+    "exampleTranslation": "The verb \"olvidar\" means \"to forget\" in English."
+  },
+  "opinar": {
+    "phonetic": "/opinˈaɾ/",
+    "example": "El verbo \"opinar\" significa \"to believe or to think\" en inglés.",
+    "exampleTranslation": "The verb \"opinar\" means \"to believe or to think\" in English."
+  },
+  "opuesto": {
+    "phonetic": "/opˈuesto/",
+    "example": "La palabra \"opuesto\" significa \"opposite\" en inglés.",
+    "exampleTranslation": "The word \"opuesto\" means \"opposite\" in English."
+  },
+  "ordenar": {
+    "phonetic": "/oɾdenˈaɾ/",
+    "example": "El verbo \"ordenar\" significa \"to arrange or to order\" en inglés.",
+    "exampleTranslation": "The verb \"ordenar\" means \"to arrange or to order\" in English."
+  },
+  "oscuro": {
+    "phonetic": "/oskˈuɾo/",
+    "example": "La palabra \"oscuro\" significa \"dark\" en inglés.",
+    "exampleTranslation": "The word \"oscuro\" means \"dark\" in English."
+  },
+  "otro": {
+    "phonetic": "/ˈotɾo/",
+    "example": "La palabra \"otro\" significa \"another\" en inglés.",
+    "exampleTranslation": "The word \"otro\" means \"another\" in English."
+  },
+  "paciente": {
+    "phonetic": "/pasˈiente/",
+    "example": "La palabra \"paciente\" significa \"patient\" en inglés.",
+    "exampleTranslation": "The word \"paciente\" means \"patient\" in English."
+  },
+  "parecerse": {
+    "phonetic": "/paɾesˈeɾse/",
+    "example": "El verbo \"parecerse\" significa \"to look like or to look alike\" en inglés.",
+    "exampleTranslation": "The verb \"parecerse\" means \"to look like or to look alike\" in English."
+  },
+  "parecido": {
+    "phonetic": "/paɾesˈiðo/",
+    "example": "La palabra \"parecido\" significa \"alike or similar\" en inglés.",
+    "exampleTranslation": "The word \"parecido\" means \"alike or similar\" in English."
+  },
+  "pasar": {
+    "phonetic": "/pasˈaɾ/",
+    "example": "El verbo \"pasar\" significa \"to happen or to pass\" en inglés.",
+    "exampleTranslation": "The verb \"pasar\" means \"to happen or to pass\" in English."
+  },
+  "peatonal": {
+    "phonetic": "/peatonˈal/",
+    "example": "La palabra \"peatonal\" significa \"pedestrian\" en inglés.",
+    "exampleTranslation": "The word \"peatonal\" means \"pedestrian\" in English."
+  },
+  "pedir": {
+    "phonetic": "/peðˈiɾ/",
+    "example": "El verbo \"pedir\" significa \"to order or to ask for\" en inglés.",
+    "exampleTranslation": "The verb \"pedir\" means \"to order or to ask for\" in English."
+  },
+  "peligroso": {
+    "phonetic": "/peliɡɾˈoso/",
+    "example": "La palabra \"peligroso\" significa \"risky or dangerous\" en inglés.",
+    "exampleTranslation": "The word \"peligroso\" means \"risky or dangerous\" in English."
+  },
+  "pelirrojo": {
+    "phonetic": "/pelirˈoxo/",
+    "example": "La palabra \"pelirrojo\" significa \"red-haired\" en inglés.",
+    "exampleTranslation": "The word \"pelirrojo\" means \"red-haired\" in English."
+  },
+  "pensar": {
+    "phonetic": "/pensˈaɾ/",
+    "example": "El verbo \"pensar\" significa \"to plan or to think\" en inglés.",
+    "exampleTranslation": "The verb \"pensar\" means \"to plan or to think\" in English."
+  },
+  "perdido": {
+    "phonetic": "/peɾdˈiðo/",
+    "example": "La palabra \"perdido\" significa \"lost\" en inglés.",
+    "exampleTranslation": "The word \"perdido\" means \"lost\" in English."
+  },
+  "pertenecer": {
+    "phonetic": "/peɾtenesˈeɾ/",
+    "example": "El verbo \"pertenecer\" significa \"to belong to\" en inglés.",
+    "exampleTranslation": "The verb \"pertenecer\" means \"to belong to\" in English."
+  },
+  "perteneciente": {
+    "phonetic": "/peɾtenesˈiente/",
+    "example": "La palabra \"perteneciente\" significa \"belonging to or pertaining to\" en inglés.",
+    "exampleTranslation": "The word \"perteneciente\" means \"belonging to or pertaining to\" in English."
+  },
+  "plano": {
+    "phonetic": "/plano/",
+    "example": "La palabra \"plano\" significa \"flat\" en inglés.",
+    "exampleTranslation": "The word \"plano\" means \"flat\" in English."
+  },
+  "por": {
+    "phonetic": "/pˈoɾ/",
+    "example": "La palabra \"por\" significa \"because of or by\" en inglés.",
+    "exampleTranslation": "The word \"por\" means \"because of or by\" in English."
+  },
+  "por cierto": {
+    "phonetic": "/pˈoɾ sˈieɾto/",
+    "example": "Por cierto, ¿cómo está tu familia?",
+    "exampleTranslation": "By the way, how is your family?"
+  },
+  "por eso": {
+    "phonetic": "/pˈoɾ ˈeso/",
+    "example": "Estoy cansado; por eso voy a descansar.",
+    "exampleTranslation": "I am tired; that is why I am going to rest."
+  },
+  "por la tarde": {
+    "phonetic": "/pˈoɾ la tˈaɾde/",
+    "example": "Trabajo por la tarde.",
+    "exampleTranslation": "I work in the afternoon."
+  },
+  "por supuesto": {
+    "phonetic": "/pˈoɾ supˈuesto/",
+    "example": "Por supuesto, puedes venir con nosotros.",
+    "exampleTranslation": "Of course, you can come with us."
+  },
+  "por último": {
+    "phonetic": "/pˈoɾ ˈultimo/",
+    "example": "Por último, revisa tus respuestas.",
+    "exampleTranslation": "Finally, check your answers."
+  },
+  "portátil": {
+    "phonetic": "/poɾtˈatil/",
+    "example": "La palabra \"portátil\" significa \"portable\" en inglés.",
+    "exampleTranslation": "The word \"portátil\" means \"portable\" in English."
+  },
+  "poseer": {
+    "phonetic": "/posˈeeɾ/",
+    "example": "El verbo \"poseer\" significa \"to have or to own\" en inglés.",
+    "exampleTranslation": "The verb \"poseer\" means \"to have or to own\" in English."
+  },
+  "preciso": {
+    "phonetic": "/pɾesˈiso/",
+    "example": "La palabra \"preciso\" significa \"accurate or precise\" en inglés.",
+    "exampleTranslation": "The word \"preciso\" means \"accurate or precise\" in English."
+  },
+  "preferir": {
+    "phonetic": "/pɾefeɾˈiɾ/",
+    "example": "El verbo \"preferir\" significa \"to prefer\" en inglés.",
+    "exampleTranslation": "The verb \"preferir\" means \"to prefer\" in English."
+  },
+  "presentar": {
+    "phonetic": "/pɾesentˈaɾ/",
+    "example": "El verbo \"presentar\" significa \"to introduce\" en inglés.",
+    "exampleTranslation": "The verb \"presentar\" means \"to introduce\" in English."
+  },
+  "previo": {
+    "phonetic": "/pɾˈeβio/",
+    "example": "La palabra \"previo\" significa \"preliminary, previous, or prior\" en inglés.",
+    "exampleTranslation": "The word \"previo\" means \"preliminary, previous, or prior\" in English."
+  },
+  "primer": {
+    "phonetic": "/pɾimˈeɾ/",
+    "example": "El verbo \"primer\" significa \"first\" en inglés.",
+    "exampleTranslation": "The verb \"primer\" means \"first\" in English."
+  },
+  "proceder": {
+    "phonetic": "/pɾosedeɾ/",
+    "example": "El verbo \"proceder\" significa \"to come from or to proceed\" en inglés.",
+    "exampleTranslation": "The verb \"proceder\" means \"to come from or to proceed\" in English."
+  },
+  "producir": {
+    "phonetic": "/pɾoðusˈiɾ/",
+    "example": "El verbo \"producir\" significa \"to produce\" en inglés.",
+    "exampleTranslation": "The verb \"producir\" means \"to produce\" in English."
+  },
+  "propio": {
+    "phonetic": "/pɾˈopio/",
+    "example": "La palabra \"propio\" significa \"own\" en inglés.",
+    "exampleTranslation": "The word \"propio\" means \"own\" in English."
+  },
+  "psíquico": {
+    "phonetic": "/psˈikiko/",
+    "example": "La palabra \"psíquico\" significa \"mental or psychological\" en inglés.",
+    "exampleTranslation": "The word \"psíquico\" means \"mental or psychological\" in English."
+  },
+  "publicar": {
+    "phonetic": "/puβlikˈaɾ/",
+    "example": "El verbo \"publicar\" significa \"to publish\" en inglés.",
+    "exampleTranslation": "The verb \"publicar\" means \"to publish\" in English."
+  },
+  "pues": {
+    "phonetic": "/pˈues/",
+    "example": "La palabra \"pues\" significa \"then or well\" en inglés.",
+    "exampleTranslation": "The word \"pues\" means \"then or well\" in English."
+  },
+  "puntual": {
+    "phonetic": "/puntˈual/",
+    "example": "La palabra \"puntual\" significa \"on time or punctual\" en inglés.",
+    "exampleTranslation": "The word \"puntual\" means \"on time or punctual\" in English."
+  },
+  "raro": {
+    "phonetic": "/rˈaɾo/",
+    "example": "La palabra \"raro\" significa \"rare or strange\" en inglés.",
+    "exampleTranslation": "The word \"raro\" means \"rare or strange\" in English."
+  },
+  "recibido": {
+    "phonetic": "/resiβˈiðo/",
+    "example": "La palabra \"recibido\" significa \"qualified\" en inglés.",
+    "exampleTranslation": "The word \"recibido\" means \"qualified\" in English."
+  },
+  "recibir": {
+    "phonetic": "/resiβˈiɾ/",
+    "example": "El verbo \"recibir\" significa \"to accept or to receive\" en inglés.",
+    "exampleTranslation": "The verb \"recibir\" means \"to accept or to receive\" in English."
+  },
+  "reciente": {
+    "phonetic": "/resˈiente/",
+    "example": "La palabra \"reciente\" significa \"recent\" en inglés.",
+    "exampleTranslation": "The word \"reciente\" means \"recent\" in English."
+  },
+  "recto": {
+    "phonetic": "/rˈekto/",
+    "example": "La palabra \"recto\" significa \"straight\" en inglés.",
+    "exampleTranslation": "The word \"recto\" means \"straight\" in English."
+  },
+  "regresar": {
+    "phonetic": "/reɡɾesˈaɾ/",
+    "example": "El verbo \"regresar\" significa \"to come back or to return\" en inglés.",
+    "exampleTranslation": "The verb \"regresar\" means \"to come back or to return\" in English."
+  },
+  "relacionado": {
+    "phonetic": "/relasionˈaðo/",
+    "example": "La palabra \"relacionado\" significa \"related\" en inglés.",
+    "exampleTranslation": "The word \"relacionado\" means \"related\" in English."
+  },
+  "relacionar": {
+    "phonetic": "/relasionˈaɾ/",
+    "example": "El verbo \"relacionar\" significa \"to relate or to connect\" en inglés.",
+    "exampleTranslation": "The verb \"relacionar\" means \"to relate or to connect\" in English."
+  },
+  "relajar": {
+    "phonetic": "/relaxˈaɾ/",
+    "example": "El verbo \"relajar\" significa \"to calm or to relax\" en inglés.",
+    "exampleTranslation": "The verb \"relajar\" means \"to calm or to relax\" in English."
+  },
+  "repetir": {
+    "phonetic": "/repetˈiɾ/",
+    "example": "El verbo \"repetir\" significa \"to repeat or to do again\" en inglés.",
+    "exampleTranslation": "The verb \"repetir\" means \"to repeat or to do again\" in English."
+  },
+  "responder": {
+    "phonetic": "/respondeɾ/",
+    "example": "El verbo \"responder\" significa \"to respond to or to answer\" en inglés.",
+    "exampleTranslation": "The verb \"responder\" means \"to respond to or to answer\" in English."
+  },
+  "reunir": {
+    "phonetic": "/reunˈiɾ/",
+    "example": "El verbo \"reunir\" significa \"to gather\" en inglés.",
+    "exampleTranslation": "The verb \"reunir\" means \"to gather\" in English."
+  },
+  "rico": {
+    "phonetic": "/rˈiko/",
+    "example": "La palabra \"rico\" significa \"delicious or rich\" en inglés.",
+    "exampleTranslation": "The word \"rico\" means \"delicious or rich\" in English."
+  },
+  "rizado": {
+    "phonetic": "/risˈaðo/",
+    "example": "La palabra \"rizado\" significa \"curly\" en inglés.",
+    "exampleTranslation": "The word \"rizado\" means \"curly\" in English."
+  },
+  "rubio": {
+    "phonetic": "/rˈuβio/",
+    "example": "La palabra \"rubio\" significa \"blond\" en inglés.",
+    "exampleTranslation": "The word \"rubio\" means \"blond\" in English."
+  },
+  "ruidoso": {
+    "phonetic": "/ruiðˈoso/",
+    "example": "La palabra \"ruidoso\" significa \"noisy\" en inglés.",
+    "exampleTranslation": "The word \"ruidoso\" means \"noisy\" in English."
+  },
+  "rural": {
+    "phonetic": "/ruɾˈal/",
+    "example": "La palabra \"rural\" significa \"rural\" en inglés.",
+    "exampleTranslation": "The word \"rural\" means \"rural\" in English."
+  },
+  "saber": {
+    "phonetic": "/saβˈeɾ/",
+    "example": "El verbo \"saber\" significa \"to know\" en inglés.",
+    "exampleTranslation": "The verb \"saber\" means \"to know\" in English."
+  },
+  "sabroso": {
+    "phonetic": "/saβɾˈoso/",
+    "example": "La palabra \"sabroso\" significa \"delicious or tasty\" en inglés.",
+    "exampleTranslation": "The word \"sabroso\" means \"delicious or tasty\" in English."
+  },
+  "saliente": {
+    "phonetic": "/salˈiente/",
+    "example": "La palabra \"saliente\" significa \"outgoing\" en inglés.",
+    "exampleTranslation": "The word \"saliente\" means \"outgoing\" in English."
+  },
+  "salud": {
+    "phonetic": "/salˈuð/",
+    "example": "La palabra \"salud\" significa \"bless you or cheers\" en inglés.",
+    "exampleTranslation": "The word \"salud\" means \"bless you or cheers\" in English."
+  },
+  "sano": {
+    "phonetic": "/sˈano/",
+    "example": "La palabra \"sano\" significa \"healthy\" en inglés.",
+    "exampleTranslation": "The word \"sano\" means \"healthy\" in English."
+  },
+  "secadora de ropa": {
+    "phonetic": "/sekaðˈoɾa de rˈopa/",
+    "example": "La expresión \"secadora de ropa\" significa \"dryer\" en inglés.",
+    "exampleTranslation": "The expression \"secadora de ropa\" means \"dryer\" in English."
+  },
+  "seguir": {
+    "phonetic": "/seɡiɾ/",
+    "example": "El verbo \"seguir\" significa \"to follow\" en inglés.",
+    "exampleTranslation": "The verb \"seguir\" means \"to follow\" in English."
+  },
+  "segundo": {
+    "phonetic": "/seɡˈundo/",
+    "example": "La palabra \"segundo\" significa \"second\" en inglés.",
+    "exampleTranslation": "The word \"segundo\" means \"second\" in English."
+  },
+  "según": {
+    "phonetic": "/seɡˈun/",
+    "example": "Según mi profesor, la prueba es fácil.",
+    "exampleTranslation": "According to my teacher, the test is easy."
+  },
+  "semejante": {
+    "phonetic": "/semexˈante/",
+    "example": "La palabra \"semejante\" significa \"similar\" en inglés.",
+    "exampleTranslation": "The word \"semejante\" means \"similar\" in English."
+  },
+  "sencillo": {
+    "phonetic": "/sensˈiʝo/",
+    "example": "La palabra \"sencillo\" significa \"simple\" en inglés.",
+    "exampleTranslation": "The word \"sencillo\" means \"simple\" in English."
+  },
+  "sentir": {
+    "phonetic": "/sentˈiɾ/",
+    "example": "El verbo \"sentir\" significa \"to feel\" en inglés.",
+    "exampleTranslation": "The verb \"sentir\" means \"to feel\" in English."
+  },
+  "separado": {
+    "phonetic": "/sepaɾˈaðo/",
+    "example": "La palabra \"separado\" significa \"divorced or separated\" en inglés.",
+    "exampleTranslation": "The word \"separado\" means \"divorced or separated\" in English."
+  },
+  "serio": {
+    "phonetic": "/sˈeɾio/",
+    "example": "La palabra \"serio\" significa \"serious\" en inglés.",
+    "exampleTranslation": "The word \"serio\" means \"serious\" in English."
+  },
+  "servir": {
+    "phonetic": "/seɾbˈiɾ/",
+    "example": "El verbo \"servir\" significa \"to serve\" en inglés.",
+    "exampleTranslation": "The verb \"servir\" means \"to serve\" in English."
+  },
+  "señalar": {
+    "phonetic": "/seɲalaɾ/",
+    "example": "El verbo \"señalar\" significa \"to show\" en inglés.",
+    "exampleTranslation": "The verb \"señalar\" means \"to show\" in English."
+  },
+  "significar": {
+    "phonetic": "/siɡnifikˈaɾ/",
+    "example": "El verbo \"significar\" significa \"to mean\" en inglés.",
+    "exampleTranslation": "The verb \"significar\" means \"to mean\" in English."
+  },
+  "siguiente": {
+    "phonetic": "/siɡiente/",
+    "example": "La palabra \"siguiente\" significa \"following or next\" en inglés.",
+    "exampleTranslation": "The word \"siguiente\" means \"following or next\" in English."
+  },
+  "soltero": {
+    "phonetic": "/soltˈeɾo/",
+    "example": "La palabra \"soltero\" significa \"single\" en inglés.",
+    "exampleTranslation": "The word \"soltero\" means \"single\" in English."
+  },
+  "subir": {
+    "phonetic": "/suβˈiɾ/",
+    "example": "El verbo \"subir\" significa \"to climb or to go up\" en inglés.",
+    "exampleTranslation": "The verb \"subir\" means \"to climb or to go up\" in English."
+  },
+  "subrayar": {
+    "phonetic": "/suβɾaʝˈaɾ/",
+    "example": "El verbo \"subrayar\" significa \"to emphasize or to underline\" en inglés.",
+    "exampleTranslation": "The verb \"subrayar\" means \"to emphasize or to underline\" in English."
+  },
+  "tacaño": {
+    "phonetic": "/takˈaɲo/",
+    "example": "La palabra \"tacaño\" significa \"stingy\" en inglés.",
+    "exampleTranslation": "The word \"tacaño\" means \"stingy\" in English."
+  },
+  "tallar": {
+    "phonetic": "/taʝˈaɾ/",
+    "example": "El verbo \"tallar\" significa \"to sculpt or to carve\" en inglés.",
+    "exampleTranslation": "The verb \"tallar\" means \"to sculpt or to carve\" in English."
+  },
+  "tampoco": {
+    "phonetic": "/tampˈoko/",
+    "example": "La palabra \"tampoco\" significa \"neither\" en inglés.",
+    "exampleTranslation": "The word \"tampoco\" means \"neither\" in English."
+  },
+  "temprano": {
+    "phonetic": "/tempɾˈano/",
+    "example": "La palabra \"temprano\" significa \"early\" en inglés.",
+    "exampleTranslation": "The word \"temprano\" means \"early\" in English."
+  },
+  "tener calor": {
+    "phonetic": "/tenˈeɾ kalˈoɾ/",
+    "example": "Tengo calor en verano.",
+    "exampleTranslation": "I am hot in summer."
+  },
+  "tener frío": {
+    "phonetic": "/tenˈeɾ fɾˈio/",
+    "example": "Tengo frío en invierno.",
+    "exampleTranslation": "I am cold in winter."
+  },
+  "tercera": {
+    "phonetic": "/teɾsˈeɾa/",
+    "example": "La palabra \"tercera\" significa \"third\" en inglés.",
+    "exampleTranslation": "The word \"tercera\" means \"third\" in English."
+  },
+  "terminar": {
+    "phonetic": "/teɾminˈaɾ/",
+    "example": "El verbo \"terminar\" significa \"to end or to finish\" en inglés.",
+    "exampleTranslation": "The verb \"terminar\" means \"to end or to finish\" in English."
+  },
+  "terrestre": {
+    "phonetic": "/terˈestɾe/",
+    "example": "La palabra \"terrestre\" significa \"land\" en inglés.",
+    "exampleTranslation": "The word \"terrestre\" means \"land\" in English."
+  },
+  "tirar": {
+    "phonetic": "/tiɾˈaɾ/",
+    "example": "El verbo \"tirar\" significa \"to throw or to throw away\" en inglés.",
+    "exampleTranslation": "The verb \"tirar\" means \"to throw or to throw away\" in English."
+  },
+  "torpe": {
+    "phonetic": "/tˈoɾpe/",
+    "example": "La palabra \"torpe\" significa \"clumsy\" en inglés.",
+    "exampleTranslation": "The word \"torpe\" means \"clumsy\" in English."
+  },
+  "trabajar": {
+    "phonetic": "/tɾaβaxˈaɾ/",
+    "example": "El verbo \"trabajar\" significa \"to work\" en inglés.",
+    "exampleTranslation": "The verb \"trabajar\" means \"to work\" in English."
+  },
+  "traer": {
+    "phonetic": "/tɾˈaeɾ/",
+    "example": "El verbo \"traer\" significa \"to bring or to have on\" en inglés.",
+    "exampleTranslation": "The verb \"traer\" means \"to bring or to have on\" in English."
+  },
+  "transcurrir": {
+    "phonetic": "/tɾanskurˈiɾ/",
+    "example": "El verbo \"transcurrir\" significa \"to pass\" en inglés.",
+    "exampleTranslation": "The verb \"transcurrir\" means \"to pass\" in English."
+  },
+  "turístico": {
+    "phonetic": "/tuɾˈistiko/",
+    "example": "La palabra \"turístico\" significa \"tourist\" en inglés.",
+    "exampleTranslation": "The word \"turístico\" means \"tourist\" in English."
+  },
+  "tímido": {
+    "phonetic": "/tˈimiðo/",
+    "example": "La palabra \"tímido\" significa \"shy or timid\" en inglés.",
+    "exampleTranslation": "The word \"tímido\" means \"shy or timid\" in English."
+  },
+  "ubicar": {
+    "phonetic": "/uβikˈaɾ/",
+    "example": "El verbo \"ubicar\" significa \"to locate\" en inglés.",
+    "exampleTranslation": "The verb \"ubicar\" means \"to locate\" in English."
+  },
+  "unir": {
+    "phonetic": "/unˈiɾ/",
+    "example": "El verbo \"unir\" significa \"to join\" en inglés.",
+    "exampleTranslation": "The verb \"unir\" means \"to join\" in English."
+  },
+  "utilizar": {
+    "phonetic": "/utilisˈaɾ/",
+    "example": "El verbo \"utilizar\" significa \"to use or to utilize\" en inglés.",
+    "exampleTranslation": "The verb \"utilizar\" means \"to use or to utilize\" in English."
+  },
+  "vago": {
+    "phonetic": "/βˈaɡo/",
+    "example": "La palabra \"vago\" significa \"lazy\" en inglés.",
+    "exampleTranslation": "The word \"vago\" means \"lazy\" in English."
+  },
+  "varios": {
+    "phonetic": "/βˈaɾios/",
+    "example": "La palabra \"varios\" significa \"several\" en inglés.",
+    "exampleTranslation": "The word \"varios\" means \"several\" in English."
+  },
+  "vender": {
+    "phonetic": "/βendeɾ/",
+    "example": "El verbo \"vender\" significa \"to sell\" en inglés.",
+    "exampleTranslation": "The verb \"vender\" means \"to sell\" in English."
+  },
+  "vestir": {
+    "phonetic": "/βestˈiɾ/",
+    "example": "El verbo \"vestir\" significa \"to wear\" en inglés.",
+    "exampleTranslation": "The verb \"vestir\" means \"to wear\" in English."
+  },
+  "vuestra": {
+    "phonetic": "/βˈuestɾa/",
+    "example": "La palabra \"vuestra\" significa \"yours or your\" en inglés.",
+    "exampleTranslation": "The word \"vuestra\" means \"yours or your\" in English."
+  },
+  "ya": {
+    "phonetic": "/ʝˈa/",
+    "example": "La palabra \"ya\" significa \"now or already\" en inglés.",
+    "exampleTranslation": "The word \"ya\" means \"now or already\" in English."
+  },
+  "¿Cómo estás?": {
+    "phonetic": "/kˈomo estˈas/",
+    "example": "¿Cómo estás hoy?",
+    "exampleTranslation": "How are you today?"
+  },
+  "último": {
+    "phonetic": "/ˈultimo/",
+    "example": "La palabra \"último\" significa \"last\" en inglés.",
+    "exampleTranslation": "The word \"último\" means \"last\" in English."
+  },
+  "único": {
+    "phonetic": "/ˈuniko/",
+    "example": "La palabra \"único\" significa \"only\" en inglés.",
+    "exampleTranslation": "The word \"único\" means \"only\" in English."
+  },
+  "__END__": null
+}

@@ -32,7 +32,9 @@ public enum AppModule: String, Module {
 
 public enum FeatureModule: String, Module {
     case splash = "Splash"
-    case cards = "Cards"
+    case deck = "Deck"
+    case study = "Study"
+    case stats = "Stats"
 
     public var includeProductTarget: Bool { true }
     public var includeExampleTarget: Bool { true }

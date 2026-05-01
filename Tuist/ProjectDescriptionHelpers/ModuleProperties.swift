@@ -86,7 +86,12 @@ public extension Module {
                 []
             case .coreModels:
                 [CoreModule.coreFoundation.targetDependency]
-            case .coreNetwork, .coreDatabase, .coreAnalytics:
+            case .coreDatabase:
+                [CoreModule.coreFoundation, .coreModels].map(\.targetDependency)
+                + [.external(name: "SQLiteData")]
+            case .coreNetwork:
+                [CoreModule.coreFoundation, .coreModels, .coreDatabase].map(\.targetDependency)
+            case .coreAnalytics:
                 [CoreModule.coreFoundation, .coreModels].map(\.targetDependency)
             }
         case let shared as SharedModule:

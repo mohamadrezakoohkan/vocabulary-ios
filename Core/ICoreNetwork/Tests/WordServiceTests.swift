@@ -8,13 +8,13 @@ struct WordServiceTests {
     // MARK: - Init with words array
 
     @Test func fetchRandomWord_returnsWordFromList() {
-        let words = [Word(spanish: "hola", english: "hello")]
+        let words = [Word(term: "hola", translation: "hello")]
         let service = WordService(words: words, defaults: makeDefaults())
 
         let word = service.fetchRandomWord()
 
-        #expect(word?.spanish == "hola")
-        #expect(word?.english == "hello")
+        #expect(word?.term == "hola")
+        #expect(word?.translation == "hello")
     }
 
     @Test func fetchRandomWord_returnsNilForEmptyList() {
@@ -25,8 +25,8 @@ struct WordServiceTests {
 
     @Test func totalCount_returnsCorrectCount() {
         let words = [
-            Word(spanish: "hola", english: "hello"),
-            Word(spanish: "adiós", english: "goodbye"),
+            Word(term: "hola", translation: "hello"),
+            Word(term: "adiós", translation: "goodbye"),
         ]
         let service = WordService(words: words, defaults: makeDefaults())
 
@@ -35,8 +35,8 @@ struct WordServiceTests {
 
     @Test func remainingCount_decreasesAfterFetch() {
         let words = [
-            Word(spanish: "hola", english: "hello"),
-            Word(spanish: "adiós", english: "goodbye"),
+            Word(term: "hola", translation: "hello"),
+            Word(term: "adiós", translation: "goodbye"),
         ]
         let service = WordService(words: words, defaults: makeDefaults())
 
@@ -47,9 +47,9 @@ struct WordServiceTests {
 
     @Test func fetchRandomWord_returnsAllWordsBeforeRepeating() {
         let words = [
-            Word(spanish: "hola", english: "hello"),
-            Word(spanish: "adiós", english: "goodbye"),
-            Word(spanish: "gracias", english: "thanks"),
+            Word(term: "hola", translation: "hello"),
+            Word(term: "adiós", translation: "goodbye"),
+            Word(term: "gracias", translation: "thanks"),
         ]
         let service = WordService(words: words, defaults: makeDefaults())
 
@@ -63,21 +63,20 @@ struct WordServiceTests {
     }
 
     @Test func fetchRandomWord_resetsWhenAllVisited() {
-        let words = [Word(spanish: "hola", english: "hello")]
+        let words = [Word(term: "hola", translation: "hello")]
         let service = WordService(words: words, defaults: makeDefaults())
 
         _ = service.fetchRandomWord()
         #expect(service.remainingCount == 0)
 
-        // Should reset and return the word again
         let word = service.fetchRandomWord()
         #expect(word != nil)
     }
 
     @Test func reset_makesAllWordsAvailableAgain() {
         let words = [
-            Word(spanish: "hola", english: "hello"),
-            Word(spanish: "adiós", english: "goodbye"),
+            Word(term: "hola", translation: "hello"),
+            Word(term: "adiós", translation: "goodbye"),
         ]
         let service = WordService(words: words, defaults: makeDefaults())
 
@@ -91,8 +90,8 @@ struct WordServiceTests {
 
     @Test func visitedState_persistsAcrossInstances() {
         let words = [
-            Word(spanish: "hola", english: "hello"),
-            Word(spanish: "adiós", english: "goodbye"),
+            Word(term: "hola", translation: "hello"),
+            Word(term: "adiós", translation: "goodbye"),
         ]
         let defaults = makeDefaults()
 
@@ -101,15 +100,6 @@ struct WordServiceTests {
 
         let service2 = WordService(words: words, defaults: defaults)
         #expect(service2.remainingCount == 1)
-    }
-
-    // MARK: - Init from CSV bundle
-
-    @Test func initFromBundle_loadsWordsFromCSV() {
-        let service = WordService(defaults: makeDefaults())
-
-        #expect(service.totalCount > 0)
-        #expect(service.fetchRandomWord() != nil)
     }
 
     // MARK: - Helpers

@@ -199,6 +199,7 @@ extension Icons {
         case .photo:               "photo"
         case .trash:               "trash"
         case .wifi:                "wifi"
+        case .speaker:             "speaker"
         }
     }
 }

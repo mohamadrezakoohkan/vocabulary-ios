@@ -172,9 +172,9 @@ private struct WordServicePreview: View {
                 Section("Current Word") {
                     if let currentWord {
                         VStack(alignment: .leading, spacing: 8) {
-                            Text(currentWord.spanish)
+                            Text(currentWord.term)
                                 .font(.largeTitle.bold())
-                            Text(currentWord.english)
+                            Text(currentWord.translation)
                                 .font(.title2)
                                 .foregroundStyle(.secondary)
                         }
@@ -211,10 +211,10 @@ private struct WordServicePreview: View {
                     Section("History") {
                         ForEach(history) { word in
                             HStack {
-                                Text(word.spanish)
+                                Text(word.term)
                                     .fontWeight(.medium)
                                 Spacer()
-                                Text(word.english)
+                                Text(word.translation)
                                     .foregroundStyle(.secondary)
                             }
                         }

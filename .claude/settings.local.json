@@ -13,7 +13,30 @@
       "Bash(xcodebuild -workspace Vocabulary.xcworkspace -scheme ICoreUI -destination 'generic/platform=iOS Simulator' -configuration Debug -quiet build)",
       "Bash(xcodebuild -workspace Vocabulary.xcworkspace -scheme ICoreUI -destination 'generic/platform=iOS Simulator' -configuration Debug build)",
       "Bash(xcodebuild -workspace Vocabulary.xcworkspace -scheme App -destination 'generic/platform=iOS Simulator' -configuration Debug build)",
-      "Bash(xcodebuild -workspace Vocabulary.xcworkspace -scheme Cards -destination 'generic/platform=iOS Simulator' -configuration Debug build)"
+      "Bash(xcodebuild -workspace Vocabulary.xcworkspace -scheme Cards -destination 'generic/platform=iOS Simulator' -configuration Debug build)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(gh repo *)",
+      "Bash(gh api *)",
+      "Bash(sqlite3 --version)",
+      "Bash(python3 Scripts/seed_vocabulary_db.py)",
+      "Bash(sqlite3 Core/ICoreDatabase/Resources/vocabulary.sqlite \"SELECT COUNT\\(*\\) FROM words; SELECT COUNT\\(*\\) FROM word_categories; SELECT * FROM categories; SELECT * FROM words LIMIT 3;\")",
+      "Bash(sqlite3 Core/ICoreDatabase/Resources/vocabulary.sqlite \".schema\")",
+      "Bash(tuist version *)",
+      "Bash(tuist install *)",
+      "Bash(tuist generate *)",
+      "Bash(mise current *)",
+      "Bash(mise which *)",
+      "Bash(mise exec *)",
+      "Bash(/Users/mohammadreza/.local/share/mise/installs/tuist/4.155.3/bin/tuist version *)",
+      "Bash(/Users/mohammadreza/.local/share/mise/installs/tuist/4.155.3/bin/tuist generate *)",
+      "Bash(xcodebuild -workspace Vocabulary.xcworkspace -scheme ICoreDatabase -configuration Debug -destination 'generic/platform=iOS Simulator' build)",
+      "Bash(xcodebuild -workspace Vocabulary.xcworkspace -scheme App -configuration Debug -destination 'generic/platform=iOS Simulator' build)",
+      "Bash(xcodebuild -workspace Vocabulary.xcworkspace -scheme App -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 16' build)",
+      "Bash(sqlite3 /Users/mohammadreza/Desktop/Hobby/Vocabulary/vocabulary-ios/Core/ICoreDatabase/Resources/vocabulary.sqlite \"SELECT COUNT\\(DISTINCT term\\) FROM words; SELECT COUNT\\(*\\) FROM words;\")",
+      "Bash(sqlite3 /Users/mohammadreza/Desktop/Hobby/Vocabulary/vocabulary-ios/Core/ICoreDatabase/Resources/vocabulary.sqlite \"SELECT DISTINCT term FROM words ORDER BY term;\")",
+      "Read(//tmp/**)",
+      "Bash(git add *)"
     ]
   }
 }

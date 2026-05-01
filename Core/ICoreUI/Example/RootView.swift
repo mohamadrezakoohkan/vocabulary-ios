@@ -22,7 +22,8 @@ struct RootView: View {
                     NavigationLink("ChipView")      { ChipViewDemo() }
                     NavigationLink("FlashcardView") { FlashcardViewDemo() }
                     NavigationLink("HeaderView")    { HeaderViewDemo() }
-                    NavigationLink("InputView")     { InputViewDemo() }
+                    NavigationLink("InputView")       { InputViewDemo() }
+                    NavigationLink("ProgressBarView") { ProgressBarViewDemo() }
                     NavigationLink("QuoteView")     { QuoteViewDemo() }
                     NavigationLink("ReviewView")    { ReviewViewDemo() }
                 }

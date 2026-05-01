@@ -28,17 +28,9 @@ public enum Icons: String, CaseIterable, Identifiable, Hashable {
 
     // MARK: - Tab Bar Icons
 
-    /// Capture tab icon - sparkle symbol
-    case sparkle = "sparkle"
-
-    /// Revisit tab icon - arrow clockwise symbol
-    case arrowClockwise = "arrow.clockwise"
-
-    /// Lineage tab icon - chart line uptrend
-    case arrowBranch = "arrow.branch"
-
-    /// Evolve tab icon - circle symbol
-    case buttonProgrammable = "button.programmable"
+    case deckTab = "list.star"
+    case studyTab = "square.stack.3d.up.fill"
+    case statsTab = "chart.bar.xaxis"
 
     case arrowRight = "arrow.right"
     case checkmark = "checkmark"
@@ -66,6 +58,7 @@ public enum Icons: String, CaseIterable, Identifiable, Hashable {
     case phone = "phone.fill"
     case photo = "photo.fill"
     case trash = "trash.fill"
+    case speaker = "speaker.wave.2.fill"
     case wifi = "wifi"
 
     public var id: String {

@@ -42,6 +42,12 @@ public protocol IImageService {
     /// - Parameter query: One or more words describing the image to search for.
     /// - Returns: The image data (JPEG/PNG) on success, or `nil` if no result was found.
     func fetchImage(query: [String]) async throws -> Data?
+
+    /// Fetches the URL of a commercially-licensed image for the given query string.
+    ///
+    /// - Parameter query: A search query string (words joined with `+`).
+    /// - Returns: The image URL on success, or `nil` if no result was found.
+    func fetchImageURL(query: String) async throws -> URL?
 }
 
 // MARK: - Implementation
@@ -81,8 +87,8 @@ public final class ImageService: IImageService {
         return data
     }
 
-    private func fetchImageURL(query: String) async throws -> URL? {
-        var components = URLComponents(string: "https://api.openverse.org/v1/images/")!
+    public func fetchImageURL(query: String) async throws -> URL? {
+        var components = URLComponents(string: "a")!
         components.queryItems = [
             URLQueryItem(name: "q", value: query),
             URLQueryItem(name: "license_type", value: "commercial"),

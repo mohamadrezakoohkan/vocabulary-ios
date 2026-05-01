@@ -26,7 +26,8 @@ private struct Interactive: View {
     @State private var translation: String = "thank you"
     @State private var example: String = "Muchas gracias por tu ayuda."
     @State private var exampleTranslation: String = "Thank you very much for your help."
-    @State private var imageSystemName: String = "hand.wave.fill"
+    @State private var imageURLString: String = "https://live.staticflickr.com/5463/14110072663_2408967254_b.jpg"
+    @State private var hasOnPlaySound: Bool = true
     @State private var hasOnReveal: Bool = true
 
     var body: some View {
@@ -40,7 +41,8 @@ private struct Interactive: View {
                     translation: translation,
                     example: example,
                     exampleTranslation: exampleTranslation,
-                    imageSystemName: imageSystemName.isEmpty ? nil : imageSystemName,
+                    imageURL: URL(string: imageURLString),
+                    onPlaySound: hasOnPlaySound ? {} : nil,
                     onReveal: hasOnReveal ? {} : nil
                 )
             }
@@ -52,11 +54,12 @@ private struct Interactive: View {
                 TextFieldRow(label: "Phonetic",     text: $phonetic)
                 TextFieldRow(label: "Reveal label", text: $revealLabel)
                 SliderRow(label: "Min height", value: $minHeight, range: 200...520, step: 20)
+                Toggle("Has onPlaySound", isOn: $hasOnPlaySound).font(.subheadline)
                 Toggle("Has onReveal", isOn: $hasOnReveal).font(.subheadline)
             }
 
             ControlsSection(title: "Back (flip)") {
-                TextFieldRow(label: "Image symbol",        text: $imageSystemName)
+                TextFieldRow(label: "Image URL",            text: $imageURLString)
                 TextFieldRow(label: "Translation",         text: $translation)
                 TextFieldRow(label: "Example",             text: $example)
                 TextFieldRow(label: "Example translation", text: $exampleTranslation)
@@ -76,7 +79,8 @@ private struct Interactive: View {
                 ("translation",        swiftStringLiteral(translation)),
                 ("example",            swiftStringLiteral(example)),
                 ("exampleTranslation", swiftStringLiteral(exampleTranslation)),
-                ("imageSystemName",    imageSystemName.isEmpty ? nil : swiftStringLiteral(imageSystemName)),
+                ("imageURL",           imageURLString.isEmpty ? nil : "URL(string: \(swiftStringLiteral(imageURLString)))"),
+                ("onPlaySound",        hasOnPlaySound ? "{ /* play */ }" : nil),
                 ("onReveal",           hasOnReveal ? "{ /* reveal */ }" : nil),
             ]
         )
@@ -86,6 +90,7 @@ private struct Interactive: View {
 // MARK: - Combinations
 
 private struct Combinations: View {
+    
     var body: some View {
         CombinationsScroll {
             CombinationGroup(title: "Full back content (image + all text)") {
@@ -95,7 +100,8 @@ private struct Combinations: View {
                     translation: "thank you",
                     example: "Muchas gracias por tu ayuda.",
                     exampleTranslation: "Thank you very much for your help.",
-                    imageSystemName: "hand.wave.fill",
+                    imageURL: URL(string: "https://live.staticflickr.com/5463/14110072663_2408967254_b.jpg"),
+                    onPlaySound: {},
                     onReveal: {}
                 )
             }
@@ -105,7 +111,8 @@ private struct Combinations: View {
                     word: "manzana",
                     phonetic: "/manˈθana/",
                     translation: "apple",
-                    imageSystemName: "applelogo",
+                    imageURL: URL(string: "https://picsum.photos/seed/manzana/200"),
+                    onPlaySound: {},
                     onReveal: {}
                 )
             }
@@ -118,6 +125,7 @@ private struct Combinations: View {
                     translation: "lasting for a very short time",
                     example: "The beauty of cherry blossoms is ephemeral.",
                     exampleTranslation: "Cherry blossoms only bloom for a few days.",
+                    onPlaySound: {},
                     onReveal: {}
                 )
             }
@@ -152,7 +160,7 @@ private struct Combinations: View {
                     translation: "usage example",
                     example: "Das ist ein gutes Anwendungsbeispiel.",
                     exampleTranslation: "That is a good usage example.",
-                    imageSystemName: "text.book.closed.fill",
+                    imageURL: URL(string: "https://picsum.photos/seed/beispiel/200"),
                     onReveal: {}
                 )
             }
@@ -163,7 +171,7 @@ private struct Combinations: View {
                     phonetic: "/a.ɾi.ɡa.toː/",
                     minHeight: 240,
                     translation: "thank you",
-                    imageSystemName: "hands.sparkles.fill",
+                    imageURL: URL(string: "https://picsum.photos/seed/arigatou/200"),
                     onReveal: {}
                 )
             }
